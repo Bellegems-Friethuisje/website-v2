@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group cursor-pointer" @click="$emit('select')">
+  <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-[box-shadow,transform] duration-300 hover:-translate-y-1 group cursor-pointer" @click="$emit('select')"
+    style="will-change: transform"
+  >
     <!-- Real photo or emoji fallback -->
     <div class="relative h-44 overflow-hidden bg-gray-100">
       <img
@@ -7,6 +9,7 @@
         :src="image"
         :alt="name"
         loading="lazy"
+        decoding="async"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       />
       <div

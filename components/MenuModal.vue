@@ -3,14 +3,9 @@
     <Transition name="backdrop">
       <div
         v-if="item"
-        class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4"
+        class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-gray-950/60 backdrop-blur-sm"
         @click.self="$emit('close')"
       >
-        <!-- Backdrop -->
-        <div
-          class="absolute inset-0 bg-gray-950/60 backdrop-blur-sm"
-          @click="$emit('close')"
-        />
 
         <!-- Modal -->
         <Transition name="modal" appear>
@@ -24,6 +19,8 @@
                 v-if="item.image"
                 :src="item.image"
                 :alt="name"
+                loading="lazy"
+                decoding="async"
                 class="w-full h-full object-cover"
               />
               <div

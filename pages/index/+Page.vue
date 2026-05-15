@@ -5,6 +5,8 @@
       <img
         src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104452_dea8c2695a.jpg"
         alt="Bellegems Friethuisje"
+        fetchpriority="high"
+        decoding="async"
         class="w-full h-full object-cover object-center"
       />
       <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent" />
@@ -33,6 +35,9 @@
       </div>
     </div>
   </section>
+
+  <!-- Festive banner -->
+  <FestiveBanner />
 
   <!-- About -->
   <section class="max-w-5xl mx-auto px-4 lg:px-0 py-20">
@@ -69,18 +74,22 @@
         <img
           src="https://strapi.bellegemsfriethuisje.be/uploads/small_Bellegems_Friethuisje_1_718c40142e.jpg"
           alt="Bellegems Friethuisje"
+          loading="lazy"
+          decoding="async"
           class="col-span-2 h-52 w-full object-cover rounded-2xl"
         />
         <img
           :src="`https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1740_Half_haantje_6b1846afc8.jpg`"
           alt="Half haantje"
           loading="lazy"
+          decoding="async"
           class="h-36 w-full object-cover rounded-2xl"
         />
         <img
           :src="`https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1520_BELL_Burger_3_05731fcc44.jpg`"
           alt="BELL Burger"
           loading="lazy"
+          decoding="async"
           class="h-36 w-full object-cover rounded-2xl"
         />
       </div>
@@ -136,6 +145,7 @@
         src="https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1740_Half_haantje_6b1846afc8.jpg"
         alt="Half haantje"
         loading="lazy"
+        decoding="async"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       />
       <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent flex items-end p-6">
@@ -205,6 +215,7 @@
       src="https://strapi.bellegemsfriethuisje.be/uploads/medium_20220417_105904_aad992e322.jpg"
       alt="Bellegems Friethuisje"
       loading="lazy"
+      decoding="async"
       class="absolute inset-0 w-full h-full object-cover"
     />
     <div class="absolute inset-0 bg-orange-600/85" />
@@ -230,6 +241,7 @@
 import { computed } from 'vue'
 import { useLang } from '../../composables/useLang'
 import MenuCard from '../../components/MenuCard.vue'
+import FestiveBanner from '../../components/FestiveBanner.vue'
 import bellegems from '../../data/locations/bellegems.json'
 import takeaway from '../../data/locations/takeaway.json'
 

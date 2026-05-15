@@ -6,33 +6,9 @@
   "phoneDisplay": "056 00 00 01",
   "hours": [
     {
-      "nl": "Maandag",
-      "fr": "Lundi",
-      "time": null,
-      "closed": true
-    },
-    {
-      "nl": "Dinsdag – Donderdag",
-      "fr": "Mar – Jeu",
-      "time": "17u00 – 22u00",
-      "closed": false
-    },
-    {
-      "nl": "Vrijdag",
-      "fr": "Vendredi",
-      "time": "17u00 – 23u00",
-      "closed": false
-    },
-    {
-      "nl": "Zaterdag",
-      "fr": "Samedi",
-      "time": "11u00 – 23u00",
-      "closed": false
-    },
-    {
-      "nl": "Zondag",
-      "fr": "Dimanche",
-      "time": "11u00 – 22u00",
+      "nl": "Maandag – Zondag",
+      "fr": "Lundi – Dimanche",
+      "time": "24u/24",
       "closed": false
     }
   ],

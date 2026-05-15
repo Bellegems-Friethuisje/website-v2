@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "bellegems",
   "name": "Bellegems Friethuisje",
   "address": "Doornikserijksweg 134, 8510 Bellegem",
@@ -66,7 +66,6 @@
       "fr": "Snacks",
       "sauzen": false
     },
-
     {
       "id": "maaltijd",
       "emoji": "🍽️",
@@ -81,7 +80,6 @@
       "fr": "Salades",
       "sauzen": false
     },
-
     {
       "id": "drank",
       "emoji": "🥤",
@@ -93,13 +91,12 @@
   "menu": [
     {
       "": "",
-      "__COMMENT__": "Frietjes",
-      "": ""
+      "__COMMENT__": "Frietjes"
     },
     {
       "id": 1,
       "category": "friet",
-      "emoji": "ðŸŸ",
+      "emoji": "🍟",
       "nl": {
         "name": "Kinderfriet",
         "description": "Kinder portie knapperige frieten voor kinderen"
@@ -124,7 +121,13 @@
         "description": "Petite portion de frites belges croustillantes"
       },
       "price": 2.6,
-      "pairsWith": [60, 61, 62, 63, 64]
+      "pairsWith": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
     },
     {
       "id": 3,
@@ -139,7 +142,13 @@
         "description": "Moyenne portion de frites croustillantes"
       },
       "price": 3.1,
-      "pairsWith": [60, 61, 62, 63, 64]
+      "pairsWith": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
     },
     {
       "id": 4,
@@ -154,12 +163,17 @@
         "description": "Frites belges croustillantes, grande portion"
       },
       "price": 3.6,
-      "pairsWith": [60, 61, 62, 63, 64]
+      "pairsWith": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
     },
     {
       "": "",
-      "__COMMENT__": "Koude sauzen",
-      "": ""
+      "__COMMENT__": "Koude sauzen"
     },
     {
       "id": 5,
@@ -177,7 +191,7 @@
     {
       "id": 6,
       "category": "saus",
-      "emoji": "Ã°Å¸Ââ€¦",
+      "emoji": "🍅",
       "nl": {
         "name": "Ketchup",
         "description": ""
@@ -218,7 +232,7 @@
     {
       "id": 9,
       "category": "saus",
-      "emoji": "Ã°Å¸Å’Â¶Ã¯Â¸Â",
+      "emoji": "🌶️",
       "nl": {
         "name": "Samurai"
       },
@@ -291,7 +305,7 @@
     {
       "id": 14,
       "category": "saus",
-      "emoji": "Ã°Å¸Å’Â¶Ã¯Â¸Â",
+      "emoji": "🌶️",
       "nl": {
         "name": "Hannibal"
       },
@@ -348,7 +362,7 @@
     {
       "id": 18,
       "category": "saus",
-      "emoji": "Ã°Å¸Å’Â¶Ã¯Â¸Â",
+      "emoji": "🌶️",
       "nl": {
         "name": "Pepersaus koud",
         "description": ""
@@ -435,7 +449,6 @@
       "price": 1.2,
       "image": "/menu/703229_azure_image1_0_5ef2375eed1f4c09bb40c11dc1a7a864.jpg"
     },
-
     {
       "id": 173,
       "category": "saus",
@@ -503,8 +516,7 @@
     },
     {
       "": "",
-      "__COMMENT__": "Warme sauzen",
-      "": ""
+      "__COMMENT__": "Warme sauzen"
     },
     {
       "id": 79,
@@ -539,7 +551,7 @@
     {
       "id": 25,
       "category": "warme_saus",
-      "emoji": "ðŸ„",
+      "emoji": "🍄",
       "image": "/menu/warme-saus/champsaus.png",
       "nl": {
         "name": "Champignonsaus warm",
@@ -554,7 +566,7 @@
     {
       "id": 80,
       "category": "warme_saus",
-      "emoji": "ðŸ¦",
+      "emoji": "🦐",
       "nl": {
         "name": "Scampisaus",
         "description": ""
@@ -584,7 +596,7 @@
     {
       "id": 81,
       "category": "warme_saus",
-      "emoji": "Ã°Å¸Ââ€¦",
+      "emoji": "🍅",
       "nl": {
         "name": "Tomatensaus potje",
         "description": "Huisbereide tomatensaus"
@@ -596,7 +608,6 @@
       "price": 3.5,
       "image": "/menu/warme-saus/tomatensaus.png"
     },
-
     {
       "id": 65,
       "category": "warme_saus",
@@ -629,8 +640,7 @@
     },
     {
       "": "",
-      "__COMMENT__": "Burgers",
-      "": ""
+      "__COMMENT__": "Burgers"
     },
     {
       "id": 75,
@@ -723,7 +733,6 @@
       "price": 4.3,
       "image": "/menu/burgers/bickycheese.png"
     },
-
     {
       "id": 75,
       "category": "burger",
@@ -786,8 +795,579 @@
     },
     {
       "": "",
-      "__COMMENT__": "Snacks",
-      "": ""
+      "__COMMENT__": "Snacks"
+    },
+    {
+      "id": 178,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Frikandel"
+      },
+      "fr": {
+        "name": "Fricadelle"
+      },
+      "price": 1.8,
+      "image": "/menu/snacks/frikandel.png"
+    },
+    {
+      "id": 179,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Frikandel speciaal"
+      },
+      "fr": {
+        "name": "Fricadelle spéciale"
+      },
+      "price": 2.8,
+      "image": "/menu/snacks/frikandelspeciaal.png"
+    },
+    {
+      "id": 180,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Hamburgerschijf"
+      },
+      "fr": {
+        "name": "Hamburgerschijf"
+      },
+      "price": 2.4,
+      "image": "/menu/snacks/hamburgerschijf.png"
+    },
+    {
+      "id": 181,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Ardeense saté"
+      },
+      "fr": {
+        "name": "Saté ardennais"
+      },
+      "price": 3.6,
+      "image": "/menu/snacks/ardeense.png"
+    },
+    {
+      "id": 182,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Vleesbrochette"
+      },
+      "fr": {
+        "name": "Brochette de viande"
+      },
+      "price": 3.8,
+      "image": "/menu/snacks/vleesbrochette.png"
+    },
+    {
+      "id": 183,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Mozzarellasticks"
+      },
+      "fr": {
+        "name": "Bâtonnets de mozzarella"
+      },
+      "price": 3.5,
+      "image": "/menu/snacks/mozarellasticks.png"
+    },
+    {
+      "id": 184,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Zigeunerstick"
+      },
+      "fr": {
+        "name": "Zigeunerstick"
+      },
+      "price": 3.5,
+      "image": "/menu/snacks/zigeunerstick.png"
+    },
+    {
+      "id": 185,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Merguez saté"
+      },
+      "fr": {
+        "name": "Saté merguez"
+      },
+      "price": 3.5,
+      "image": "/menu/snacks/mergueze.png"
+    },
+    {
+      "id": 186,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Spicy viandel"
+      },
+      "fr": {
+        "name": "Viandel épicé"
+      },
+      "price": 2.6,
+      "image": "/menu/snacks/spicyviandel.png"
+    },
+    {
+      "id": 187,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Visbrochette"
+      },
+      "fr": {
+        "name": "Brochette de poisson"
+      },
+      "price": 3.9,
+      "image": "/menu/snacks/visbrochette.png"
+    },
+    {
+      "id": 188,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kaassoufflé"
+      },
+      "fr": {
+        "name": "Soufflé au fromage"
+      },
+      "price": 3.1,
+      "image": "/menu/snacks/kaassouffle.png"
+    },
+    {
+      "id": 189,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Mini lucifers"
+      },
+      "fr": {
+        "name": "Mini lucifers"
+      },
+      "price": 3.7,
+      "image": "/menu/snacks/minilucifers.png"
+    },
+    {
+      "id": 190,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Mini-megamix"
+      },
+      "fr": {
+        "name": "Mini-megamix"
+      },
+      "price": 3.8,
+      "image": "/menu/snacks/minimegamix.png"
+    },
+    {
+      "id": 191,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Crizly pikant"
+      },
+      "fr": {
+        "name": "Crizly épicé"
+      },
+      "price": 4.3,
+      "image": "/menu/snacks/crizzly.png"
+    },
+    {
+      "id": 192,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kipcorn"
+      },
+      "fr": {
+        "name": "Poulycroc"
+      },
+      "price": 4.7,
+      "image": "/menu/snacks/kipcorn.png"
+    },
+    {
+      "id": 192,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kippenboutjes"
+      },
+      "fr": {
+        "name": "Pilons de poulet"
+      },
+      "price": 4.7,
+      "image": "/menu/snacks/kippenboutjes.png"
+    },
+    {
+      "id": 193,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kalkoenstick"
+      },
+      "fr": {
+        "name": "Stick de dinde"
+      },
+      "price": 4.0,
+      "image": "/menu/snacks/kalkoenstick.png"
+    },
+    {
+      "id": 194,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Viandel"
+      },
+      "fr": {
+        "name": "Viandel"
+      },
+      "price": 2.6,
+      "image": "/menu/snacks/viandel.png"
+    },
+    {
+      "id": 195,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Viandel speciaal"
+      },
+      "fr": {
+        "name": "Viandel spécial"
+      },
+      "price": 3.6,
+      "image": "/menu/snacks/viandelspeciaal.png"
+    },
+    {
+      "id": 196,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Mexicano"
+      },
+      "fr": {
+        "name": "Mexicano"
+      },
+      "price": 3.2,
+      "image": "/menu/snacks/mexicano.png"
+    },
+    {
+      "id": 197,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Vleeskroket"
+      },
+      "fr": {
+        "name": "Croquette de viande"
+      },
+      "price": 3.7,
+      "image": "/menu/snacks/vleeskroket.png"
+    },
+    {
+      "id": 198,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Boulet"
+      },
+      "fr": {
+        "name": "Boulet"
+      },
+      "price": 2.5,
+      "image": "/menu/snacks/boulet.png"
+    },
+    {
+      "id": 199,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Boulet speciaal"
+      },
+      "fr": {
+        "name": "Boulet spécial"
+      },
+      "price": 3.5,
+      "image": "/menu/snacks/bouletspeciaal.png"
+    },
+    {
+      "id": 200,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kipfingers"
+      },
+      "fr": {
+        "name": "Doigts de poulet"
+      },
+      "price": 3.9,
+      "image": "/menu/snacks/kipfingers.png"
+    },
+    {
+      "id": 201,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kippets"
+      },
+      "fr": {
+        "name": "Kippets"
+      },
+      "price": 3.7,
+      "image": "/menu/snacks/kipnuggets.png"
+    },
+    {
+      "id": 202,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Taco"
+      },
+      "fr": {
+        "name": "Taco"
+      },
+      "price": 4.1,
+      "image": "/menu/snacks/taco.png"
+    },
+    {
+      "id": 203,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bitterballen"
+      },
+      "fr": {
+        "name": "Bitterballen"
+      },
+      "price": 3.2,
+      "image": "/menu/snacks/bitterballen.png"
+    },
+    {
+      "id": 204,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Ribster"
+      },
+      "fr": {
+        "name": "Ribster"
+      },
+      "price": 3.4,
+      "image": "/menu/snacks/ribster.png"
+    },
+    {
+      "id": 205,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Mammoet"
+      },
+      "fr": {
+        "name": "Mammouth"
+      },
+      "price": 2.9,
+      "image": "/menu/snacks/mammoet.png"
+    },
+    {
+      "id": 206,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Mini loempia's"
+      },
+      "fr": {
+        "name": "Mini nems"
+      },
+      "price": 3.8,
+      "image": "/menu/snacks/miniloempias.png"
+    },
+    {
+      "id": 207,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Loempia"
+      },
+      "fr": {
+        "name": "Nem"
+      },
+      "price": 4.5,
+      "image": "/menu/snacks/loempia.png"
+    },
+    {
+      "id": 208,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Cheese crack"
+      },
+      "fr": {
+        "name": "Cheese crack"
+      },
+      "price": 3.0,
+      "image": "/menu/snacks/cheesecrack.png"
+    },
+    {
+      "id": 209,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Garnalenkroket"
+      },
+      "fr": {
+        "name": "Croquette aux crevettes"
+      },
+      "price": 4.8,
+      "image": "/menu/snacks/garnaalkroket.png"
+    },
+    {
+      "id": 210,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Lookworst"
+      },
+      "fr": {
+        "name": "Saucisse à l'ail"
+      },
+      "price": 3.5,
+      "image": "/menu/snacks/lookworst.png"
+    },
+    {
+      "id": 211,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bockworst"
+      },
+      "fr": {
+        "name": "Bockwurst"
+      },
+      "price": 3.5,
+      "image": "/menu/snacks/bockworst.png"
+    },
+    {
+      "id": 212,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kip-kaasdonut"
+      },
+      "fr": {
+        "name": "Donut poulet-fromage"
+      },
+      "price": 2.9,
+      "image": "/menu/snacks/kipkaasdonut.png"
+    },
+    {
+      "id": 213,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bami-balletjes"
+      },
+      "fr": {
+        "name": "Boulettes bami"
+      },
+      "price": 3.4,
+      "image": "/menu/snacks/bamiballetjes.png"
+    },
+    {
+      "id": 214,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Jagerworst"
+      },
+      "fr": {
+        "name": "Saucisse du chasseur"
+      },
+      "price": 3.8,
+      "image": "/menu/snacks/jagerworst.jpg"
+    },
+    {
+      "id": 215,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kaasballetjes"
+      },
+      "fr": {
+        "name": "Boulettes de fromage"
+      },
+      "price": 3.2,
+      "image": "/menu/snacks/kaasballetjes.jpg"
+    },
+    {
+      "id": 216,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Kalkoenbrochette v/h huis"
+      },
+      "fr": {
+        "name": "Brochette de dinde maison"
+      },
+      "price": 4.2,
+      "image": "/menu/snacks/kalkoenborchette-huis.jpg"
+    },
+    {
+      "id": 217,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Scampibrochette"
+      },
+      "fr": {
+        "name": "Brochette de scampi"
+      },
+      "price": 5.9,
+      "image": "/menu/snacks/scampibrochette.jpg"
+    },
+    {
+      "id": 218,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Vuurvreter"
+      },
+      "fr": {
+        "name": "Vuurvreter"
+      },
+      "price": 3.4,
+      "image": "/menu/snacks/vuurvreter.jpg"
+    },
+    {
+      "id": 219,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Dynamite"
+      },
+      "fr": {
+        "name": "Dynamite"
+      },
+      "price": 3.4,
+      "image": "/menu/snacks/dynamite.png"
+    },
+    {
+      "id": 220,
+      "category": "snack",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Artisanale kipbrochette"
+      },
+      "fr": {
+        "name": "Brochette de poulet artisanale"
+      },
+      "price": 3.8,
+      "image": "/menu/snacks/artisanalekipbrochette.png"
     }
   ]
 }

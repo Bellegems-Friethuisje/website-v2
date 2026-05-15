@@ -38,7 +38,7 @@
 
   <!-- Sticky category filter -->
   <div
-    class="sticky top-16 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm"
+    class="sticky top-16 z-40 bg-white border-b border-gray-100 shadow-sm"
   >
     <div class="max-w-5xl mx-auto px-4 lg:px-0">
       <div class="flex gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -200,8 +200,17 @@ const sauzenItems = computed(() =>
   locationMenu.value.filter((i) => i.category === "saus"),
 );
 
+const catItemsMap = computed(() => {
+  const map: Record<string, typeof locationMenu.value> = {};
+  for (const item of locationMenu.value) {
+    if (!item.category) continue;
+    (map[item.category] ??= []).push(item);
+  }
+  return map;
+});
+
 function catItems(catId: string) {
-  return locationMenu.value.filter((i) => i.category === catId);
+  return catItemsMap.value[catId] ?? [];
 }
 </script>
 

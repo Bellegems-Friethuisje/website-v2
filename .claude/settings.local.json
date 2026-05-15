@@ -37,7 +37,10 @@
       "PowerShell($r = Invoke-WebRequest -Uri \"https://belfriet.plugandpos.com/_nuxt/pages/index.6206f78.js\" -UseBasicParsing -TimeoutSec 15; $c = $r.Content; $matches = [regex]::Matches\\($c, '[\"'']\\(/[a-z][^\"'']{3,60}\\)[\"'']'\\); $matches | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique | Select-Object -First 60)",
       "PowerShell($r = Invoke-WebRequest -Uri \"https://belfriet.plugandpos.com/_nuxt/app.d093cd3.js\" -UseBasicParsing -TimeoutSec 15; $c = $r.Content; $matches = [regex]::Matches\\($c, '\"\\(/api/[^\"]{3,80}\\)\"'\\); $matches | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique | Select-Object -First 40)",
       "PowerShell($response = Invoke-WebRequest -Uri \"https://belfriet.plugandpos.com/fr\" -UseBasicParsing -TimeoutSec 10; $content = $response.Content; $tokenMatch = [regex]::Match\\($content, '\"easystoreToken\":\"\\(Bearer [^\"]+\\)\"'\\); $token = $tokenMatch.Groups[1].Value; Write-Host \"Token found: $\\($token.Length\\) chars\"; $headers = @{ Authorization = $token; Accept = \"application/json\" }; $r = Invoke-WebRequest -Uri \"https://belfriet.plugandpos.com/api/v4/items/CustomerWebApp/pos/3283\" -Headers $headers -UseBasicParsing -TimeoutSec 15; $data = $r.Content | ConvertFrom-Json; Write-Host \"Items: $\\($data.Count\\)\"; $data | ForEach-Object { \"$\\($_.item_category1_name_fr\\)|$\\($_.name_fr\\)|$\\($_.name_nl\\)|$\\($_.price\\)\" } | Sort-Object | Write-Host)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://belfriet.plugandpos.com/nl\" -o \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\belfriet_page.html\" --max-redirs 10)",
+      "Bash(curl -s -A \"Mozilla/5.0\" \"https://belfriet.plugandpos.com/nl\" -D - --max-redirs 0)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" -b \"i18n_redirected=nl\" \"https://belfriet.plugandpos.com/nl\" -o \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\belfriet_page.html\")"
     ]
   }
 }
