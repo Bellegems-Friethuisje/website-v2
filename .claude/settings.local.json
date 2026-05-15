@@ -40,7 +40,9 @@
       "Bash(python3 *)",
       "Bash(curl -sL -A \"Mozilla/5.0\" \"https://belfriet.plugandpos.com/nl\" -o \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\belfriet_page.html\" --max-redirs 10)",
       "Bash(curl -s -A \"Mozilla/5.0\" \"https://belfriet.plugandpos.com/nl\" -D - --max-redirs 0)",
-      "Bash(curl -sL -A \"Mozilla/5.0\" -b \"i18n_redirected=nl\" \"https://belfriet.plugandpos.com/nl\" -o \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\belfriet_page.html\")"
+      "Bash(curl -sL -A \"Mozilla/5.0\" -b \"i18n_redirected=nl\" \"https://belfriet.plugandpos.com/nl\" -o \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\belfriet_page.html\")",
+      "Bash(not exist *)",
+      "PowerShell(New-Item *)"
     ]
   }
 }
