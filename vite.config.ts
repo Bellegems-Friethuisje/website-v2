@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 import { vercel } from "vite-plugin-vercel/vite";
 
 export default defineConfig({
-  plugins: [vike(), vercel(), tailwindcss(), vue()],
+  plugins: [vercel(), vike(), tailwindcss(), vue()],
   server: {
     host: "0.0.0.0",
     port: 3000,
