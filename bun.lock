@@ -9,7 +9,7 @@
         "express": "^5.2.1",
         "vike": "0.4.259",
         "vike-vue": "^0.9.11",
-        "vite-plugin-vercel": "^11.0.3",
+        "vite-plugin-vercel": "^11.1.0",
         "vue": "^3.5.34",
         "vue-gtag": "^3.7.1",
       },
