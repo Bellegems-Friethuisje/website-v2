@@ -1,0 +1,1334 @@
+[
+  {
+    "id": 668928,
+    "name": "Bieslookvinaigrette",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 1371136,
+    "name": "Mosterdsaus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: gluten, tarwe, mosterd, sulfiet, melk, lactose, gerst."
+  },
+  {
+    "id": 668931,
+    "name": "Romboutje",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, soja, mosterd, selderij, ei, lactose, melk, gerst, sulfiet."
+  },
+  {
+    "id": 668936,
+    "name": "Stoofvleessaus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: gerst, gluten, soja, mosterd, melk, lactose, tarwe, sulfiet, selderij."
+  },
+  {
+    "id": 668938,
+    "name": "Julientje",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, melk, lactose, soja, ei, mosterd, selderij, gerst, sulfiet, rogge."
+  },
+  {
+    "id": 668940,
+    "name": "Frikandel",
+    "category": "Snacks",
+    "allergens": "Bevat: gluten, tarwe, soja."
+  },
+  {
+    "id": 668941,
+    "name": "Frikandel speciaal",
+    "category": "Snacks",
+    "allergens": "Bevat: mosterd, melk, lactose, soja, ei, gluten, tarwe."
+  },
+  {
+    "id": 668943,
+    "name": "Vleesbrochette (varken)",
+    "category": "Snacks",
+    "allergens": "Bevat: mosterd."
+  },
+  {
+    "id": 668944,
+    "name": "Hamburgerschijf",
+    "category": "Snacks",
+    "allergens": "Bevat: selderij, soja, tarwe, gluten."
+  },
+  {
+    "id": 668945,
+    "name": "Zigeunerstick",
+    "category": "Snacks",
+    "allergens": "Bevat: soja, tarwe, gluten."
+  },
+  {
+    "id": 668947,
+    "name": "Mergueze saté",
+    "category": "Snacks",
+    "allergens": "Bevat: soja."
+  },
+  {
+    "id": 668948,
+    "name": "Visbrochette",
+    "category": "Snacks",
+    "allergens": "Bevat: lactose, tarwe, soja, gluten, selderij, melk, vis."
+  },
+  {
+    "id": 668949,
+    "name": "Mini-megamix",
+    "category": "Snacks",
+    "allergens": "Bevat: rogge, mosterd, ei, gerst, selderij, gluten, tarwe, soja, melk, lactose."
+  },
+  {
+    "id": 668951,
+    "name": "Crizly pikant",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, melk, soja, gluten, lactose."
+  },
+  {
+    "id": 1847064,
+    "name": "duomousse",
+    "category": "Dessert",
+    "allergens": "Bevat: melk, soja, lactose, ei."
+  },
+  {
+    "id": 668952,
+    "name": "Kippenboutjes",
+    "category": "Snacks",
+    "allergens": ""
+  },
+  {
+    "id": 668953,
+    "name": "Ardeense saté",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, gluten, selderij."
+  },
+  {
+    "id": 668954,
+    "name": "Kalkoenstick",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, gluten, melk, selderij, ei, rogge, soja, lactose."
+  },
+  {
+    "id": 668956,
+    "name": "Kalkoenbrochette v/h huis",
+    "category": "Chicken, Turkey & poultry",
+    "allergens": ""
+  },
+  {
+    "id": 668957,
+    "name": "Scampi-brochette v/h huis",
+    "category": "Shellfish",
+    "allergens": "Bevat: schaaldieren, lactose, melk."
+  },
+  {
+    "id": 668958,
+    "name": "Kaasballetjes",
+    "category": "Snacks",
+    "allergens": "Bevat: gluten, melk, soja, gerst, tarwe, lactose."
+  },
+  {
+    "id": 668959,
+    "name": "kipkaasdonut",
+    "category": "Snacks",
+    "allergens": "Bevat: gluten, lactose, melk, soja, tarwe."
+  },
+  {
+    "id": 1848352,
+    "name": "Chocolademouse wit",
+    "category": "Dessert",
+    "allergens": "Bevat: ei."
+  },
+  {
+    "id": 1311777,
+    "name": "Witloof met ham",
+    "category": "",
+    "allergens": "Bevat: melk, lactose, ei, gluten, tarwe."
+  },
+  {
+    "id": 668961,
+    "name": "Viandel",
+    "category": "Snacks",
+    "allergens": "Bevat: selderij, rogge, lactose, soja, tarwe, melk, gluten."
+  },
+  {
+    "id": 668962,
+    "name": "Viandel speciaal",
+    "category": "Snacks",
+    "allergens": "Bevat: selderij, rogge, lactose, soja, tarwe, melk, gluten, ei, mosterd."
+  },
+  {
+    "id": 668963,
+    "name": "Spicy viandel",
+    "category": "Snacks",
+    "allergens": "Bevat: gluten, lactose, tarwe, soja, melk, rogge, selderij."
+  },
+  {
+    "id": 668964,
+    "name": "Mexicano",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, gluten, soja."
+  },
+  {
+    "id": 668965,
+    "name": "Vleeskroket",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, soja, gluten, gerst."
+  },
+  {
+    "id": 1257254,
+    "name": "Scampis Diabolique",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, schaaldieren, gluten, tarwe."
+  },
+  {
+    "id": 668968,
+    "name": "Boulet",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, gluten."
+  },
+  {
+    "id": 668969,
+    "name": "Boulet speciaal",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, gluten, melk, lactose, soja, ei, mosterd."
+  },
+  {
+    "id": 668971,
+    "name": "Kipcorn",
+    "category": "Snacks",
+    "allergens": "Bevat: melk, gerst, rogge, gluten, soja, tarwe, lactose."
+  },
+  {
+    "id": 668972,
+    "name": "Kipfingers",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, soja, gluten."
+  },
+  {
+    "id": 668974,
+    "name": "Kippets",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, ei, sulfiet, selderij, gluten."
+  },
+  {
+    "id": 668975,
+    "name": "Taco",
+    "category": "Snacks",
+    "allergens": "Bevat: lactose, ei, soja, selderij, melk, tarwe, rogge, gluten."
+  },
+  {
+    "id": 649008,
+    "name": "Puree",
+    "category": "Potato dishes",
+    "allergens": "Bevat: melk, lactose."
+  },
+  {
+    "id": 668977,
+    "name": "Mammoet",
+    "category": "Snacks",
+    "allergens": "Bevat: gerst, mosterd, ei, gluten, soja."
+  },
+  {
+    "id": 1506609,
+    "name": "Wortelen",
+    "category": "Vegetables",
+    "allergens": ""
+  },
+  {
+    "id": 860978,
+    "name": "Bicky oranje saus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: selderij, ei, mosterd, gluten, tarwe, soja."
+  },
+  {
+    "id": 668978,
+    "name": "Ribster",
+    "category": "Snacks",
+    "allergens": "Bevat: gerst, gluten, tarwe, selderij, soja."
+  },
+  {
+    "id": 668979,
+    "name": "Bitterballen",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, gluten, soja, gerst."
+  },
+  {
+    "id": 668980,
+    "name": "Mini loempias",
+    "category": "Snacks",
+    "allergens": "Bevat: soja, gluten, tarwe, sesam, pinda."
+  },
+  {
+    "id": 668982,
+    "name": "Mozarellasticks",
+    "category": "Snacks",
+    "allergens": "Bevat: gluten, lactose, tarwe, melk."
+  },
+  {
+    "id": 668983,
+    "name": "Loempia (met kip)",
+    "category": "",
+    "allergens": "Bevat: tarwe, soja, ei, selderij, gluten."
+  },
+  {
+    "id": 1940279,
+    "name": "scampis saus",
+    "category": "Sauce cold",
+    "allergens": ""
+  },
+  {
+    "id": 668984,
+    "name": "Vuurvreter",
+    "category": "Snacks",
+    "allergens": "Bevat: gluten, tarwe."
+  },
+  {
+    "id": 654648,
+    "name": "Stoofvlees",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: sulfiet, mosterd, gerst, gluten, melk, lactose, soja, tarwe."
+  },
+  {
+    "id": 668985,
+    "name": "Cheese crack",
+    "category": "Snacks",
+    "allergens": "Bevat: lactose, lupine, tarwe, gluten, melk."
+  },
+  {
+    "id": 668988,
+    "name": "Garnalenkroket",
+    "category": "Shellfish",
+    "allergens": "Bevat: schaaldieren, lactose, soja, gluten, vis, ei, tarwe, melk."
+  },
+  {
+    "id": 668989,
+    "name": "Kaaskroket",
+    "category": "Snacks",
+    "allergens": "Bevat: melk, tarwe, gluten, ei, lactose, soja."
+  },
+  {
+    "id": 668990,
+    "name": "Kaassouflé",
+    "category": "Snacks",
+    "allergens": "Bevat: lactose, gluten, melk, tarwe."
+  },
+  {
+    "id": 668991,
+    "name": "Lookworst (rood)",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, ei, melk, gluten, lactose, soja."
+  },
+  {
+    "id": 1335871,
+    "name": "kippenmarinade",
+    "category": "Semifinished products",
+    "allergens": "Bevat: mosterd."
+  },
+  {
+    "id": 654656,
+    "name": "Vol-au-vent",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, lactose, melk, ei."
+  },
+  {
+    "id": 668993,
+    "name": "Jagerworst (bruin)",
+    "category": "Meat preparations of crunched meat",
+    "allergens": "Bevat: lactose, gluten, selderij, soja, khorasantarwe, tarwe, gerst, haver, sesam, melk, spelt, ei, rogge."
+  },
+  {
+    "id": 668994,
+    "name": "Bockworst",
+    "category": "Snacks",
+    "allergens": "Bevat: soja, gluten, melk, lactose, tarwe."
+  },
+  {
+    "id": 860995,
+    "name": "BELLsaus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd, tarwe, soja, gluten."
+  },
+  {
+    "id": 668995,
+    "name": "Smullbox",
+    "category": "Snacks",
+    "allergens": "Bevat: tarwe, ei, sulfiet, selderij, gluten, mosterd, melk, lactose, soja, gerst."
+  },
+  {
+    "id": 1484099,
+    "name": "Tonijn perzik",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: vis, melk, lactose, soja, ei, mosterd."
+  },
+  {
+    "id": 668996,
+    "name": "Mosselen in potje",
+    "category": "Shellfish",
+    "allergens": "Bevat: weekdieren."
+  },
+  {
+    "id": 654660,
+    "name": "Tomatensaus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, selderij, soja, lactose, gluten, tarwe, mosterd."
+  },
+  {
+    "id": 1335621,
+    "name": "Hesp (6st)",
+    "category": "Salads",
+    "allergens": "Bevat: melk, ei, selderij, lactose, soja."
+  },
+  {
+    "id": 668998,
+    "name": "Mini-lucifers",
+    "category": "Snacks",
+    "allergens": "Bevat: rogge, tarwe, selderij, soja, gluten, melk, gerst, lactose."
+  },
+  {
+    "id": 669000,
+    "name": "Bami balletjes",
+    "category": "Snacks",
+    "allergens": "Bevat: soja, lactose, tarwe, melk, gluten."
+  },
+  {
+    "id": 1335625,
+    "name": "Salami (6st)",
+    "category": "Salads",
+    "allergens": ""
+  },
+  {
+    "id": 1312586,
+    "name": "Scampi's Creme pasta",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: schaaldieren, lactose, melk, mosterd, tarwe, ei, gluten."
+  },
+  {
+    "id": 669004,
+    "name": "Stokbroodje",
+    "category": "Bread and rolls",
+    "allergens": "Bevat: lactose, melk, gluten, tarwe."
+  },
+  {
+    "id": 654668,
+    "name": "Balletjes (gehakt)",
+    "category": "Meat preparations of crunched meat",
+    "allergens": ""
+  },
+  {
+    "id": 669009,
+    "name": "Broodje préparé",
+    "category": "Sandwiches",
+    "allergens": "Bevat: lactose, melk, gluten, tarwe, ei, mosterd."
+  },
+  {
+    "id": 669011,
+    "name": "Broodje kaas",
+    "category": "Sandwiches",
+    "allergens": "Bevat: melk, lactose, soja, ei, mosterd, gluten, tarwe."
+  },
+  {
+    "id": 669014,
+    "name": "Broodje hesp",
+    "category": "Sandwiches",
+    "allergens": "Bevat: melk, lactose, soja, ei, mosterd, gluten, tarwe, selderij."
+  },
+  {
+    "id": 654678,
+    "name": "Spaghettisaus",
+    "category": "Semifinished products",
+    "allergens": "Bevat: gluten, tarwe, melk, selderij, soja, lactose."
+  },
+  {
+    "id": 669016,
+    "name": "Broodje tonijn",
+    "category": "Sandwiches",
+    "allergens": "Bevat: vis, melk, lactose, soja, ei, mosterd, gluten, tarwe."
+  },
+  {
+    "id": 669017,
+    "name": "Broodje kaas&hesp",
+    "category": "Sandwiches",
+    "allergens": "Bevat: lactose, melk, gluten, tarwe, ei, selderij, soja, mosterd."
+  },
+  {
+    "id": 669019,
+    "name": "Broodje krabsalade",
+    "category": "Sandwiches",
+    "allergens": "Bevat: ei, soja, schaaldieren, vis, tarwe, gluten, melk, lactose, mosterd."
+  },
+  {
+    "id": 669028,
+    "name": "Bicky burger",
+    "category": "Burgers",
+    "allergens": "Bevat: selderij, ei, mosterd, gluten, tarwe, soja, sesam."
+  },
+  {
+    "id": 656486,
+    "name": "balletjes in tomatensaus met puree",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: mosterd, melk, selderij, soja, lactose, gluten, tarwe."
+  },
+  {
+    "id": 669030,
+    "name": "Bicky cheese burger",
+    "category": "Burgers",
+    "allergens": "Bevat: tarwe, gluten, selderij, soja, ei, mosterd, sesam, melk, lactose."
+  },
+  {
+    "id": 1372518,
+    "name": "Jambonneau",
+    "category": "Hot meals",
+    "allergens": "Bevat: lactose, melk, mosterd, sulfiet, gluten, tarwe, gerst."
+  },
+  {
+    "id": 659047,
+    "name": "Américain natuur",
+    "category": "Prepared dishes",
+    "allergens": ""
+  },
+  {
+    "id": 656488,
+    "name": "Frietjes",
+    "category": "Potato dishes",
+    "allergens": ""
+  },
+  {
+    "id": 1508458,
+    "name": "Haksel",
+    "category": "Spice",
+    "allergens": ""
+  },
+  {
+    "id": 669034,
+    "name": "Bicky burger (3 sauzen)",
+    "category": "Burgers",
+    "allergens": "Bevat: tarwe, gluten, mosterd, gerst, ei, sesam, selderij, soja."
+  },
+  {
+    "id": 1508459,
+    "name": "Passendaele mix",
+    "category": "Spice",
+    "allergens": ""
+  },
+  {
+    "id": 1256811,
+    "name": "Scampis crème",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: schaaldieren, lactose, melk, mosterd."
+  },
+  {
+    "id": 669040,
+    "name": "Bicky chicken",
+    "category": "Burgers",
+    "allergens": "Bevat: tarwe, gluten, sesam, ei, mosterd, selderij, soja."
+  },
+  {
+    "id": 658546,
+    "name": "Béchamel",
+    "category": "Sauce hot",
+    "allergens": "Bevat: tarwe, gluten, melk, lactose."
+  },
+  {
+    "id": 669042,
+    "name": "Bicky rib",
+    "category": "Burgers",
+    "allergens": "Bevat: tarwe, soja, gluten, ei, mosterd, sesam, selderij."
+  },
+  {
+    "id": 669044,
+    "name": "Bicky rib (3 sauzen)",
+    "category": "Burgers",
+    "allergens": "Bevat: ei, mosterd, tarwe, gerst, gluten, sesam, soja."
+  },
+  {
+    "id": 658550,
+    "name": "Tagliatelli saus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, ei, selderij, lactose, soja."
+  },
+  {
+    "id": 669048,
+    "name": "Bicky fish",
+    "category": "Burgers",
+    "allergens": "Bevat: tarwe, gluten, sesam, vis, selderij, mosterd, ei."
+  },
+  {
+    "id": 658553,
+    "name": "Scampi saus",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, mosterd."
+  },
+  {
+    "id": 669049,
+    "name": "Bicky crispy",
+    "category": "Burgers",
+    "allergens": "Bevat: tarwe, gluten, selderij, ei, mosterd, soja, sesam."
+  },
+  {
+    "id": 669050,
+    "name": "Bicky veggie",
+    "category": "Burgers",
+    "allergens": "Bevat: lactose, tarwe, melk, gluten, ei, selderij, mosterd, soja, sesam."
+  },
+  {
+    "id": 669052,
+    "name": "Bicky ketchup",
+    "category": "Burgers",
+    "allergens": "Bevat: gluten, mosterd, tarwe, gerst, sesam, selderij, soja."
+  },
+  {
+    "id": 669055,
+    "name": "BELLBurger",
+    "category": "Burgers",
+    "allergens": "Bevat: melk, lactose, ei, mosterd, gluten, soja, tarwe."
+  },
+  {
+    "id": 669058,
+    "name": "Stoofvleessaus v/h huis",
+    "category": "Sauce hot",
+    "allergens": "Bevat: gerst, gluten, soja, mosterd, melk, lactose, tarwe, sulfiet."
+  },
+  {
+    "id": 1290371,
+    "name": "Scampi curry saus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, lactose, sulfiet, gluten, tarwe, mosterd."
+  },
+  {
+    "id": 658564,
+    "name": "Witloof",
+    "category": "Vegetables",
+    "allergens": "Bevat: melk, lactose."
+  },
+  {
+    "id": 669060,
+    "name": "Tomatensaus v/h huis",
+    "category": "Sauce hot",
+    "allergens": "Bevat: mosterd, melk, selderij, soja, lactose, gluten, tarwe."
+  },
+  {
+    "id": 669061,
+    "name": "Scampi saus v/h huis",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, lactose, mosterd."
+  },
+  {
+    "id": 658566,
+    "name": "Witloof saus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: lactose, melk, ei, gluten, tarwe."
+  },
+  {
+    "id": 669062,
+    "name": "Witloof saus v/h huis",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, lactose, ei, gluten, tarwe."
+  },
+  {
+    "id": 669064,
+    "name": "Béarnaise (warm)",
+    "category": "Sauce hot",
+    "allergens": "Bevat: mosterd, ei, melk, lactose."
+  },
+  {
+    "id": 658569,
+    "name": "Tonijnsalade",
+    "category": "Various Preparations",
+    "allergens": "Bevat: vis, ei, melk, lactose, soja, mosterd."
+  },
+  {
+    "id": 669066,
+    "name": "Pepersaus (warm)",
+    "category": "Sauce hot",
+    "allergens": "Bevat: tarwe, melk, gluten, lactose."
+  },
+  {
+    "id": 669067,
+    "name": "Champignonsaus (warm)",
+    "category": "Sauce hot",
+    "allergens": "Bevat: gluten, tarwe, melk, lactose."
+  },
+  {
+    "id": 658572,
+    "name": "Krabsalade",
+    "category": "Various Preparations",
+    "allergens": "Bevat: ei, melk, lactose, soja, mosterd, schaaldieren, vis, tarwe, gluten."
+  },
+  {
+    "id": 669069,
+    "name": "Mayonnaise",
+    "category": "Sauce cold",
+    "allergens": "Bevat: melk, lactose, soja, ei, mosterd."
+  },
+  {
+    "id": 1437838,
+    "name": "Tarte aux fruits",
+    "category": "pattiserie",
+    "allergens": "Bevat: tarwe, melk, lactose, gluten, ei."
+  },
+  {
+    "id": 669071,
+    "name": "Gele curry",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 1437839,
+    "name": "Tarte aux fraises",
+    "category": "pattiserie",
+    "allergens": "Bevat: tarwe, lactose, gluten, melk, ei."
+  },
+  {
+    "id": 658576,
+    "name": "Vinaigrette",
+    "category": "Various Preparations",
+    "allergens": "Bevat: ei, sulfiet, mosterd."
+  },
+  {
+    "id": 669075,
+    "name": "Pickels",
+    "category": "Sauce cold",
+    "allergens": "Bevat: selderij, mosterd."
+  },
+  {
+    "id": 658580,
+    "name": "Half haantje",
+    "category": "Chicken, Turkey & poultry",
+    "allergens": "Bevat: mosterd, melk, lactose."
+  },
+  {
+    "id": 1440404,
+    "name": "Wit groot brood",
+    "category": "Bread",
+    "allergens": "Bevat: tarwe, gluten."
+  },
+  {
+    "id": 669077,
+    "name": "Toscaanse",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 1440405,
+    "name": "Wit klein brood",
+    "category": "Bread",
+    "allergens": "Bevat: gluten, tarwe."
+  },
+  {
+    "id": 669078,
+    "name": "Gele Bicky",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 1440406,
+    "name": "Bruin groot brood",
+    "category": "",
+    "allergens": "Bevat: tarwe, gluten, gerst."
+  },
+  {
+    "id": 1440407,
+    "name": "Bruin klein brood",
+    "category": "",
+    "allergens": "Bevat: tarwe, gluten, gerst."
+  },
+  {
+    "id": 658584,
+    "name": "Kip VAV",
+    "category": "Chicken, Turkey & poultry",
+    "allergens": ""
+  },
+  {
+    "id": 669080,
+    "name": "Ketchup",
+    "category": "Sauce cold",
+    "allergens": "Bevat: mosterd."
+  },
+  {
+    "id": 1440408,
+    "name": "Sandwiches",
+    "category": "Bread",
+    "allergens": "Bevat: gluten, tarwe."
+  },
+  {
+    "id": 669081,
+    "name": "Curry ketchup",
+    "category": "Sauce cold",
+    "allergens": "Bevat: mosterd."
+  },
+  {
+    "id": 1476505,
+    "name": "Garnaalkroketten",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: ei, schaaldieren, soja, gluten, tarwe, melk, selderij, lactose."
+  },
+  {
+    "id": 1440410,
+    "name": "Meergranenbrood",
+    "category": "Bread",
+    "allergens": "Bevat: sesam, tarwe, gluten, gerst, soja, rogge, haver."
+  },
+  {
+    "id": 669083,
+    "name": "Tartare",
+    "category": "Sauce cold",
+    "allergens": "Bevat: selderij, ei, mosterd."
+  },
+  {
+    "id": 669084,
+    "name": "Béarnaise (koud)",
+    "category": "Sauce cold",
+    "allergens": "Bevat: mosterd, ei, melk, lactose."
+  },
+  {
+    "id": 669086,
+    "name": "Barbecue saus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: tarwe, ei, soja, mosterd, gluten, gerst, selderij."
+  },
+  {
+    "id": 658592,
+    "name": "Scampis natuur",
+    "category": "Shellfish",
+    "allergens": "Bevat: schaaldieren, lactose, melk."
+  },
+  {
+    "id": 669088,
+    "name": "Brazil",
+    "category": "Sauce cold",
+    "allergens": "Bevat: vis, ei, gluten, tarwe, soja, mosterd, gerst."
+  },
+  {
+    "id": 669090,
+    "name": "Coctail",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 669092,
+    "name": "Samuraï",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 669095,
+    "name": "Joppie",
+    "category": "Sauce cold",
+    "allergens": "Bevat: selderij, ei, mosterd, gluten, tarwe, soja."
+  },
+  {
+    "id": 658600,
+    "name": "Scampi brochette",
+    "category": "Shellfish",
+    "allergens": "Bevat: schaaldieren."
+  },
+  {
+    "id": 669097,
+    "name": "Mammoetsaus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: gerst, mosterd, ei, gluten."
+  },
+  {
+    "id": 669098,
+    "name": "Américaine saus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: tarwe, selderij, soja, gluten, ei, mosterd."
+  },
+  {
+    "id": 1839275,
+    "name": "Rosbief",
+    "category": "Various Preparations",
+    "allergens": ""
+  },
+  {
+    "id": 669100,
+    "name": "Loempiasaus",
+    "category": "Sauce cold",
+    "allergens": ""
+  },
+  {
+    "id": 658605,
+    "name": "Scampis Noordzee salade",
+    "category": "Shellfish",
+    "allergens": "Bevat: schaaldieren."
+  },
+  {
+    "id": 669102,
+    "name": "Pepersaus (koud)",
+    "category": "Sauce cold",
+    "allergens": "Bevat: soja, tarwe, ei, gluten."
+  },
+  {
+    "id": 669104,
+    "name": "Hannibal saus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: mosterd, soja, gluten, tarwe, ei."
+  },
+  {
+    "id": 669105,
+    "name": "Andalouse",
+    "category": "Sauce cold",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 658610,
+    "name": "Vispan",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: vis, gluten, tarwe, schaaldieren, melk, lactose, selderij."
+  },
+  {
+    "id": 669106,
+    "name": "Bicky oranje saus",
+    "category": "Sauce cold",
+    "allergens": "Bevat: selderij, ei, mosterd, gluten, tarwe, soja."
+  },
+  {
+    "id": 669108,
+    "name": "Chocolademousse",
+    "category": "Dessert",
+    "allergens": "Bevat: melk, soja, lactose, ei."
+  },
+  {
+    "id": 669113,
+    "name": "Coca cola",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 669114,
+    "name": "Coca cola zero",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 669116,
+    "name": "Fanta",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 1840830,
+    "name": "Aspergesoep",
+    "category": "Prepared dishes",
+    "allergens": ""
+  },
+  {
+    "id": 669118,
+    "name": "Sprite",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 698046,
+    "name": "Ambachtelijke kipfingers",
+    "category": "Snacks",
+    "allergens": "Bevat: ei, gluten, tarwe."
+  },
+  {
+    "id": 669120,
+    "name": "Ice Tea",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 669123,
+    "name": "Ice Tea Pêche",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 658884,
+    "name": "Spaghetti Bolognaise",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, melk, selderij, soja, lactose."
+  },
+  {
+    "id": 1398724,
+    "name": "Geraspte kaas",
+    "category": "",
+    "allergens": "Bevat: lactose, melk."
+  },
+  {
+    "id": 658629,
+    "name": "Diabolique saus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, lactose, gluten, tarwe, schaaldieren."
+  },
+  {
+    "id": 669125,
+    "name": "Ice Tea Green",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 668870,
+    "name": "Balletjes in tomatensaus",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: mosterd, melk, selderij, soja, lactose, gluten, tarwe."
+  },
+  {
+    "id": 658632,
+    "name": "Paté",
+    "category": "Various Preparations",
+    "allergens": "Bevat: mosterd, sulfiet, melk, lactose, ei."
+  },
+  {
+    "id": 668872,
+    "name": "Stoofvlees",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: gerst, gluten, soja, mosterd, melk, lactose, tarwe, sulfiet."
+  },
+  {
+    "id": 669128,
+    "name": "Schweppes Agrum",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 658633,
+    "name": "BELLBurger (vlees)",
+    "category": "Meat preparations of crunched meat",
+    "allergens": "Bevat: soja."
+  },
+  {
+    "id": 668873,
+    "name": "Vol-au-vent",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, tarwe, gluten, ei."
+  },
+  {
+    "id": 668874,
+    "name": "Boerenpaté",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, ei, sulfiet, mosterd."
+  },
+  {
+    "id": 658635,
+    "name": "Stoofvleessaus",
+    "category": "Sauce hot",
+    "allergens": "Bevat: melk, sulfiet, sesam, spelt, macadamianoten, tarwe, schaaldieren, khorasantarwe, selderij, hazelnoten, vis, ei, pinda, gerst, haver, pistachenoten, weekdieren, cashewnoten, lupine, walnoten, soja, rogge, amandelen, paranoten, noten, mosterd, pecannoten, lactose, gluten."
+  },
+  {
+    "id": 669131,
+    "name": "Gini",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 668876,
+    "name": "Koude schotel",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, ei, sulfiet, mosterd, soja, gluten, selderij."
+  },
+  {
+    "id": 669134,
+    "name": "Minute Maid multivitamine",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 669135,
+    "name": "Tropico",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 658640,
+    "name": "Américain préparé",
+    "category": "Meat preparations of crunched meat",
+    "allergens": "Bevat: ei, mosterd."
+  },
+  {
+    "id": 668883,
+    "name": "Omelet",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: lactose, melk, ei."
+  },
+  {
+    "id": 669139,
+    "name": "Chaudfontaine plat",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 668884,
+    "name": "Vispannetje",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: schaaldieren, lactose, melk, selderij, vis, gluten, tarwe."
+  },
+  {
+    "id": 669141,
+    "name": "Chaudfontaine bruisend",
+    "category": "Drinks",
+    "allergens": ""
+  },
+  {
+    "id": 669142,
+    "name": "Jupiler 0,0%",
+    "category": "Beer",
+    "allergens": "Bevat: gerst, gluten."
+  },
+  {
+    "id": 787159,
+    "name": "Tomatensoep met balletjes",
+    "category": "Soup",
+    "allergens": ""
+  },
+  {
+    "id": 669143,
+    "name": "Jupiler",
+    "category": "Beer",
+    "allergens": "Bevat: gerst, gluten."
+  },
+  {
+    "id": 669144,
+    "name": "Hoegaarden",
+    "category": "Beer",
+    "allergens": "Bevat: tarwe, gerst, gluten."
+  },
+  {
+    "id": 669146,
+    "name": "Leffe blond",
+    "category": "Beer",
+    "allergens": "Bevat: gluten, gerst."
+  },
+  {
+    "id": 669147,
+    "name": "Leffe bruin",
+    "category": "Beer",
+    "allergens": "Bevat: gluten, gerst."
+  },
+  {
+    "id": 669148,
+    "name": "Duvel",
+    "category": "Beer",
+    "allergens": "Bevat: gerst, gluten."
+  },
+  {
+    "id": 1314525,
+    "name": "Scampi diabolique pasta",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: schaaldieren, lactose, melk, gluten, tarwe, ei."
+  },
+  {
+    "id": 669149,
+    "name": "Omer",
+    "category": "Beer",
+    "allergens": "Bevat: gluten, gerst."
+  },
+  {
+    "id": 669151,
+    "name": "Kriek Bellevue",
+    "category": "Beer",
+    "allergens": "Bevat: gluten, gerst, tarwe."
+  },
+  {
+    "id": 1891551,
+    "name": "ZalmLasagne",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, tarwe, gluten, vis."
+  },
+  {
+    "id": 1314528,
+    "name": "Scampi curry pasta",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, sulfiet, gluten, tarwe, mosterd, schaaldieren, ei."
+  },
+  {
+    "id": 669152,
+    "name": "Rodenbach",
+    "category": "Beer",
+    "allergens": ""
+  },
+  {
+    "id": 1891553,
+    "name": "ZalmTagliatelli",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, melk, lactose, ei, vis."
+  },
+  {
+    "id": 1424354,
+    "name": "Steak Tartare",
+    "category": "",
+    "allergens": ""
+  },
+  {
+    "id": 669155,
+    "name": "Campari orange",
+    "category": "Aperitifs",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 668901,
+    "name": "Rundsbrochette",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: selderij."
+  },
+  {
+    "id": 669157,
+    "name": "Porto rood",
+    "category": "Aperitifs",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 668903,
+    "name": "Tagliatelli Carbonara",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: ei, tarwe, gluten, melk, lactose, selderij, soja."
+  },
+  {
+    "id": 669159,
+    "name": "Porto wit",
+    "category": "Aperitifs",
+    "allergens": ""
+  },
+  {
+    "id": 1610727,
+    "name": "Chocolademouse",
+    "category": "Dessert",
+    "allergens": "Bevat: melk, soja, lactose, ei."
+  },
+  {
+    "id": 668905,
+    "name": "Croque monsieur",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, tarwe, gluten, ei, selderij, soja."
+  },
+  {
+    "id": 669161,
+    "name": "Martini wit",
+    "category": "Aperitifs",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 668906,
+    "name": "Croque Hawaï",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, melk, lactose, ei, selderij, soja."
+  },
+  {
+    "id": 669162,
+    "name": "Martini rood",
+    "category": "Aperitifs",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 668907,
+    "name": "Croque Boem Boem",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose, selderij, soja, gluten, tarwe, ei."
+  },
+  {
+    "id": 669164,
+    "name": "Witte wijn",
+    "category": "Wines",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 669165,
+    "name": "Rode wijn",
+    "category": "Wines",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 668911,
+    "name": "Aardappelpuree",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, lactose."
+  },
+  {
+    "id": 668912,
+    "name": "Lasagne",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, selderij, soja, lactose, gluten, tarwe, ei."
+  },
+  {
+    "id": 669168,
+    "name": "Rosé wijn",
+    "category": "Wines",
+    "allergens": "Bevat: sulfiet."
+  },
+  {
+    "id": 668913,
+    "name": "Macaroni",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: tarwe, gluten, melk, lactose, ei, selderij, soja."
+  },
+  {
+    "id": 668914,
+    "name": "Salade Rauwkost",
+    "category": "Vegetables",
+    "allergens": "Bevat: sulfiet, mosterd, ei."
+  },
+  {
+    "id": 1512179,
+    "name": "Cheesy frites",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: melk, soja, lactose."
+  },
+  {
+    "id": 668915,
+    "name": "Salade Scampis (gepaneerd)",
+    "category": "Salads",
+    "allergens": "Bevat: sulfiet, schaaldieren, soja, selderij, tarwe, gluten, ei."
+  },
+  {
+    "id": 668916,
+    "name": "Salade Noordzee",
+    "category": "Salads",
+    "allergens": "Bevat: vis, melk, lactose, soja, ei, mosterd, schaaldieren, tarwe, gluten."
+  },
+  {
+    "id": 669173,
+    "name": "Tomatensoep",
+    "category": "Soup",
+    "allergens": ""
+  },
+  {
+    "id": 668918,
+    "name": "Salade Niçoise",
+    "category": "Salads",
+    "allergens": "Bevat: vis, ei."
+  },
+  {
+    "id": 668921,
+    "name": "Salade Caesar",
+    "category": "Salads",
+    "allergens": "Bevat: ei, lactose, melk, mosterd, gluten, tarwe."
+  },
+  {
+    "id": 669177,
+    "name": "Groentensoep",
+    "category": "Soup",
+    "allergens": "Bevat: selderij."
+  },
+  {
+    "id": 668923,
+    "name": "Salade Geitenkaas",
+    "category": "Salads",
+    "allergens": "Bevat: melk, lactose, tarwe, gluten."
+  },
+  {
+    "id": 668926,
+    "name": "Calamares",
+    "category": "Prepared dishes",
+    "allergens": "Bevat: selderij, weekdieren, soja, gluten, tarwe."
+  },
+  {
+    "id": 1319423,
+    "name": "satekruiden",
+    "category": "Semifinished products",
+    "allergens": "Bevat: mosterd."
+  },
+  {
+    "id": 668927,
+    "name": "Honing-mosterd vinaigrette",
+    "category": "Sauce cold",
+    "allergens": "Bevat: mosterd, ei."
+  },
+  {
+    "id": 669183,
+    "name": "Minestrone",
+    "category": "Soup",
+    "allergens": "Bevat: tarwe, gluten, selderij."
+  }
+]

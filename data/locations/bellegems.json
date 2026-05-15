@@ -1,0 +1,793 @@
+﻿{
+  "id": "bellegems",
+  "name": "Bellegems Friethuisje",
+  "address": "Doornikserijksweg 134, 8510 Bellegem",
+  "phone": "+3256229995",
+  "phoneDisplay": "056 22 99 95",
+  "hours": [
+    {
+      "nl": "Maandag – Donderdag",
+      "fr": "Lundi – Jeudi",
+      "time": "11u00 – 14u30 | 17u00 – 22u00",
+      "closed": false
+    },
+    {
+      "nl": "Vrijdag",
+      "fr": "Vendredi",
+      "time": "11u00 – 14u30 | 17u00 – 23u00",
+      "closed": false
+    },
+    {
+      "nl": "Zaterdag",
+      "fr": "Samedi",
+      "time": "11u00 – 23u00",
+      "closed": false
+    },
+    {
+      "nl": "Zondag",
+      "fr": "Dimanche",
+      "time": "11u00 – 22u00",
+      "closed": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "friet",
+      "emoji": "🍟",
+      "nl": "Frietjes",
+      "fr": "Frites",
+      "sauzen": false
+    },
+    {
+      "id": "saus",
+      "emoji": "🥫",
+      "nl": "Sauzen",
+      "fr": "Sauces",
+      "sauzen": true
+    },
+    {
+      "id": "warme_saus",
+      "emoji": "🌶️",
+      "nl": "Warme sauzen",
+      "fr": "Sauces chaudes",
+      "sauzen": false
+    },
+    {
+      "id": "burger",
+      "emoji": "🍔",
+      "nl": "Burgers",
+      "fr": "Burgers",
+      "sauzen": false
+    },
+    {
+      "id": "snack",
+      "emoji": "🍔",
+      "nl": "Snacks",
+      "fr": "Snacks",
+      "sauzen": false
+    },
+
+    {
+      "id": "maaltijd",
+      "emoji": "🍽️",
+      "nl": "Huisbereide gerechten",
+      "fr": "Plats maison",
+      "sauzen": false
+    },
+    {
+      "id": "salade",
+      "emoji": "🥗",
+      "nl": "Salades",
+      "fr": "Salades",
+      "sauzen": false
+    },
+
+    {
+      "id": "drank",
+      "emoji": "🥤",
+      "nl": "Dranken",
+      "fr": "Boissons",
+      "sauzen": false
+    }
+  ],
+  "menu": [
+    {
+      "": "",
+      "__COMMENT__": "Frietjes",
+      "": ""
+    },
+    {
+      "id": 1,
+      "category": "friet",
+      "emoji": "ðŸŸ",
+      "nl": {
+        "name": "Kinderfriet",
+        "description": "Kinder portie knapperige frieten voor kinderen"
+      },
+      "fr": {
+        "name": "Frites enfant",
+        "description": "Portion enfant de frites croustillantes"
+      },
+      "price": 2.1,
+      "image": "/menu/frietjes/kinder.png"
+    },
+    {
+      "id": 2,
+      "category": "friet",
+      "image": "/menu/frietjes/klein.png",
+      "nl": {
+        "name": "Kleine friet",
+        "description": "Kleine portie knapperige Belgische frietjes"
+      },
+      "fr": {
+        "name": "Petite portion",
+        "description": "Petite portion de frites belges croustillantes"
+      },
+      "price": 2.6,
+      "pairsWith": [60, 61, 62, 63, 64]
+    },
+    {
+      "id": 3,
+      "category": "friet",
+      "image": "/menu/frietjes/middel.png",
+      "nl": {
+        "name": "Middel friet",
+        "description": "Middelgrote portie krokante frieten"
+      },
+      "fr": {
+        "name": "Portion moyenne",
+        "description": "Moyenne portion de frites croustillantes"
+      },
+      "price": 3.1,
+      "pairsWith": [60, 61, 62, 63, 64]
+    },
+    {
+      "id": 4,
+      "category": "friet",
+      "image": "/menu/frietjes/groot.png",
+      "nl": {
+        "name": "Grote friet",
+        "description": "Knapperige Belgische frietjes, grote portie"
+      },
+      "fr": {
+        "name": "Grande portion",
+        "description": "Frites belges croustillantes, grande portion"
+      },
+      "price": 3.6,
+      "pairsWith": [60, 61, 62, 63, 64]
+    },
+    {
+      "": "",
+      "__COMMENT__": "Koude sauzen",
+      "": ""
+    },
+    {
+      "id": 5,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Mayonaise"
+      },
+      "fr": {
+        "name": "Mayonnaise"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/mayo.png"
+    },
+    {
+      "id": 6,
+      "category": "saus",
+      "emoji": "Ã°Å¸Ââ€¦",
+      "nl": {
+        "name": "Ketchup",
+        "description": ""
+      },
+      "fr": {
+        "name": "Ketchup",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/ketchup.png"
+    },
+    {
+      "id": 7,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Andalouse"
+      },
+      "fr": {
+        "name": "Andalouse"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/andalouse.png"
+    },
+    {
+      "id": 8,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Cocktail"
+      },
+      "fr": {
+        "name": "Cocktail"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/coctail.png"
+    },
+    {
+      "id": 9,
+      "category": "saus",
+      "emoji": "Ã°Å¸Å’Â¶Ã¯Â¸Â",
+      "nl": {
+        "name": "Samurai"
+      },
+      "fr": {
+        "name": "Samouraï"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/samourai.png"
+    },
+    {
+      "id": 10,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Tartaar",
+        "description": ""
+      },
+      "fr": {
+        "name": "Tartare",
+        "description": ""
+      },
+      "price": 1.5,
+      "image": "/menu/saus/tartare.png"
+    },
+    {
+      "id": 11,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Américaine",
+        "description": ""
+      },
+      "fr": {
+        "name": "Américaine",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/americaine.png"
+    },
+    {
+      "id": 12,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Joppie",
+        "description": ""
+      },
+      "fr": {
+        "name": "Joppie",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/joppie.png"
+    },
+    {
+      "id": 13,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Brazil",
+        "description": ""
+      },
+      "fr": {
+        "name": "Brazil",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/brazil.png"
+    },
+    {
+      "id": 14,
+      "category": "saus",
+      "emoji": "Ã°Å¸Å’Â¶Ã¯Â¸Â",
+      "nl": {
+        "name": "Hannibal"
+      },
+      "fr": {
+        "name": "Hannibal"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/hannibal.png"
+    },
+    {
+      "id": 15,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Barbecue",
+        "description": ""
+      },
+      "fr": {
+        "name": "Barbecue",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/bbq.png"
+    },
+    {
+      "id": 16,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Toscane",
+        "description": ""
+      },
+      "fr": {
+        "name": "Toscane",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/toscane.png"
+    },
+    {
+      "id": 17,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Bearnaise koud",
+        "description": ""
+      },
+      "fr": {
+        "name": "Bearnaise froide",
+        "description": ""
+      },
+      "price": 1.5
+    },
+    {
+      "id": 18,
+      "category": "saus",
+      "emoji": "Ã°Å¸Å’Â¶Ã¯Â¸Â",
+      "nl": {
+        "name": "Pepersaus koud",
+        "description": ""
+      },
+      "fr": {
+        "name": "Sauce poivre froide",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/pepersaus.png"
+    },
+    {
+      "id": 19,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Mammoetsaus",
+        "description": ""
+      },
+      "fr": {
+        "name": "Sauce mammouth",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/mammoet.png"
+    },
+    {
+      "id": 20,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Loempiasaus",
+        "description": ""
+      },
+      "fr": {
+        "name": "Sauce aigre-douce",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/loempia.png"
+    },
+    {
+      "id": 21,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Curry ketchup",
+        "description": ""
+      },
+      "fr": {
+        "name": "Ketchup curry",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/curryketchup.png"
+    },
+    {
+      "id": 22,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Piccalilli",
+        "description": ""
+      },
+      "fr": {
+        "name": "Piccalilli",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/pickels.png"
+    },
+    {
+      "id": 23,
+      "category": "saus",
+      "emoji": "💛",
+      "nl": {
+        "name": "Mosterd",
+        "description": ""
+      },
+      "fr": {
+        "name": "Moutarde",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/703229_azure_image1_0_5ef2375eed1f4c09bb40c11dc1a7a864.jpg"
+    },
+
+    {
+      "id": 173,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Gele Bicky"
+      },
+      "fr": {
+        "name": "Bicky jaune"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/gelebicky.png"
+    },
+    {
+      "id": 174,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Oranje Bicky"
+      },
+      "fr": {
+        "name": "Bicky orange"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/oranjebicky.png"
+    },
+    {
+      "id": 175,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Gele curry"
+      },
+      "fr": {
+        "name": "Curry jaune"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/gelecurry.png"
+    },
+    {
+      "id": 176,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Speciale saus"
+      },
+      "fr": {
+        "name": "Sauce spéciale"
+      },
+      "price": 1.6,
+      "image": "/menu/saus/specialesaus.png"
+    },
+    {
+      "id": 177,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "3 sauzen"
+      },
+      "fr": {
+        "name": "3 sauces"
+      },
+      "price": 1.6,
+      "image": "/menu/saus/3sauzen.png"
+    },
+    {
+      "": "",
+      "__COMMENT__": "Warme sauzen",
+      "": ""
+    },
+    {
+      "id": 79,
+      "category": "warme_saus",
+      "emoji": "🫕",
+      "nl": {
+        "name": "Pepersaus warm",
+        "description": "Huisbereid"
+      },
+      "fr": {
+        "name": "Sauce poivre chaude maison",
+        "description": "Maison"
+      },
+      "price": 3.5,
+      "image": "/menu/warme-saus/pepersaus.jpg"
+    },
+    {
+      "id": 24,
+      "category": "warme_saus",
+      "emoji": "🫕",
+      "image": "/menu/warme-saus/bearnaise.jpg",
+      "nl": {
+        "name": "Bearnaise warm",
+        "description": "Warme bearnaisesaus"
+      },
+      "fr": {
+        "name": "Bearnaise chaude",
+        "description": "Bearnaise chaude"
+      },
+      "price": 3.5
+    },
+    {
+      "id": 25,
+      "category": "warme_saus",
+      "emoji": "ðŸ„",
+      "image": "/menu/warme-saus/champsaus.png",
+      "nl": {
+        "name": "Champignonsaus warm",
+        "description": "Romige champignonsaus"
+      },
+      "fr": {
+        "name": "Sauce champignon chaude",
+        "description": "Sauce champignon crémeuse"
+      },
+      "price": 3.5
+    },
+    {
+      "id": 80,
+      "category": "warme_saus",
+      "emoji": "ðŸ¦",
+      "nl": {
+        "name": "Scampisaus",
+        "description": ""
+      },
+      "fr": {
+        "name": "Sauce scampi",
+        "description": ""
+      },
+      "price": 3,
+      "image": "/menu/warme-saus/scampisaus.png"
+    },
+    {
+      "id": 26,
+      "category": "warme_saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Witloofsaus",
+        "description": ""
+      },
+      "fr": {
+        "name": "Sauce chicons",
+        "description": ""
+      },
+      "price": 3,
+      "image": "/menu/warme-saus/witloofsaus.png"
+    },
+    {
+      "id": 81,
+      "category": "warme_saus",
+      "emoji": "Ã°Å¸Ââ€¦",
+      "nl": {
+        "name": "Tomatensaus potje",
+        "description": "Huisbereide tomatensaus"
+      },
+      "fr": {
+        "name": "Sauce tomate en pot",
+        "description": "Sauce tomate maison"
+      },
+      "price": 3.5,
+      "image": "/menu/warme-saus/tomatensaus.png"
+    },
+
+    {
+      "id": 65,
+      "category": "warme_saus",
+      "emoji": "🥘",
+      "nl": {
+        "name": "Stoofvleessaus",
+        "description": "Rijke Belgische saus"
+      },
+      "fr": {
+        "name": "Sauce carbonnade",
+        "description": "Riche sauce belge"
+      },
+      "price": 2.4,
+      "image": "/menu/warme-saus/stoofvleessaus.png"
+    },
+    {
+      "id": 75,
+      "category": "warme_saus",
+      "emoji": "🥘",
+      "nl": {
+        "name": "Stoofvleessaus van het huis",
+        "description": "Vlaamse stoofvleessaus van 't huis"
+      },
+      "fr": {
+        "name": "Sauce carbonnade maison",
+        "description": "Sauce carbonnade maison"
+      },
+      "price": 2.6,
+      "image": "/menu/warme-saus/stoofvleessaus.png"
+    },
+    {
+      "": "",
+      "__COMMENT__": "Burgers",
+      "": ""
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "popular": true,
+      "nl": {
+        "name": "BELL' Burger",
+        "description": "Onze huisgemaakte rundsburger met sla, tomaat en cheddarsaus"
+      },
+      "fr": {
+        "name": "BELL' Burger",
+        "description": "Notre burger maison avec de la laitue, des tomates et de la sauce cheddar"
+      },
+      "price": 6.5,
+      "image": "/menu/burgers/bellburger.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky natuur",
+        "description": "Lekker broodje met een hamburgerschijf"
+      },
+      "fr": {
+        "name": "Bicky nature",
+        "description": "Délicieux sandwich avec un hamburger"
+      },
+      "price": 3,
+      "image": "/menu/burgers/bickynatuur.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky burger",
+        "description": "De klassieker met saus naar keuze, ui en augurk"
+      },
+      "fr": {
+        "name": "Bicky burger",
+        "description": "Le classique avec sauce au choix, oignon et cornichon"
+      },
+      "price": 4,
+      "image": "/menu/burgers/bicky.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky alleen saus",
+        "description": "Lekker broodje met een hamburgerschijf en saus naar keuze"
+      },
+      "fr": {
+        "name": "Bicky seulement sauce",
+        "description": "Délicieux sandwich avec un hamburger et sauce au choix"
+      },
+      "price": 3.5,
+      "image": "/menu/burgers/bickyketchup.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky chicken",
+        "description": "Lekker broodje met een kipburgerschijf en saus naar keuze"
+      },
+      "fr": {
+        "name": "Bicky chicken",
+        "description": "Délicieux sandwich avec un hamburger de poulet et sauce au choix"
+      },
+      "price": 4.3,
+      "image": "/menu/burgers/bickychicken.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky cheese",
+        "description": "Met de basis van onze bicky met een plakje kaas "
+      },
+      "fr": {
+        "name": "Bicky cheese",
+        "description": "Délicieux sandwich avec un hamburger et une tranche de fromage"
+      },
+      "price": 4.3,
+      "image": "/menu/burgers/bickycheese.png"
+    },
+
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky rib",
+        "description": "Een bickyburger met een mexicano"
+      },
+      "fr": {
+        "name": "Bicky rib",
+        "description": "Un bickyburger avec un mexicano"
+      },
+      "price": 4.5,
+      "image": "/menu/burgers/bickeyrib.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky Fish",
+        "description": "Een kabbeljauwburger met tartaar saus en sla"
+      },
+      "fr": {
+        "name": "Bicky Fish",
+        "description": "Un burger de cabillaud avec sauce tartare et salade"
+      },
+      "price": 4.5,
+      "image": "/menu/burgers/bickyfish.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky Crispy",
+        "description": "De welbekende bicky met een krokante twist"
+      },
+      "fr": {
+        "name": "Bicky Crispy",
+        "description": "Le célèbre bicky avec une touche croustillante"
+      },
+      "price": 4.2,
+      "image": "/menu/burgers/bickycrispy.png"
+    },
+    {
+      "id": 75,
+      "category": "burger",
+      "emoji": "🍔",
+      "nl": {
+        "name": "Bicky veggie",
+        "description": "Onze vegitarische variant van de bickyburger"
+      },
+      "fr": {
+        "name": "Bicky végétarien",
+        "description": "Notre variante végétarienne du bickyburger"
+      },
+      "price": 3.8,
+      "image": "/menu/burgers/veggieburger.png"
+    },
+    {
+      "": "",
+      "__COMMENT__": "Snacks",
+      "": ""
+    }
+  ]
+}

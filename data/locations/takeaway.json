@@ -1,0 +1,412 @@
+{
+  "id": "takeaway",
+  "name": "Take-Away Shop",
+  "address": "Groot-Bellegemstraat, 8510 Bellegem",
+  "phone": "+3256000001",
+  "phoneDisplay": "056 00 00 01",
+  "hours": [
+    {
+      "nl": "Maandag",
+      "fr": "Lundi",
+      "time": null,
+      "closed": true
+    },
+    {
+      "nl": "Dinsdag – Donderdag",
+      "fr": "Mar – Jeu",
+      "time": "17u00 – 22u00",
+      "closed": false
+    },
+    {
+      "nl": "Vrijdag",
+      "fr": "Vendredi",
+      "time": "17u00 – 23u00",
+      "closed": false
+    },
+    {
+      "nl": "Zaterdag",
+      "fr": "Samedi",
+      "time": "11u00 – 23u00",
+      "closed": false
+    },
+    {
+      "nl": "Zondag",
+      "fr": "Dimanche",
+      "time": "11u00 – 22u00",
+      "closed": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "friet",
+      "emoji": "ðŸŸ",
+      "nl": "Frietjes",
+      "fr": "Frites",
+      "sauzen": false
+    },
+    {
+      "id": "snack",
+      "emoji": "🌭",
+      "nl": "Snacks",
+      "fr": "Snacks",
+      "sauzen": false
+    },
+    {
+      "id": "kroket",
+      "emoji": "ðŸ¦",
+      "nl": "Kroketten",
+      "fr": "Croquettes",
+      "sauzen": false
+    },
+    {
+      "id": "saus",
+      "emoji": "🫙",
+      "nl": "Sauzen",
+      "fr": "Sauces",
+      "sauzen": true
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "category": "friet",
+      "image": "/menu/small_DSC_1460_6efba8a2bf.jpg",
+      "nl": {
+        "name": "Kleine friet",
+        "description": "Knapperige Belgische frietjes"
+      },
+      "fr": {
+        "name": "Petite portion",
+        "description": "Frites belges croustillantes"
+      },
+      "price": 2.5
+    },
+    {
+      "id": 2,
+      "category": "friet",
+      "image": "/menu/small_DSC_1455_0d3170ab52.jpg",
+      "nl": {
+        "name": "Grote friet",
+        "description": "Knapperige Belgische frietjes, grote portie"
+      },
+      "fr": {
+        "name": "Grande portion",
+        "description": "Frites belges croustillantes, grande portion"
+      },
+      "price": 3.5
+    },
+    {
+      "id": 3,
+      "category": "friet",
+      "image": "/menu/small_DSC_1439_8dafa38908.jpg",
+      "nl": {
+        "name": "XL friet",
+        "description": "Extra grote portie krokante frieten"
+      },
+      "fr": {
+        "name": "Portion XL",
+        "description": "Très grande portion de frites croustillantes"
+      },
+      "price": 4.5
+    },
+    {
+      "id": 5,
+      "category": "snack",
+      "image": "/menu/small_DSC_1587_21c57d9257.jpg",
+      "nl": {
+        "name": "Frikandel",
+        "description": "Klassieke gefrituurde frikandel"
+      },
+      "fr": {
+        "name": "Fricandelle",
+        "description": "Fricandelle frite classique"
+      },
+      "price": 1.8
+    },
+    {
+      "id": 6,
+      "category": "snack",
+      "popular": true,
+      "image": "/menu/small_DSC_1463_788714ff9b.jpg",
+      "nl": {
+        "name": "Frikandel speciaal",
+        "description": "Met mayonaise, ketchup en uitjes"
+      },
+      "fr": {
+        "name": "Fricandelle spéciale",
+        "description": "Avec mayo, ketchup et oignons"
+      },
+      "price": 2.8
+    },
+    {
+      "id": 7,
+      "category": "snack",
+      "popular": true,
+      "image": "/menu/890058_azure_image1_0_a4d92e6c52ef4b038e379e80dc0827cf.jpg",
+      "nl": {
+        "name": "BELL' Burger",
+        "description": "Huisgemaakte burger op ambachtelijk broodje"
+      },
+      "fr": {
+        "name": "BELL' Burger",
+        "description": "Burger maison sur pain artisanal"
+      },
+      "price": 6.5
+    },
+    {
+      "id": 8,
+      "category": "snack",
+      "image": "/menu/small_DSC_1472_f5f175f90f.jpg",
+      "nl": {
+        "name": "Loempia",
+        "description": "Krokante loempia met verse groenten"
+      },
+      "fr": {
+        "name": "Rouleau de printemps",
+        "description": "Rouleau croustillant aux légumes frais"
+      },
+      "price": 4.5
+    },
+    {
+      "id": 9,
+      "category": "snack",
+      "image": "/menu/small_DSC_1500_2012fe361d.jpg",
+      "nl": {
+        "name": "Kippenboutjes",
+        "description": "Krokant gebakken kippenboutjes"
+      },
+      "fr": {
+        "name": "Cuisses de poulet",
+        "description": "Cuisses de poulet frites croustillantes"
+      },
+      "price": 4.7
+    },
+    {
+      "id": 10,
+      "category": "snack",
+      "image": "/menu/small_DSC_1467_3c01c6f956.jpg",
+      "nl": {
+        "name": "Hamburgerschijf",
+        "description": "Klassieke hamburgerschijf"
+      },
+      "fr": {
+        "name": "Steak haché",
+        "description": "Steak haché classique"
+      },
+      "price": 2.4
+    },
+    {
+      "id": 20,
+      "category": "kroket",
+      "popular": true,
+      "image": "/menu/small_DSC_1431_cc6d968b5c.jpg",
+      "nl": {
+        "name": "Garnaalkroket",
+        "description": "Huisbereide kroket met Noordzeegarnalen"
+      },
+      "fr": {
+        "name": "Croquette aux crevettes",
+        "description": "Croquette maison aux crevettes de la Mer du Nord"
+      },
+      "price": 4.8
+    },
+    {
+      "id": 21,
+      "category": "kroket",
+      "image": "/menu/small_DSC_1436_5fb1b2ce15.jpg",
+      "nl": {
+        "name": "Bitterballen (6 st.)",
+        "description": "Klassieke bitterballen"
+      },
+      "fr": {
+        "name": "Bitterballen (6 pc.)",
+        "description": "Bitterballen classiques"
+      },
+      "price": 5
+    },
+    {
+      "id": 22,
+      "category": "kroket",
+      "image": "/menu/small_DSC_1442_e087512060.jpg",
+      "nl": {
+        "name": "Kaaskroket",
+        "description": "Krokant met gesmolten kaas"
+      },
+      "fr": {
+        "name": "Croquette au fromage",
+        "description": "Croustillante au fromage fondu"
+      },
+      "price": 3.5
+    },
+    {
+      "id": 60,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Mayonaise",
+        "description": "Huisbereid"
+      },
+      "fr": {
+        "name": "Mayonnaise",
+        "description": "Maison"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/mayo.png"
+    },
+    {
+      "id": 61,
+      "category": "saus",
+      "emoji": "ðŸ…",
+      "nl": {
+        "name": "Ketchup",
+        "description": ""
+      },
+      "fr": {
+        "name": "Ketchup",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/ketchup.png"
+    },
+    {
+      "id": 62,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Andalouse",
+        "description": "Licht pikant"
+      },
+      "fr": {
+        "name": "Andalouse",
+        "description": "Légèrement épicée"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/andalouse.png"
+    },
+    {
+      "id": 63,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Cocktail",
+        "description": "Romig"
+      },
+      "fr": {
+        "name": "Cocktail",
+        "description": "Crémeux"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/coctail.png"
+    },
+    {
+      "id": 64,
+      "category": "saus",
+      "emoji": "ðŸŒ¶ï¸",
+      "nl": {
+        "name": "Samurai",
+        "description": "Pittig"
+      },
+      "fr": {
+        "name": "Samouraï",
+        "description": "Épicée"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/samourai.png"
+    },
+    {
+      "id": 66,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Tartaar",
+        "description": ""
+      },
+      "fr": {
+        "name": "Tartare",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/tartare.png"
+    },
+    {
+      "id": 67,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Américaine",
+        "description": ""
+      },
+      "fr": {
+        "name": "Américaine",
+        "description": ""
+      },
+      "price": 1.2,
+      "image": "/menu/saus/americaine.png"
+    },
+    {
+      "id": 68,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Gele Bicky"
+      },
+      "fr": {
+        "name": "Bicky jaune"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/gelebicky.png"
+    },
+    {
+      "id": 69,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Oranje Bicky"
+      },
+      "fr": {
+        "name": "Bicky orange"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/oranjebicky.png"
+    },
+    {
+      "id": 70,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Gele curry"
+      },
+      "fr": {
+        "name": "Curry jaune"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/gelecurry.png"
+    },
+    {
+      "id": 71,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "Speciale saus"
+      },
+      "fr": {
+        "name": "Sauce spéciale"
+      },
+      "price": 1.2,
+      "image": "/menu/saus/specialesaus.png"
+    },
+    {
+      "id": 72,
+      "category": "saus",
+      "emoji": "🫙",
+      "nl": {
+        "name": "3 sauzen"
+      },
+      "fr": {
+        "name": "3 sauces"
+      },
+      "price": 3.0,
+      "image": "/menu/saus/3sauzen.png"
+    }
+  ]
+}

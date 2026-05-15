@@ -1,0 +1,9 @@
+[
+  { "id": "friet",    "emoji": "🍟", "nl": "Frietjes",   "fr": "Frites",      "sauzen": false },
+  { "id": "snack",    "emoji": "🌭", "nl": "Snacks",     "fr": "Snacks",      "sauzen": false },
+  { "id": "kroket",   "emoji": "🦐", "nl": "Kroketten",  "fr": "Croquettes",  "sauzen": false },
+  { "id": "maaltijd", "emoji": "🍽️", "nl": "Maaltijden", "fr": "Plats",       "sauzen": false },
+  { "id": "scampi",   "emoji": "🦐", "nl": "Scampi's",   "fr": "Scampi's",    "sauzen": false },
+  { "id": "salade",   "emoji": "🥗", "nl": "Salades",    "fr": "Salades",     "sauzen": false },
+  { "id": "saus",     "emoji": "🫙", "nl": "Sauzen",     "fr": "Sauces",      "sauzen": true  }
+]

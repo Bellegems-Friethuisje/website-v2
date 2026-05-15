@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+#page-content {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+body.page-transition #page-content {
+  opacity: 0;
+}
