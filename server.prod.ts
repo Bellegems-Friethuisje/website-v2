@@ -1,3 +1,4 @@
+import 'virtual:@brillout/vite-plugin-server-entry:serverEntry'
 import vike, { toFetchHandler } from '@vikejs/express'
 import express from 'express'
 import type { Server } from 'vike/types'
