@@ -14,15 +14,15 @@
 
     <div class="absolute bottom-0 left-0 right-0 z-10 max-w-5xl mx-auto px-4 lg:px-0 pb-12">
       <p class="text-orange-400 text-sm font-semibold tracking-widest uppercase mb-4">
-        📍 Bellegem · Kortrijk
+        📍 Bellegem · Kortrijk · {{ t({ nl: 'Sinds 2004', fr: 'Depuis 2004' }) }}
       </p>
       <h1 class="text-5xl lg:text-7xl font-extrabold text-white leading-none mb-5 tracking-tight">
         {{ t({ nl: 'Meer dan een\nfrituur alleen.', fr: "Plus qu'une\nsimple friterie." }) }}
       </h1>
       <p class="text-gray-400 text-xl mb-8 max-w-md">
         {{ t({
-          nl: 'Kwaliteitskeuken, verse kroketten en goudgele frietjes — elke dag met passie bereid.',
-          fr: 'Cuisine de qualité, croquettes fraîches et frites dorées — préparées avec passion chaque jour.'
+          nl: 'Kwaliteitskeuken, verse kroketten en goudgele frietjes. Elke dag met passie bereid.',
+          fr: 'Cuisine de qualité, croquettes fraîches et frites dorées. Préparées avec passion chaque jour.'
         }) }}
       </p>
       <div class="flex flex-wrap gap-3">
@@ -39,30 +39,115 @@
   <!-- Festive banner -->
   <FestiveBanner />
 
-  <!-- About -->
+  <!-- Rating strip -->
+  <section class="bg-gray-900 py-4">
+    <div class="max-w-5xl mx-auto px-4 lg:px-0">
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <div class="flex items-center gap-2 text-white">
+          <span class="text-yellow-400 font-bold text-base">★ 4.5</span>
+          <span class="text-gray-400">Google</span>
+          <span class="text-gray-600 text-xs">(2.854)</span>
+        </div>
+        <div class="w-px h-4 bg-gray-700 hidden sm:block" />
+        <div class="flex items-center gap-2 text-white">
+          <span class="text-yellow-400 font-bold text-base">★ 4.7</span>
+          <span class="text-gray-400">Facebook</span>
+          <span class="text-gray-600 text-xs">(423)</span>
+        </div>
+        <div class="w-px h-4 bg-gray-700 hidden sm:block" />
+        <div class="flex items-center gap-2 text-white">
+          <span class="text-yellow-400 font-bold text-base">9/10</span>
+          <span class="text-gray-400">Foursquare</span>
+          <span class="text-gray-600 text-xs">(376)</span>
+        </div>
+        <div class="w-px h-4 bg-gray-700 hidden sm:block" />
+        <span class="text-gray-400 text-xs">{{ t({ nl: 'Langs de steenweg Kortrijk–Doornik, al meer dan 20 jaar', fr: 'Sur la route Kortrijk–Tournai, depuis plus de 20 ans' }) }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our story — timeline -->
   <section class="max-w-5xl mx-auto px-4 lg:px-0 py-20">
-    <div class="grid lg:grid-cols-5 gap-12 items-center">
+    <div class="grid lg:grid-cols-5 gap-12 items-start">
+
+      <!-- Timeline -->
       <div class="lg:col-span-3">
         <span class="inline-block text-orange-500 text-sm font-bold tracking-widest uppercase mb-5">
           {{ t({ nl: 'Ons verhaal', fr: 'Notre histoire' }) }}
         </span>
-        <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-          {{ t({
-            nl: 'Welkom bij Bellegems Friethuisje',
-            fr: 'Bienvenue au Bellegems Friethuisje'
-          }) }}
+        <h2 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-10 leading-tight">
+          {{ t({ nl: 'Hoe alles begon.', fr: 'Comment tout a commencé.' }) }}
         </h2>
-        <div class="space-y-4 text-gray-500 leading-relaxed text-lg">
-          <p>{{ t({
-            nl: 'Bij ons bent u niet gewoon bij een frituur. Wij serveren verse maaltijden, huisbereide kroketten en krokante frietjes — bereid met producten van eigen regio.',
-            fr: "Chez nous, vous n'êtes pas dans une simple friterie. Nous servons des repas frais, des croquettes maison et des frites croustillantes — préparées avec des produits de la région."
-          }) }}</p>
-          <p>{{ t({
-            nl: 'Van een eenvoudige frikandel speciaal tot een uitgebreide scampi of ons befaamd half haantje: de kaart is groot, de kwaliteit onveranderlijk.',
-            fr: "D'une simple fricandelle spéciale à un scampi complet ou notre fameux demi poulet : la carte est grande, la qualité immuable."
-          }) }}</p>
+
+        <div class="relative pl-6 border-l-2 border-orange-100 space-y-10">
+
+          <!-- 2004 -->
+          <div class="relative">
+            <div class="absolute -left-[1.4375rem] top-1.5 w-4 h-4 rounded-full bg-orange-500 border-4 border-white shadow-sm" />
+            <span class="text-orange-500 text-xs font-bold tracking-widest uppercase">2004</span>
+            <h3 class="text-lg font-extrabold text-gray-900 mt-1 mb-1">
+              {{ t({ nl: 'De eerste dag', fr: 'Le premier jour' }) }}
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              {{ t({
+                nl: 'Patrick Huyse, vakman in de vleeshandel, opent de deuren langs de steenweg tussen Kortrijk en Doornik. Verse friet, warme maaltijden en een welkomstgevoel dat mensen doet terugkomen.',
+                fr: "Patrick Huyse, expert dans le commerce de viande, ouvre les portes sur la route entre Kortrijk et Tournai. Des frites fraîches, des plats chauds et un accueil chaleureux qui fait revenir les gens."
+              }) }}
+            </p>
+          </div>
+
+          <!-- Eerste jaren -->
+          <div class="relative">
+            <div class="absolute -left-[1.4375rem] top-1.5 w-4 h-4 rounded-full bg-orange-200 border-4 border-white shadow-sm" />
+            <span class="text-orange-400 text-xs font-bold tracking-widest uppercase">
+              {{ t({ nl: 'De eerste jaren', fr: 'Les premières années' }) }}
+            </span>
+            <h3 class="text-lg font-extrabold text-gray-900 mt-1 mb-1">
+              {{ t({ nl: 'Van frituur naar vaste waarde', fr: 'De friterie à valeur sûre' }) }}
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              {{ t({
+                nl: 'De zaak groeit gestaag. Families, werklui en doorrijders vinden hun weg naar Bellegem. De eerste uitbreidingen volgen al snel, telkens gedreven door meer volk dan er plek was.',
+                fr: "L'établissement grandit régulièrement. Familles, travailleurs et voyageurs trouvent leur chemin vers Bellegem. Les premières extensions suivent rapidement, à chaque fois poussées par plus de monde qu'il n'y avait de place."
+              }) }}
+            </p>
+          </div>
+
+          <!-- 2019 -->
+          <div class="relative">
+            <div class="absolute -left-[1.4375rem] top-1.5 w-4 h-4 rounded-full bg-orange-500 border-4 border-white shadow-sm" />
+            <span class="text-orange-500 text-xs font-bold tracking-widest uppercase">2019</span>
+            <h3 class="text-lg font-extrabold text-gray-900 mt-1 mb-1">
+              {{ t({ nl: 'De vijfde uitbreiding', fr: 'Le cinquième agrandissement' }) }}
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              {{ t({
+                nl: 'In amper twee weken tijd wordt de zaak grondig vernieuwd. De eetruimte groeit naar meer dan 550 m², met ruimte voor grote families, groepen vrienden en iedereen daartussen.',
+                fr: "En à peine deux semaines, l'établissement est entièrement rénové. L'espace repas passe à plus de 550 m², avec de la place pour les grandes familles, les groupes d'amis et tout le monde entre les deux."
+              }) }}
+            </p>
+          </div>
+
+          <!-- Vandaag -->
+          <div class="relative">
+            <div class="absolute -left-[1.4375rem] top-1.5 w-4 h-4 rounded-full bg-gray-900 border-4 border-white shadow-sm" />
+            <span class="text-gray-400 text-xs font-bold tracking-widest uppercase">
+              {{ t({ nl: 'Vandaag', fr: "Aujourd'hui" }) }}
+            </span>
+            <h3 class="text-lg font-extrabold text-gray-900 mt-1 mb-1">
+              {{ t({ nl: 'Een begrip in de regio', fr: 'Une référence dans la région' }) }}
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              {{ t({
+                nl: 'Meer dan 250 zitplaatsen, een 30-tal medewerkers en een kaart die elke dag vers wordt klaargemaakt. Hetzelfde gevoel als dag één, op veel grotere schaal.',
+                fr: "Plus de 250 places assises, une trentaine de collaborateurs et une carte préparée fraîche chaque jour. Le même esprit qu'au premier jour, à bien plus grande échelle."
+              }) }}
+            </p>
+          </div>
+
         </div>
-        <a href="/menu" class="inline-flex items-center gap-2 mt-8 bg-gray-900 hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+
+        <a href="/menu" class="inline-flex items-center gap-2 mt-10 bg-gray-900 hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-xl transition-colors">
           {{ t({ nl: 'Volledige menukaart', fr: 'Menu complet' }) }}
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -70,51 +155,119 @@
         </a>
       </div>
 
-      <div class="lg:col-span-2 grid grid-cols-2 gap-3">
+      <!-- Images -->
+      <div class="lg:col-span-2 grid grid-cols-2 gap-3 lg:sticky lg:top-24">
         <img
-          src="https://strapi.bellegemsfriethuisje.be/uploads/small_Bellegems_Friethuisje_1_718c40142e.jpg"
-          alt="Bellegems Friethuisje"
+          src="https://strapi.bellegemsfriethuisje.be/uploads/large_20220417_104452_dea8c2695a.jpg"
+          alt="Bellegems Friethuisje buiten"
           loading="lazy"
           decoding="async"
           class="col-span-2 h-52 w-full object-cover rounded-2xl"
         />
         <img
-          :src="`https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1740_Half_haantje_6b1846afc8.jpg`"
-          alt="Half haantje"
+          src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_105458_b3b7e1d676.jpg"
+          alt="Sfeer binnen"
           loading="lazy"
           decoding="async"
           class="h-36 w-full object-cover rounded-2xl"
         />
         <img
-          :src="`https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1520_BELL_Burger_3_05731fcc44.jpg`"
-          alt="BELL Burger"
+          src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_105146_6ff5e0da63.jpg"
+          alt="Zaal"
+          loading="lazy"
+          decoding="async"
+          class="h-36 w-full object-cover rounded-2xl"
+        />
+        <img
+          src="https://strapi.bellegemsfriethuisje.be/uploads/DSC_07923_c92311a02a.jpg"
+          alt="Bellegems Friethuisje zaal"
+          loading="lazy"
+          decoding="async"
+          class="h-36 w-full object-cover rounded-2xl"
+        />
+        <img
+          src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104808_7d920f05c2.jpg"
+          alt="Ingang"
           loading="lazy"
           decoding="async"
           class="h-36 w-full object-cover rounded-2xl"
         />
       </div>
+
     </div>
   </section>
 
-  <!-- Orange divider with facts -->
+  <!-- Orange stats bar -->
   <section class="bg-orange-500 py-8">
     <div class="max-w-5xl mx-auto px-4 lg:px-0">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-white text-center">
         <div>
-          <p class="text-3xl font-extrabold">7/7</p>
-          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Dagen open', fr: 'Jours ouverts' }) }}</p>
+          <p class="text-3xl font-extrabold">2004</p>
+          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Opgericht', fr: 'Fondé' }) }}</p>
         </div>
         <div>
-          <p class="text-3xl font-extrabold">2</p>
-          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Locaties', fr: 'Emplacements' }) }}</p>
+          <p class="text-3xl font-extrabold">250+</p>
+          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Zitplaatsen', fr: 'Places assises' }) }}</p>
         </div>
         <div>
-          <p class="text-3xl font-extrabold">50+</p>
-          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Gerechten', fr: 'Plats' }) }}</p>
+          <p class="text-3xl font-extrabold">30</p>
+          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Medewerkers', fr: 'Collaborateurs' }) }}</p>
         </div>
         <div>
-          <p class="text-3xl font-extrabold">10+</p>
-          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Jaar ervaring', fr: "Ans d'expérience" }) }}</p>
+          <p class="text-3xl font-extrabold">550m²</p>
+          <p class="text-orange-200 text-sm mt-1">{{ t({ nl: 'Eetruimte', fr: 'Espace repas' }) }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us — 3 pillars -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-5xl mx-auto px-4 lg:px-0">
+      <div class="text-center mb-12">
+        <span class="text-orange-500 text-sm font-bold tracking-widest uppercase block mb-3">
+          {{ t({ nl: 'Wat je kunt verwachten', fr: 'Ce que vous pouvez attendre' }) }}
+        </span>
+        <h2 class="text-4xl font-extrabold text-gray-900">
+          {{ t({ nl: 'Meer dan friet alleen', fr: 'Bien plus que des frites' }) }}
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
+          <div class="text-4xl mb-4">🍟</div>
+          <h3 class="text-lg font-extrabold text-gray-900 mb-3">
+            {{ t({ nl: 'Frieten zoals het hoort', fr: 'Des frites comme il se doit' }) }}
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            {{ t({
+              nl: 'Goudgeel, krokant en heet van de frituur. Bereid met verse aardappelen, elke dag opnieuw.',
+              fr: "Dorées, croustillantes et fraîches de la friteuse. Préparées avec des pommes de terre fraîches, chaque jour."
+            }) }}
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
+          <div class="text-4xl mb-4">🍽️</div>
+          <h3 class="text-lg font-extrabold text-gray-900 mb-3">
+            {{ t({ nl: 'Een echte keuken', fr: 'Une vraie cuisine' }) }}
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            {{ t({
+              nl: 'Stoofvlees, vol-au-vent, verse garnaalkroketten en scampi. Gerechten die je bij oma verwacht, hier gemaakt.',
+              fr: "Carbonnade, vol-au-vent, croquettes aux crevettes fraîches et scampi. Des plats que vous attendez chez mamie, préparés ici."
+            }) }}
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
+          <div class="text-4xl mb-4">🪑</div>
+          <h3 class="text-lg font-extrabold text-gray-900 mb-3">
+            {{ t({ nl: 'Rustig aan tafel', fr: 'À table en toute tranquillité' }) }}
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            {{ t({
+              nl: 'Geen gehaast eten aan een toonbank. Bij ons zit je neer, ook al kom je alleen voor een portie friet.',
+              fr: "Pas de repas précipité au comptoir. Ici vous vous asseyez, même si vous venez juste pour une portion de frites."
+            }) }}
+          </p>
         </div>
       </div>
     </div>
@@ -139,7 +292,7 @@
       </a>
     </div>
 
-    <!-- Featured dish - full width -->
+    <!-- Featured dish -->
     <div class="rounded-2xl overflow-hidden mb-5 relative h-64 group">
       <img
         src="https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1740_Half_haantje_6b1846afc8.jpg"
@@ -151,7 +304,7 @@
       <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent flex items-end p-6">
         <div>
           <span class="bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full mb-2 inline-block">
-            {{ t({ nl: 'Populair', fr: 'Populaire' }) }}
+            ⭐ {{ t({ nl: 'Populair', fr: 'Populaire' }) }}
           </span>
           <h3 class="text-white font-extrabold text-2xl">{{ t({ nl: 'Half haantje', fr: 'Demi poulet' }) }}</h3>
           <p class="text-gray-300 text-sm mt-1">
@@ -162,7 +315,6 @@
       </div>
     </div>
 
-    <!-- Other popular items -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
       <MenuCard
         v-for="item in popularItems"
@@ -183,33 +335,87 @@
     </div>
   </section>
 
-  <!-- Locations -->
-  <section class="bg-gray-50 py-20">
-    <div class="max-w-5xl mx-auto px-4 lg:px-0">
-      <h2 class="text-4xl font-extrabold text-gray-900 mb-10">
-        {{ t({ nl: 'Onze locaties', fr: 'Nos emplacements' }) }}
+  <!-- Ratings / social proof -->
+  <section class="bg-orange-50 border-y border-orange-100 py-16">
+    <div class="max-w-5xl mx-auto px-4 lg:px-0 text-center">
+      <span class="text-orange-500 text-sm font-bold tracking-widest uppercase block mb-3">
+        {{ t({ nl: 'Wat klanten zeggen', fr: 'Ce que disent les clients' }) }}
+      </span>
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-3">
+        {{ t({ nl: 'Wat andere gasten zeggen', fr: 'Ce que disent les autres clients' }) }}
       </h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div v-for="loc in locations" :key="loc.id" class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100">
-          <h3 class="font-extrabold text-gray-900 text-xl mb-1">{{ loc.name }}</h3>
-          <p class="text-gray-400 text-sm mb-4">{{ loc.address }}</p>
-          <div class="space-y-1 mb-5">
-            <div v-for="h in loc.hours" :key="h.nl" class="flex justify-between text-sm">
-              <span class="text-gray-500">{{ lang === 'nl' ? h.nl : h.fr }}</span>
-              <span :class="h.closed ? 'text-red-400 font-medium' : 'text-gray-800 font-medium'">
-                {{ h.closed ? t({ nl: 'Gesloten', fr: 'Fermé' }) : h.time }}
-              </span>
-            </div>
-          </div>
-          <a :href="`tel:${loc.phone}`" class="inline-flex items-center gap-2 text-orange-500 font-bold hover:text-orange-600 transition-colors text-sm">
-            📞 {{ loc.phoneDisplay }}
-          </a>
+      <p class="text-gray-500 max-w-lg mx-auto mb-12">
+        {{ t({
+          nl: 'Beoordelingen van echte bezoekers op Google, Facebook en Foursquare.',
+          fr: 'Avis de vrais visiteurs sur Google, Facebook et Foursquare.'
+        }) }}
+      </p>
+      <div class="grid sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-orange-100">
+          <p class="text-4xl font-extrabold text-gray-900 mb-1">4.5</p>
+          <div class="text-yellow-400 text-lg mb-1">★★★★★</div>
+          <p class="text-gray-500 text-sm font-semibold">Google</p>
+          <p class="text-gray-400 text-xs mt-1">2.854 {{ t({ nl: 'beoordelingen', fr: 'avis' }) }}</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-orange-100">
+          <p class="text-4xl font-extrabold text-gray-900 mb-1">4.7</p>
+          <div class="text-yellow-400 text-lg mb-1">★★★★★</div>
+          <p class="text-gray-500 text-sm font-semibold">Facebook</p>
+          <p class="text-gray-400 text-xs mt-1">423 {{ t({ nl: 'beoordelingen', fr: 'avis' }) }}</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-orange-100">
+          <p class="text-4xl font-extrabold text-gray-900 mb-1">9/10</p>
+          <div class="text-yellow-400 text-lg mb-1">★★★★★</div>
+          <p class="text-gray-500 text-sm font-semibold">Foursquare</p>
+          <p class="text-gray-400 text-xs mt-1">376 {{ t({ nl: 'beoordelingen', fr: 'avis' }) }}</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Reservation CTA with real photo bg -->
+  <!-- Locations -->
+  <section class="bg-white py-20">
+    <div class="max-w-5xl mx-auto px-4 lg:px-0">
+      <div class="mb-10">
+        <span class="text-orange-500 text-sm font-bold tracking-widest uppercase block mb-3">
+          {{ t({ nl: 'Kom langs', fr: 'Venez nous voir' }) }}
+        </span>
+        <h2 class="text-4xl font-extrabold text-gray-900">
+          {{ t({ nl: 'Onze locaties', fr: 'Nos emplacements' }) }}
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div v-for="loc in locations" :key="loc.id" class="bg-gray-50 rounded-2xl p-6 hover:shadow-md transition-all border border-gray-100">
+          <h3 class="font-extrabold text-gray-900 text-xl mb-1">{{ loc.name }}</h3>
+          <p class="text-gray-400 text-sm mb-4">📍 {{ loc.address }}</p>
+          <div class="space-y-1.5 mb-5">
+            <div v-for="h in loc.hours" :key="h.nl" class="flex justify-between text-sm">
+              <span class="text-gray-500">{{ lang === 'nl' ? h.nl : h.fr }}</span>
+              <span :class="h.closed ? 'text-red-400 font-medium' : 'text-gray-800 font-semibold'">
+                {{ h.closed ? t({ nl: 'Gesloten', fr: 'Fermé' }) : h.time }}
+              </span>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <a :href="`tel:${loc.phone}`" class="inline-flex items-center gap-2 text-orange-500 font-bold hover:text-orange-600 transition-colors text-sm">
+              📞 {{ loc.phoneDisplay }}
+            </a>
+            <span class="text-gray-200">|</span>
+            <a
+              :href="loc.mapsUrl || `https://maps.google.com/?q=${encodeURIComponent(loc.address)}`"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-gray-600 text-sm font-medium transition-colors"
+            >
+              {{ t({ nl: 'Route →', fr: 'Itinéraire →' }) }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation CTA -->
   <section class="relative overflow-hidden h-64 flex items-center">
     <img
       src="https://strapi.bellegemsfriethuisje.be/uploads/medium_20220417_105904_aad992e322.jpg"
@@ -223,14 +429,14 @@
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
           <h2 class="text-3xl font-extrabold text-white mb-2">
-            {{ t({ nl: 'Grote groep? Bel ons.', fr: 'Grand groupe? Appelez-nous.' }) }}
+            {{ t({ nl: 'Grote groep? Reserveer op voorhand.', fr: 'Grand groupe? Réservez à l\'avance.' }) }}
           </h2>
           <p class="text-orange-100">
-            {{ t({ nl: 'Reserveren vanaf 10 personen.', fr: 'Réservation à partir de 10 personnes.' }) }}
+            {{ t({ nl: 'Aanbevolen vanaf 10 personen, wij zorgen voor de rest.', fr: 'Recommandé à partir de 10 personnes, nous nous occupons du reste.' }) }}
           </p>
         </div>
-        <a href="tel:+3256000000" class="shrink-0 bg-white text-orange-500 font-bold px-7 py-3.5 rounded-xl hover:bg-orange-50 transition-colors text-lg">
-          📞 056 00 00 00
+        <a href="/reservaties" class="shrink-0 bg-white text-orange-500 font-bold px-7 py-3.5 rounded-xl hover:bg-orange-50 transition-colors text-lg whitespace-nowrap">
+          {{ t({ nl: 'Reserveer nu', fr: 'Réservez maintenant' }) }}
         </a>
       </div>
     </div>
@@ -253,4 +459,3 @@ const popularItems = computed(() =>
   bellegems.menu.filter(i => i.popular).slice(0, 3)
 )
 </script>
-

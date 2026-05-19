@@ -80,11 +80,17 @@
               <div class="p-6">
                 <!-- Title & location -->
                 <div class="flex items-start justify-between gap-3 mb-2">
-                  <h2
-                    class="text-2xl font-extrabold text-gray-900 leading-tight"
-                  >
-                    {{ name }}
-                  </h2>
+                  <div>
+                    <h2 class="text-2xl font-extrabold text-gray-900 leading-tight">
+                      {{ name }}
+                    </h2>
+                    <span
+                      v-if="item.childVersion"
+                      class="inline-flex items-center gap-1 mt-1.5 text-xs bg-blue-50 border border-blue-100 text-blue-700 font-semibold px-3 py-1 rounded-full"
+                    >
+                      👶 {{ t({ nl: 'Kinderportie beschikbaar', fr: 'Portion enfant disponible' }) }}
+                    </span>
+                  </div>
                   <span
                     v-if="locationName"
                     class="shrink-0 text-xs bg-gray-100 text-gray-500 font-semibold px-2.5 py-1 rounded-full mt-1"
@@ -95,10 +101,26 @@
 
                 <p
                   v-if="description"
-                  class="text-gray-500 text-sm leading-relaxed mb-6"
+                  class="text-gray-500 text-sm leading-relaxed mb-4"
                 >
                   {{ description }}
                 </p>
+
+                <!-- Sides -->
+                <div v-if="itemSides.length" class="mb-6">
+                  <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-3">
+                    {{ t({ nl: 'Bijgerecht naar keuze', fr: 'Accompagnement au choix' }) }}
+                  </h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      v-for="side in itemSides"
+                      :key="side.key"
+                      class="inline-flex items-center gap-1.5 bg-amber-50 border border-amber-100 text-amber-700 text-sm font-semibold px-3 py-1.5 rounded-full"
+                    >
+                      {{ side.emoji }} {{ side.label }}
+                    </span>
+                  </div>
+                </div>
 
                 <!-- Allergens -->
                 <div>
@@ -243,15 +265,29 @@ const description = computed(() =>
 
 const itemAllergens = computed(() => {
   if (!props.item) return [];
-  const ids: string[] =
-    (allergensData.items as Record<string, string[]>)[String(props.item.id)] ??
-    [];
+  const keys: string[] = props.item.allergens ?? [];
   const legend = allergensData._legend as Record<
     string,
     { emoji: string; nl: string; fr: string }
   >;
-  return ids.map((key) => ({ key, ...legend[key] })).filter((a) => a.emoji);
+  return keys.map((key) => ({ key, ...legend[key] })).filter((a) => a.emoji);
 });
+
+const SIDES_MAP: Record<string, { nl: string; fr: string; emoji: string }> = {
+  friet: { nl: 'Friet', fr: 'Frites', emoji: '🍟' },
+  puree: { nl: 'Puree', fr: 'Purée', emoji: '🥔' },
+  pasta: { nl: 'Pasta', fr: 'Pâtes', emoji: '🍝' },
+}
+
+const itemSides = computed(() => {
+  const sides = props.item?.sides as string[] | undefined
+  if (!sides?.length) return []
+  return sides.map(key => {
+    const s = SIDES_MAP[key]
+    if (!s) return null
+    return { key, emoji: s.emoji, label: lang.value === 'nl' ? s.nl : s.fr }
+  }).filter(Boolean) as { key: string; emoji: string; label: string }[]
+})
 
 const pairedItems = computed(() => {
   if (!props.item?.pairsWith?.length || !props.menu) return [];

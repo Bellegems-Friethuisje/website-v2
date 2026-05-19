@@ -1,9 +1,11 @@
 {
   "id": "bellegems",
+  "hidden": false,
   "name": "Bellegems Friethuisje",
   "address": "Doornikserijksweg 134, 8510 Bellegem",
   "phone": "+3256229995",
   "phoneDisplay": "056 22 99 95",
+  "mapsUrl": "https://www.google.com/maps/place/Bellegem's+Friethuisje/@50.7772452,3.3040134,211m/data=!3m1!1e3!4m6!3m5!1s0x47c3249f52517ed7:0x46006e35e77f11c9!8m2!3d50.7775904!4d3.3042113!16s%2Fg%2F1hc36r_kc?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D",
   "hours": [
     {
       "nl": "Maandag – Donderdag",
@@ -106,7 +108,8 @@
         "description": "Portion enfant de frites croustillantes"
       },
       "price": 2.1,
-      "image": "/menu/frietjes/kinder.png"
+      "image": "/menu/frietjes/kinder.png",
+      "allergens": []
     },
     {
       "id": 2,
@@ -121,18 +124,14 @@
         "description": "Petite portion de frites belges croustillantes"
       },
       "price": 2.6,
-      "pairsWith": [
-        60,
-        61,
-        62,
-        63,
-        64
-      ]
+      "pairsWith": [25, 26, 27, 28, 29],
+      "allergens": []
     },
     {
       "id": 3,
       "category": "friet",
       "image": "/menu/frietjes/middel.png",
+      "popular": true,
       "nl": {
         "name": "Middel friet",
         "description": "Middelgrote portie krokante frieten"
@@ -142,13 +141,8 @@
         "description": "Moyenne portion de frites croustillantes"
       },
       "price": 3.1,
-      "pairsWith": [
-        60,
-        61,
-        62,
-        63,
-        64
-      ]
+      "pairsWith": [25, 26, 27, 28, 29],
+      "allergens": []
     },
     {
       "id": 4,
@@ -163,22 +157,18 @@
         "description": "Frites belges croustillantes, grande portion"
       },
       "price": 3.6,
-      "pairsWith": [
-        60,
-        61,
-        62,
-        63,
-        64
-      ]
+      "pairsWith": [25, 26, 27, 28, 29],
+      "allergens": []
     },
     {
       "": "",
       "__COMMENT__": "Koude sauzen"
     },
     {
-      "id": 5,
+      "id": 25,
       "category": "saus",
       "emoji": "🫙",
+      "popular": true,
       "nl": {
         "name": "Mayonaise"
       },
@@ -186,10 +176,11 @@
         "name": "Mayonnaise"
       },
       "price": 1.2,
-      "image": "/menu/saus/mayo.png"
+      "image": "/menu/saus/mayo.png",
+      "allergens": ["eggs", "milk", "mustard", "soy"]
     },
     {
-      "id": 6,
+      "id": 26,
       "category": "saus",
       "emoji": "🍅",
       "nl": {
@@ -201,12 +192,14 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/ketchup.png"
+      "image": "/menu/saus/ketchup.png",
+      "allergens": ["mustard"]
     },
     {
-      "id": 7,
+      "id": 27,
       "category": "saus",
       "emoji": "🫙",
+      "popular": true,
       "nl": {
         "name": "Andalouse"
       },
@@ -214,10 +207,11 @@
         "name": "Andalouse"
       },
       "price": 1.2,
-      "image": "/menu/saus/andalouse.png"
+      "image": "/menu/saus/andalouse.png",
+      "allergens": ["eggs", "mustard"]
     },
     {
-      "id": 8,
+      "id": 28,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -227,10 +221,11 @@
         "name": "Cocktail"
       },
       "price": 1.2,
-      "image": "/menu/saus/coctail.png"
+      "image": "/menu/saus/coctail.png",
+      "allergens": ["eggs", "mustard"]
     },
     {
-      "id": 9,
+      "id": 29,
       "category": "saus",
       "emoji": "🌶️",
       "nl": {
@@ -240,10 +235,11 @@
         "name": "Samouraï"
       },
       "price": 1.2,
-      "image": "/menu/saus/samourai.png"
+      "image": "/menu/saus/samourai.png",
+      "allergens": ["eggs", "mustard"]
     },
     {
-      "id": 10,
+      "id": 30,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -255,10 +251,11 @@
         "description": ""
       },
       "price": 1.5,
-      "image": "/menu/saus/tartare.png"
+      "image": "/menu/saus/tartare.png",
+      "allergens": ["celery", "eggs", "mustard"]
     },
     {
-      "id": 11,
+      "id": 31,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -270,10 +267,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/americaine.png"
+      "image": "/menu/saus/americaine.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
-      "id": 12,
+      "id": 32,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -285,10 +283,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/joppie.png"
+      "image": "/menu/saus/joppie.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
-      "id": 13,
+      "id": 33,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -300,12 +299,14 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/brazil.png"
+      "image": "/menu/saus/brazil.png",
+      "allergens": ["eggs", "fish", "gluten", "mustard", "soy"]
     },
     {
-      "id": 14,
+      "id": 34,
       "category": "saus",
       "emoji": "🌶️",
+      "popular": true,
       "nl": {
         "name": "Hannibal"
       },
@@ -313,10 +314,11 @@
         "name": "Hannibal"
       },
       "price": 1.2,
-      "image": "/menu/saus/hannibal.png"
+      "image": "/menu/saus/hannibal.png",
+      "allergens": ["eggs", "gluten", "mustard", "soy"]
     },
     {
-      "id": 15,
+      "id": 35,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -328,10 +330,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/bbq.png"
+      "image": "/menu/saus/bbq.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
-      "id": 16,
+      "id": 36,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -343,10 +346,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/toscane.png"
+      "image": "/menu/saus/toscane.png",
+      "allergens": ["eggs", "mustard"]
     },
     {
-      "id": 17,
+      "id": 37,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -357,10 +361,11 @@
         "name": "Bearnaise froide",
         "description": ""
       },
-      "price": 1.5
+      "price": 1.5,
+      "allergens": ["eggs", "milk", "mustard"]
     },
     {
-      "id": 18,
+      "id": 38,
       "category": "saus",
       "emoji": "🌶️",
       "nl": {
@@ -372,10 +377,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/pepersaus.png"
+      "image": "/menu/saus/pepersaus.png",
+      "allergens": ["eggs", "gluten", "soy"]
     },
     {
-      "id": 19,
+      "id": 39,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -387,10 +393,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/mammoet.png"
+      "image": "/menu/saus/mammoet.png",
+      "allergens": ["eggs", "gluten", "mustard"]
     },
     {
-      "id": 20,
+      "id": 40,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -402,10 +409,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/loempia.png"
+      "image": "/menu/saus/loempia.png",
+      "allergens": ["soy"]
     },
     {
-      "id": 21,
+      "id": 41,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -417,10 +425,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/curryketchup.png"
+      "image": "/menu/saus/curryketchup.png",
+      "allergens": ["mustard"]
     },
     {
-      "id": 22,
+      "id": 42,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -432,10 +441,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/pickels.png"
+      "image": "/menu/saus/pickels.png",
+      "allergens": ["celery", "mustard"]
     },
     {
-      "id": 23,
+      "id": 43,
       "category": "saus",
       "emoji": "💛",
       "nl": {
@@ -447,10 +457,11 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/703229_azure_image1_0_5ef2375eed1f4c09bb40c11dc1a7a864.jpg"
+      "image": "/menu/703229_azure_image1_0_5ef2375eed1f4c09bb40c11dc1a7a864.jpg",
+      "allergens": ["gluten", "milk", "mustard", "sulphites"]
     },
     {
-      "id": 173,
+      "id": 44,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -460,10 +471,11 @@
         "name": "Bicky jaune"
       },
       "price": 1.2,
-      "image": "/menu/saus/gelebicky.png"
+      "image": "/menu/saus/gelebicky.png",
+      "allergens": ["eggs", "mustard"]
     },
     {
-      "id": 174,
+      "id": 45,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -473,10 +485,11 @@
         "name": "Bicky orange"
       },
       "price": 1.2,
-      "image": "/menu/saus/oranjebicky.png"
+      "image": "/menu/saus/oranjebicky.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
-      "id": 175,
+      "id": 46,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -486,10 +499,11 @@
         "name": "Curry jaune"
       },
       "price": 1.2,
-      "image": "/menu/saus/gelecurry.png"
+      "image": "/menu/saus/gelecurry.png",
+      "allergens": ["eggs", "mustard"]
     },
     {
-      "id": 176,
+      "id": 47,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -499,10 +513,11 @@
         "name": "Sauce spéciale"
       },
       "price": 1.6,
-      "image": "/menu/saus/specialesaus.png"
+      "image": "/menu/saus/specialesaus.png",
+      "allergens": []
     },
     {
-      "id": 177,
+      "id": 48,
       "category": "saus",
       "emoji": "🫙",
       "nl": {
@@ -512,16 +527,18 @@
         "name": "3 sauces"
       },
       "price": 1.6,
-      "image": "/menu/saus/3sauzen.png"
+      "image": "/menu/saus/3sauzen.png",
+      "allergens": []
     },
     {
       "": "",
       "__COMMENT__": "Warme sauzen"
     },
     {
-      "id": 79,
+      "id": 69,
       "category": "warme_saus",
       "emoji": "🫕",
+      "popular": true,
       "nl": {
         "name": "Pepersaus warm",
         "description": "Huisbereid"
@@ -531,10 +548,12 @@
         "description": "Maison"
       },
       "price": 3.5,
-      "image": "/menu/warme-saus/pepersaus.jpg"
+      "image": "/menu/warme-saus/pepersaus.jpg",
+      "allergens": ["gluten", "milk"],
+      "pairsWith": [196]
     },
     {
-      "id": 24,
+      "id": 70,
       "category": "warme_saus",
       "emoji": "🫕",
       "image": "/menu/warme-saus/bearnaise.jpg",
@@ -546,10 +565,12 @@
         "name": "Bearnaise chaude",
         "description": "Bearnaise chaude"
       },
-      "price": 3.5
+      "price": 3.5,
+      "allergens": ["eggs", "milk", "mustard"],
+      "pairsWith": [196]
     },
     {
-      "id": 25,
+      "id": 71,
       "category": "warme_saus",
       "emoji": "🍄",
       "image": "/menu/warme-saus/champsaus.png",
@@ -561,10 +582,12 @@
         "name": "Sauce champignon chaude",
         "description": "Sauce champignon crémeuse"
       },
-      "price": 3.5
+      "price": 3.5,
+      "allergens": ["gluten", "milk"],
+      "pairsWith": [196]
     },
     {
-      "id": 80,
+      "id": 72,
       "category": "warme_saus",
       "emoji": "🦐",
       "nl": {
@@ -576,10 +599,11 @@
         "description": ""
       },
       "price": 3,
-      "image": "/menu/warme-saus/scampisaus.png"
+      "image": "/menu/warme-saus/scampisaus.png",
+      "allergens": ["milk", "mustard"]
     },
     {
-      "id": 26,
+      "id": 73,
       "category": "warme_saus",
       "emoji": "🫙",
       "nl": {
@@ -591,10 +615,11 @@
         "description": ""
       },
       "price": 3,
-      "image": "/menu/warme-saus/witloofsaus.png"
+      "image": "/menu/warme-saus/witloofsaus.png",
+      "allergens": ["eggs", "gluten", "milk"]
     },
     {
-      "id": 81,
+      "id": 74,
       "category": "warme_saus",
       "emoji": "🍅",
       "nl": {
@@ -606,12 +631,14 @@
         "description": "Sauce tomate maison"
       },
       "price": 3.5,
-      "image": "/menu/warme-saus/tomatensaus.png"
+      "image": "/menu/warme-saus/tomatensaus.png",
+      "allergens": ["celery", "gluten", "milk", "mustard", "soy"]
     },
     {
-      "id": 65,
+      "id": 75,
       "category": "warme_saus",
       "emoji": "🥘",
+      "popular": true,
       "nl": {
         "name": "Stoofvleessaus",
         "description": "Rijke Belgische saus"
@@ -621,12 +648,14 @@
         "description": "Riche sauce belge"
       },
       "price": 2.4,
-      "image": "/menu/warme-saus/stoofvleessaus.png"
+      "image": "/menu/warme-saus/stoofvleessaus.png",
+      "allergens": ["celery", "gluten", "milk", "mustard", "soy", "sulphites"]
     },
     {
-      "id": 75,
+      "id": 76,
       "category": "warme_saus",
       "emoji": "🥘",
+      "popular": true,
       "nl": {
         "name": "Stoofvleessaus van het huis",
         "description": "Vlaamse stoofvleessaus van 't huis"
@@ -636,14 +665,15 @@
         "description": "Sauce carbonnade maison"
       },
       "price": 2.6,
-      "image": "/menu/warme-saus/stoofvleessaus.png"
+      "image": "/menu/warme-saus/stoofvleessaus.png",
+      "allergens": ["gluten", "milk", "mustard", "soy", "sulphites"]
     },
     {
       "": "",
       "__COMMENT__": "Burgers"
     },
     {
-      "id": 75,
+      "id": 97,
       "category": "burger",
       "emoji": "🍔",
       "popular": true,
@@ -656,12 +686,14 @@
         "description": "Notre burger maison avec de la laitue, des tomates et de la sauce cheddar"
       },
       "price": 6.5,
-      "image": "/menu/burgers/bellburger.png"
+      "image": "/menu/burgers/bellburger.png",
+      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
-      "id": 75,
+      "id": 98,
       "category": "burger",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Bicky natuur",
         "description": "Lekker broodje met een hamburgerschijf"
@@ -671,10 +703,11 @@
         "description": "Délicieux sandwich avec un hamburger"
       },
       "price": 3,
-      "image": "/menu/burgers/bickynatuur.png"
+      "image": "/menu/burgers/bickynatuur.png",
+      "allergens": ["gluten", "sesame"]
     },
     {
-      "id": 75,
+      "id": 99,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -686,10 +719,11 @@
         "description": "Le classique avec sauce au choix, oignon et cornichon"
       },
       "price": 4,
-      "image": "/menu/burgers/bicky.png"
+      "image": "/menu/burgers/bicky.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
-      "id": 75,
+      "id": 100,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -701,10 +735,11 @@
         "description": "Délicieux sandwich avec un hamburger et sauce au choix"
       },
       "price": 3.5,
-      "image": "/menu/burgers/bickyketchup.png"
+      "image": "/menu/burgers/bickyketchup.png",
+      "allergens": ["celery", "gluten", "mustard", "sesame", "soy"]
     },
     {
-      "id": 75,
+      "id": 101,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -716,10 +751,11 @@
         "description": "Délicieux sandwich avec un hamburger de poulet et sauce au choix"
       },
       "price": 4.3,
-      "image": "/menu/burgers/bickychicken.png"
+      "image": "/menu/burgers/bickychicken.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
-      "id": 75,
+      "id": 102,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -731,10 +767,19 @@
         "description": "Délicieux sandwich avec un hamburger et une tranche de fromage"
       },
       "price": 4.3,
-      "image": "/menu/burgers/bickycheese.png"
+      "image": "/menu/burgers/bickycheese.png",
+      "allergens": [
+        "celery",
+        "eggs",
+        "gluten",
+        "milk",
+        "mustard",
+        "sesame",
+        "soy"
+      ]
     },
     {
-      "id": 75,
+      "id": 103,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -746,10 +791,11 @@
         "description": "Un bickyburger avec un mexicano"
       },
       "price": 4.5,
-      "image": "/menu/burgers/bickeyrib.png"
+      "image": "/menu/burgers/bickeyrib.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
-      "id": 75,
+      "id": 104,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -761,10 +807,11 @@
         "description": "Un burger de cabillaud avec sauce tartare et salade"
       },
       "price": 4.5,
-      "image": "/menu/burgers/bickyfish.png"
+      "image": "/menu/burgers/bickyfish.png",
+      "allergens": ["celery", "eggs", "fish", "gluten", "mustard", "sesame"]
     },
     {
-      "id": 75,
+      "id": 105,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -776,10 +823,11 @@
         "description": "Le célèbre bicky avec une touche croustillante"
       },
       "price": 4.2,
-      "image": "/menu/burgers/bickycrispy.png"
+      "image": "/menu/burgers/bickycrispy.png",
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
-      "id": 75,
+      "id": 106,
       "category": "burger",
       "emoji": "🍔",
       "nl": {
@@ -791,16 +839,26 @@
         "description": "Notre variante végétarienne du bickyburger"
       },
       "price": 3.8,
-      "image": "/menu/burgers/veggieburger.png"
+      "image": "/menu/burgers/veggieburger.png",
+      "allergens": [
+        "celery",
+        "eggs",
+        "gluten",
+        "milk",
+        "mustard",
+        "sesame",
+        "soy"
+      ]
     },
     {
       "": "",
       "__COMMENT__": "Snacks"
     },
     {
-      "id": 178,
+      "id": 127,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Frikandel"
       },
@@ -808,10 +866,11 @@
         "name": "Fricadelle"
       },
       "price": 1.8,
-      "image": "/menu/snacks/frikandel.png"
+      "image": "/menu/snacks/frikandel.png",
+      "allergens": ["gluten", "soy"]
     },
     {
-      "id": 179,
+      "id": 128,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -821,10 +880,11 @@
         "name": "Fricadelle spéciale"
       },
       "price": 2.8,
-      "image": "/menu/snacks/frikandelspeciaal.png"
+      "image": "/menu/snacks/frikandelspeciaal.png",
+      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
-      "id": 180,
+      "id": 129,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -834,10 +894,11 @@
         "name": "Hamburgerschijf"
       },
       "price": 2.4,
-      "image": "/menu/snacks/hamburgerschijf.png"
+      "image": "/menu/snacks/hamburgerschijf.png",
+      "allergens": ["celery", "gluten", "soy"]
     },
     {
-      "id": 181,
+      "id": 130,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -847,12 +908,14 @@
         "name": "Saté ardennais"
       },
       "price": 3.6,
-      "image": "/menu/snacks/ardeense.png"
+      "image": "/menu/snacks/ardeense.png",
+      "allergens": ["celery", "gluten"]
     },
     {
-      "id": 182,
+      "id": 131,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Vleesbrochette"
       },
@@ -860,10 +923,11 @@
         "name": "Brochette de viande"
       },
       "price": 3.8,
-      "image": "/menu/snacks/vleesbrochette.png"
+      "image": "/menu/snacks/vleesbrochette.png",
+      "allergens": ["mustard"]
     },
     {
-      "id": 183,
+      "id": 132,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -873,10 +937,11 @@
         "name": "Bâtonnets de mozzarella"
       },
       "price": 3.5,
-      "image": "/menu/snacks/mozarellasticks.png"
+      "image": "/menu/snacks/mozarellasticks.png",
+      "allergens": ["gluten", "milk"]
     },
     {
-      "id": 184,
+      "id": 133,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -886,10 +951,11 @@
         "name": "Zigeunerstick"
       },
       "price": 3.5,
-      "image": "/menu/snacks/zigeunerstick.png"
+      "image": "/menu/snacks/zigeunerstick.png",
+      "allergens": ["gluten", "soy"]
     },
     {
-      "id": 185,
+      "id": 134,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -899,10 +965,11 @@
         "name": "Saté merguez"
       },
       "price": 3.5,
-      "image": "/menu/snacks/mergueze.png"
+      "image": "/menu/snacks/mergueze.png",
+      "allergens": ["soy"]
     },
     {
-      "id": 186,
+      "id": 135,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -912,10 +979,12 @@
         "name": "Viandel épicé"
       },
       "price": 2.6,
-      "image": "/menu/snacks/spicyviandel.png"
+      "image": "/menu/snacks/spicyviandel.png",
+      "allergens": ["celery", "gluten", "milk", "soy"],
+      "pairsWith": [29, 31, 34]
     },
     {
-      "id": 187,
+      "id": 136,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -925,10 +994,11 @@
         "name": "Brochette de poisson"
       },
       "price": 3.9,
-      "image": "/menu/snacks/visbrochette.png"
+      "image": "/menu/snacks/visbrochette.png",
+      "allergens": ["celery", "fish", "gluten", "milk", "soy"]
     },
     {
-      "id": 188,
+      "id": 137,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -938,10 +1008,11 @@
         "name": "Soufflé au fromage"
       },
       "price": 3.1,
-      "image": "/menu/snacks/kaassouffle.png"
+      "image": "/menu/snacks/kaassouffle.png",
+      "allergens": ["gluten", "milk"]
     },
     {
-      "id": 189,
+      "id": 138,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -951,10 +1022,11 @@
         "name": "Mini lucifers"
       },
       "price": 3.7,
-      "image": "/menu/snacks/minilucifers.png"
+      "image": "/menu/snacks/minilucifers.png",
+      "allergens": ["celery", "gluten", "milk", "soy"]
     },
     {
-      "id": 190,
+      "id": 139,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -964,10 +1036,11 @@
         "name": "Mini-megamix"
       },
       "price": 3.8,
-      "image": "/menu/snacks/minimegamix.png"
+      "image": "/menu/snacks/minimegamix.png",
+      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
-      "id": 191,
+      "id": 140,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -977,10 +1050,11 @@
         "name": "Crizly épicé"
       },
       "price": 4.3,
-      "image": "/menu/snacks/crizzly.png"
+      "image": "/menu/snacks/crizzly.png",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 192,
+      "id": 141,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -990,12 +1064,14 @@
         "name": "Poulycroc"
       },
       "price": 4.7,
-      "image": "/menu/snacks/kipcorn.png"
+      "image": "/menu/snacks/kipcorn.png",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 192,
+      "id": 142,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Kippenboutjes"
       },
@@ -1003,10 +1079,11 @@
         "name": "Pilons de poulet"
       },
       "price": 4.7,
-      "image": "/menu/snacks/kippenboutjes.png"
+      "image": "/menu/snacks/kippenboutjes.png",
+      "allergens": []
     },
     {
-      "id": 193,
+      "id": 143,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1015,13 +1092,15 @@
       "fr": {
         "name": "Stick de dinde"
       },
-      "price": 4.0,
-      "image": "/menu/snacks/kalkoenstick.png"
+      "price": 4,
+      "image": "/menu/snacks/kalkoenstick.png",
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
     {
-      "id": 194,
+      "id": 144,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Viandel"
       },
@@ -1029,10 +1108,11 @@
         "name": "Viandel"
       },
       "price": 2.6,
-      "image": "/menu/snacks/viandel.png"
+      "image": "/menu/snacks/viandel.png",
+      "allergens": ["celery", "gluten", "milk", "soy"]
     },
     {
-      "id": 195,
+      "id": 145,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1042,10 +1122,11 @@
         "name": "Viandel spécial"
       },
       "price": 3.6,
-      "image": "/menu/snacks/viandelspeciaal.png"
+      "image": "/menu/snacks/viandelspeciaal.png",
+      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
-      "id": 196,
+      "id": 146,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1055,10 +1136,11 @@
         "name": "Mexicano"
       },
       "price": 3.2,
-      "image": "/menu/snacks/mexicano.png"
+      "image": "/menu/snacks/mexicano.png",
+      "allergens": ["gluten", "soy"]
     },
     {
-      "id": 197,
+      "id": 147,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1068,12 +1150,14 @@
         "name": "Croquette de viande"
       },
       "price": 3.7,
-      "image": "/menu/snacks/vleeskroket.png"
+      "image": "/menu/snacks/vleeskroket.png",
+      "allergens": ["gluten", "soy"]
     },
     {
-      "id": 198,
+      "id": 148,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Boulet"
       },
@@ -1081,10 +1165,11 @@
         "name": "Boulet"
       },
       "price": 2.5,
-      "image": "/menu/snacks/boulet.png"
+      "image": "/menu/snacks/boulet.png",
+      "allergens": ["gluten"]
     },
     {
-      "id": 199,
+      "id": 149,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1094,12 +1179,14 @@
         "name": "Boulet spécial"
       },
       "price": 3.5,
-      "image": "/menu/snacks/bouletspeciaal.png"
+      "image": "/menu/snacks/bouletspeciaal.png",
+      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
-      "id": 200,
+      "id": 150,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Kipfingers"
       },
@@ -1107,10 +1194,11 @@
         "name": "Doigts de poulet"
       },
       "price": 3.9,
-      "image": "/menu/snacks/kipfingers.png"
+      "image": "/menu/snacks/kipfingers.png",
+      "allergens": ["gluten", "soy"]
     },
     {
-      "id": 201,
+      "id": 151,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1120,10 +1208,11 @@
         "name": "Kippets"
       },
       "price": 3.7,
-      "image": "/menu/snacks/kipnuggets.png"
+      "image": "/menu/snacks/kipnuggets.png",
+      "allergens": ["celery", "eggs", "gluten", "sulphites"]
     },
     {
-      "id": 202,
+      "id": 152,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1133,10 +1222,11 @@
         "name": "Taco"
       },
       "price": 4.1,
-      "image": "/menu/snacks/taco.png"
+      "image": "/menu/snacks/taco.png",
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
     {
-      "id": 203,
+      "id": 153,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1146,10 +1236,11 @@
         "name": "Bitterballen"
       },
       "price": 3.2,
-      "image": "/menu/snacks/bitterballen.png"
+      "image": "/menu/snacks/bitterballen.png",
+      "allergens": ["gluten", "soy"]
     },
     {
-      "id": 204,
+      "id": 154,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1159,10 +1250,11 @@
         "name": "Ribster"
       },
       "price": 3.4,
-      "image": "/menu/snacks/ribster.png"
+      "image": "/menu/snacks/ribster.png",
+      "allergens": ["celery", "gluten", "soy"]
     },
     {
-      "id": 205,
+      "id": 155,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1172,10 +1264,11 @@
         "name": "Mammouth"
       },
       "price": 2.9,
-      "image": "/menu/snacks/mammoet.png"
+      "image": "/menu/snacks/mammoet.png",
+      "allergens": ["eggs", "gluten", "mustard", "soy"]
     },
     {
-      "id": 206,
+      "id": 156,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1185,10 +1278,11 @@
         "name": "Mini nems"
       },
       "price": 3.8,
-      "image": "/menu/snacks/miniloempias.png"
+      "image": "/menu/snacks/miniloempias.png",
+      "allergens": ["celery", "eggs", "gluten", "soy"]
     },
     {
-      "id": 207,
+      "id": 157,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1198,10 +1292,11 @@
         "name": "Nem"
       },
       "price": 4.5,
-      "image": "/menu/snacks/loempia.png"
+      "image": "/menu/snacks/loempia.png",
+      "allergens": ["gluten", "peanuts", "sesame", "soy"]
     },
     {
-      "id": 208,
+      "id": 158,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1210,11 +1305,12 @@
       "fr": {
         "name": "Cheese crack"
       },
-      "price": 3.0,
-      "image": "/menu/snacks/cheesecrack.png"
+      "price": 3,
+      "image": "/menu/snacks/cheesecrack.png",
+      "allergens": ["gluten", "lupin", "milk"]
     },
     {
-      "id": 209,
+      "id": 159,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1224,10 +1320,11 @@
         "name": "Croquette aux crevettes"
       },
       "price": 4.8,
-      "image": "/menu/snacks/garnaalkroket.png"
+      "image": "/menu/snacks/garnaalkroket.png",
+      "allergens": ["crustaceans", "eggs", "fish", "gluten", "milk", "soy"]
     },
     {
-      "id": 210,
+      "id": 160,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1237,10 +1334,11 @@
         "name": "Saucisse à l'ail"
       },
       "price": 3.5,
-      "image": "/menu/snacks/lookworst.png"
+      "image": "/menu/snacks/lookworst.png",
+      "allergens": ["eggs", "gluten", "milk", "soy"]
     },
     {
-      "id": 211,
+      "id": 161,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1250,10 +1348,11 @@
         "name": "Bockwurst"
       },
       "price": 3.5,
-      "image": "/menu/snacks/bockworst.png"
+      "image": "/menu/snacks/bockworst.png",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 212,
+      "id": 162,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1263,10 +1362,11 @@
         "name": "Donut poulet-fromage"
       },
       "price": 2.9,
-      "image": "/menu/snacks/kipkaasdonut.png"
+      "image": "/menu/snacks/kipkaasdonut.png",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 213,
+      "id": 163,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1276,10 +1376,11 @@
         "name": "Boulettes bami"
       },
       "price": 3.4,
-      "image": "/menu/snacks/bamiballetjes.png"
+      "image": "/menu/snacks/bamiballetjes.png",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 214,
+      "id": 164,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1289,10 +1390,11 @@
         "name": "Saucisse du chasseur"
       },
       "price": 3.8,
-      "image": "/menu/snacks/jagerworst.jpg"
+      "image": "/menu/snacks/jagerworst.jpg",
+      "allergens": ["celery", "eggs", "gluten", "milk", "sesame", "soy"]
     },
     {
-      "id": 215,
+      "id": 165,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1302,12 +1404,14 @@
         "name": "Boulettes de fromage"
       },
       "price": 3.2,
-      "image": "/menu/snacks/kaasballetjes.jpg"
+      "image": "/menu/snacks/kaasballetjes.jpg",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 216,
+      "id": 166,
       "category": "snack",
       "emoji": "🍔",
+      "popular": true,
       "nl": {
         "name": "Kalkoenbrochette v/h huis"
       },
@@ -1315,10 +1419,11 @@
         "name": "Brochette de dinde maison"
       },
       "price": 4.2,
-      "image": "/menu/snacks/kalkoenborchette-huis.jpg"
+      "image": "/menu/snacks/kalkoenborchette-huis.jpg",
+      "allergens": []
     },
     {
-      "id": 217,
+      "id": 167,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1328,10 +1433,11 @@
         "name": "Brochette de scampi"
       },
       "price": 5.9,
-      "image": "/menu/snacks/scampibrochette.jpg"
+      "image": "/menu/snacks/scampibrochette.jpg",
+      "allergens": ["crustaceans"]
     },
     {
-      "id": 218,
+      "id": 168,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1341,10 +1447,11 @@
         "name": "Vuurvreter"
       },
       "price": 3.4,
-      "image": "/menu/snacks/vuurvreter.jpg"
+      "image": "/menu/snacks/vuurvreter.jpg",
+      "allergens": ["gluten"]
     },
     {
-      "id": 219,
+      "id": 169,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1354,10 +1461,11 @@
         "name": "Dynamite"
       },
       "price": 3.4,
-      "image": "/menu/snacks/dynamite.png"
+      "image": "/menu/snacks/dynamite.png",
+      "allergens": ["gluten", "milk", "soy"]
     },
     {
-      "id": 220,
+      "id": 170,
       "category": "snack",
       "emoji": "🍔",
       "nl": {
@@ -1367,7 +1475,1055 @@
         "name": "Brochette de poulet artisanale"
       },
       "price": 3.8,
-      "image": "/menu/snacks/artisanalekipbrochette.png"
+      "image": "/menu/snacks/artisanalekipbrochette.png",
+      "allergens": []
+    },
+    {
+      "": "",
+      "__COMMENT__": "Huisbereide gerechten"
+    },
+    {
+      "id": 191,
+      "category": "maaltijd",
+      "emoji": "🥘",
+      "popular": true,
+      "nl": {
+        "name": "Stoofvlees",
+        "description": "Een van onze klassiekers, langzaam gegaard in donker bier."
+      },
+      "fr": {
+        "name": "Carbonnades flamandes",
+        "description": "Un de nos classiques, mijoté dans la bière brune."
+      },
+      "price": 16,
+      "image": "/menu/plats/toofvlees.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": true,
+      "allergens": ["gluten", "milk", "mustard", "soy", "sulphites"],
+      "pairsWith": [25]
+    },
+    {
+      "id": 192,
+      "category": "maaltijd",
+      "emoji": "🍗",
+      "nl": {
+        "name": "Vol-au-vent",
+        "description": "Romige kippenkroketten in een heerlijke roomsaus."
+      },
+      "fr": {
+        "name": "Vol-au-vent",
+        "description": "Croquettes de poulet crémeuses en sauce blanche."
+      },
+      "price": 14,
+      "image": "/menu/plats/volauvent.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": true,
+      "allergens": ["eggs", "gluten", "milk"]
+    },
+    {
+      "id": 193,
+      "category": "maaltijd",
+      "emoji": "🍖",
+      "popular": true,
+      "nl": {
+        "name": "Balletjes in tomatensaus",
+        "description": "Huisbereide gehaktballetjes in rijke tomatensaus."
+      },
+      "fr": {
+        "name": "Boulettes sauce tomates",
+        "description": "Boulettes maison en sauce tomate généreuse."
+      },
+      "price": 14,
+      "image": "/menu/plats/balletjes.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": true,
+      "allergens": ["celery", "gluten", "milk", "mustard", "soy"],
+      "pairsWith": [25]
+    },
+    {
+      "id": 194,
+      "category": "maaltijd",
+      "emoji": "🥬",
+      "nl": {
+        "name": "Witloof met ham",
+        "description": "Gegratineerd witloof omwikkeld met ham."
+      },
+      "fr": {
+        "name": "Chicons au gratin",
+        "description": "Chicons gratinés enveloppés de jambon."
+      },
+      "price": 15.2,
+      "image": "/menu/plats/witloof.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["eggs", "gluten", "milk"]
+    },
+    {
+      "id": 195,
+      "category": "maaltijd",
+      "emoji": "🍗",
+      "nl": {
+        "name": "Half haantje",
+        "description": "Sappig gegrild half haantje."
+      },
+      "fr": {
+        "name": "Demi-poulet",
+        "description": "Demi-poulet grillé juteux."
+      },
+      "price": 14.7,
+      "image": "/menu/plats/halfhaantje.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["milk", "mustard"]
+    },
+    {
+      "id": 196,
+      "category": "maaltijd",
+      "emoji": "🥩",
+      "popular": true,
+      "nl": {
+        "name": "Rundsbrochette",
+        "description": "Malse rundsbrochette van het huis."
+      },
+      "fr": {
+        "name": "Brochette de boeuf",
+        "description": "Brochette de boeuf tendre maison."
+      },
+      "price": 19.7,
+      "image": "/menu/plats/rundbrochette.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["celery"],
+      "pairsWith": [69, 70, 71, 25]
+    },
+    {
+      "id": 197,
+      "category": "maaltijd",
+      "emoji": "🐟",
+      "nl": {
+        "name": "Vispannetje",
+        "description": "Romig pannetje met verse vis en zeevruchten."
+      },
+      "fr": {
+        "name": "Cassolette de poissons",
+        "description": "Cassolette crémeuse de poissons et fruits de mer."
+      },
+      "price": 19.5,
+      "image": "/menu/plats/vispannetje.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["celery", "crustaceans", "fish", "gluten", "milk"]
+    },
+    {
+      "id": 198,
+      "category": "maaltijd",
+      "emoji": "🦐",
+      "popular": true,
+      "nl": {
+        "name": "Scampi met zoete roomsaus",
+        "description": "Scampi's in een zachte, romige saus."
+      },
+      "fr": {
+        "name": "Scampis à la crème",
+        "description": "Scampis en sauce crème douce."
+      },
+      "price": 16.5,
+      "image": "/menu/plats/scampicreme.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["crustaceans", "milk", "mustard"]
+    },
+    {
+      "id": 199,
+      "category": "maaltijd",
+      "emoji": "🦐",
+      "nl": {
+        "name": "Scampi diabolique",
+        "description": "Scampi's in pikante diaboliquesaus."
+      },
+      "fr": {
+        "name": "Scampis diabolique",
+        "description": "Scampis en sauce diabolique épicée."
+      },
+      "price": 16.5,
+      "image": "/menu/plats/scampidiabolique.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["crustaceans", "gluten", "milk"]
+    },
+    {
+      "id": 200,
+      "category": "maaltijd",
+      "emoji": "🦐",
+      "nl": {
+        "name": "Scampi curry",
+        "description": "Scampi's in aromatische currysaus."
+      },
+      "fr": {
+        "name": "Scampis au curry",
+        "description": "Scampis en sauce curry aromatique."
+      },
+      "price": 16.5,
+      "image": "/menu/plats/scampicurry.png",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": false,
+      "allergens": ["crustaceans", "gluten", "milk", "mustard", "sulphites"]
+    },
+    {
+      "id": 201,
+      "category": "maaltijd",
+      "emoji": "🍳",
+      "nl": {
+        "name": "Omelet",
+        "description": "Luchtige omelet naar keuze."
+      },
+      "fr": {
+        "name": "Omelette",
+        "description": "Omelette légère au choix."
+      },
+      "price": 12.5,
+      "image": "/menu/plats/omelet.jpg",
+      "sides": ["friet", "puree", "pasta"],
+      "childVersion": true,
+      "allergens": ["eggs", "milk"]
+    },
+    {
+      "id": 202,
+      "category": "maaltijd",
+      "emoji": "🥩",
+      "popular": true,
+      "nl": {
+        "name": "Americain Préparé",
+        "description": "Verse bereide americain met klassieke garnituur."
+      },
+      "fr": {
+        "name": "Américain préparé",
+        "description": "Américain frais préparé avec garnitures classiques."
+      },
+      "price": 16,
+      "image": "/menu/plats/prepare.jpg",
+      "childVersion": true,
+      "allergens": ["eggs", "mustard"],
+      "pairsWith": [25]
+    },
+    {
+      "id": 203,
+      "category": "maaltijd",
+      "emoji": "🥩",
+      "nl": {
+        "name": "Steak tartare",
+        "description": "Klassiek bereide steak tartare van rundsvlees."
+      },
+      "fr": {
+        "name": "Steak tartare de bœuf",
+        "description": "Steak tartare de bœuf préparé à la classique."
+      },
+      "price": 15.5,
+      "image": "/menu/plats/steaktartare.jpg",
+      "childVersion": true,
+      "allergens": ["eggs", "mustard"]
+    },
+    {
+      "id": 204,
+      "category": "maaltijd",
+      "emoji": "🍖",
+      "nl": {
+        "name": "Boerenpaté",
+        "description": "Ambachtelijke boerenpaté van eigen bereiding."
+      },
+      "fr": {
+        "name": "Pâté fermier",
+        "description": "Pâté fermier artisanal de notre préparation."
+      },
+      "price": 14,
+      "image": "/menu/plats/boerenpate.jpg",
+      "childVersion": true,
+      "allergens": ["eggs", "milk", "mustard", "sulphites"]
+    },
+    {
+      "id": 205,
+      "category": "maaltijd",
+      "emoji": "🍽️",
+      "nl": {
+        "name": "Koude schotel",
+        "description": "Koude vleeswaren met garnituur."
+      },
+      "fr": {
+        "name": "Charcuterie froide",
+        "description": "Charcuterie froide avec garnitures."
+      },
+      "price": 14.5,
+      "image": "/menu/plats/koudeschotel.jpg",
+      "childVersion": false,
+      "allergens": [
+        "celery",
+        "eggs",
+        "gluten",
+        "milk",
+        "mustard",
+        "soy",
+        "sulphites"
+      ]
+    },
+    {
+      "id": 206,
+      "category": "maaltijd",
+      "emoji": "🍅",
+      "nl": {
+        "name": "Tomaat garnaal",
+        "description": "Verse tomaat gevuld met Noordzee garnalen."
+      },
+      "fr": {
+        "name": "Tomate aux crevettes",
+        "description": "Tomate fraîche garnie de crevettes de la Mer du Nord."
+      },
+      "price": 23,
+      "image": "/menu/plats/tomaatgarnaal.jpg",
+      "childVersion": true,
+      "allergens": ["crustaceans", "eggs", "gluten", "milk", "soy"],
+      "pairsWith": [25, 28]
+    },
+    {
+      "id": 207,
+      "category": "maaltijd",
+      "emoji": "🍅",
+      "nl": {
+        "name": "Tomaat tonijn",
+        "description": "Verse tomaat gevuld met tonijnsalade."
+      },
+      "fr": {
+        "name": "Tomate au thon",
+        "description": "Tomate fraîche garnie de salade de thon."
+      },
+      "price": 14.2,
+      "image": "/menu/plats/tomaattonijn.jpg",
+      "childVersion": true,
+      "allergens": ["eggs", "fish", "milk", "mustard", "soy"]
+    },
+    {
+      "id": 208,
+      "category": "maaltijd",
+      "emoji": "🍑",
+      "popular": true,
+      "nl": {
+        "name": "Tonijn perzik",
+        "description": "Tonijnsalade geserveerd met perzik."
+      },
+      "fr": {
+        "name": "Thon aux pêches",
+        "description": "Salade de thon accompagnée de pêches."
+      },
+      "price": 14.2,
+      "image": "/menu/plats/tonijnperzik.jpg",
+      "childVersion": true,
+      "allergens": ["eggs", "fish", "milk", "mustard", "soy"]
+    },
+    {
+      "id": 209,
+      "category": "maaltijd",
+      "emoji": "🍝",
+      "popular": true,
+      "nl": {
+        "name": "Spaghetti bolognaise",
+        "description": "Huisbereide spaghetti met vleessaus."
+      },
+      "fr": {
+        "name": "Spaghetti bolognaise",
+        "description": "Spaghetti bolognaise maison."
+      },
+      "price": 12,
+      "image": "/menu/plats/spaghetti.jpg",
+      "childVersion": true,
+      "allergens": ["celery", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 210,
+      "category": "maaltijd",
+      "emoji": "🍝",
+      "nl": {
+        "name": "Tagliatelli carbonara",
+        "description": "Huisbereide tagliatelli met romige carbonarasaus."
+      },
+      "fr": {
+        "name": "Tagliatelli carbonara",
+        "description": "Tagliatelli maison à la sauce carbonara crémeuse."
+      },
+      "price": 13,
+      "image": "/menu/plats/tagliatellecarbonara.jpg",
+      "childVersion": true,
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 211,
+      "category": "maaltijd",
+      "emoji": "🍝",
+      "nl": {
+        "name": "Macaroni",
+        "description": "Huisbereide macaroni met vleessaus en kaas."
+      },
+      "fr": {
+        "name": "Macaroni",
+        "description": "Macaroni maison à la sauce viande et fromage."
+      },
+      "price": 12,
+      "image": "/menu/plats/macaroni.jpg",
+      "childVersion": true,
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 212,
+      "category": "maaltijd",
+      "emoji": "🫕",
+      "nl": {
+        "name": "Lasagne",
+        "description": "Laagjes pasta met vleessaus en bechamelsaus."
+      },
+      "fr": {
+        "name": "Lasagne",
+        "description": "Couches de pâtes à la sauce viande et béchamel."
+      },
+      "price": 12.5,
+      "image": "/menu/plats/lasagne.jpg",
+      "childVersion": false,
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 213,
+      "category": "maaltijd",
+      "emoji": "🥪",
+      "nl": {
+        "name": "Croque monsieur",
+        "description": "Gegrilde broodje met ham en gesmolten kaas."
+      },
+      "fr": {
+        "name": "Croque monsieur",
+        "description": "Sandwich grillé au jambon et fromage fondu."
+      },
+      "price": 9.5,
+      "image": "/menu/plats/croque.jpg",
+      "childVersion": false,
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 214,
+      "category": "maaltijd",
+      "emoji": "🥪",
+      "image": "/menu/plats/croqueboem.jpg",
+      "nl": {
+        "name": "Croque Boem Boem",
+        "description": "Onze speciale croque met extra beleg."
+      },
+      "fr": {
+        "name": "Croque Boem Boem",
+        "description": "Notre croque spécial avec garnitures supplémentaires."
+      },
+      "price": 11.5,
+      "childVersion": false,
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 215,
+      "category": "maaltijd",
+      "emoji": "🥪",
+      "image": "/menu/plats/croquehawai.jpg",
+      "nl": {
+        "name": "Croque hawaï",
+        "description": "Croque monsieur met ananas."
+      },
+      "fr": {
+        "name": "Croque hawaï",
+        "description": "Croque monsieur à l'ananas."
+      },
+      "price": 11,
+      "childVersion": false,
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "": "",
+      "__COMMENT__": "Salades"
+    },
+    {
+      "id": 236,
+      "category": "salade",
+      "emoji": "🥗",
+      "nl": {
+        "name": "Salade Caesar",
+        "description": "Krokante sla, kipfilet, croutons en Caesardressing."
+      },
+      "fr": {
+        "name": "Salade César",
+        "description": "Salade croustillante, filet de poulet, croûtons et sauce César."
+      },
+      "price": 13.7,
+      "image": "/menu/salades/caesar.jpg",
+      "allergens": ["eggs", "gluten", "milk", "mustard"]
+    },
+    {
+      "id": 237,
+      "category": "salade",
+      "emoji": "🥗",
+      "nl": {
+        "name": "Salade rauwkost",
+        "description": "Frisse gemengde groentesalade."
+      },
+      "fr": {
+        "name": "Salade de crudités",
+        "description": "Salade fraîche de légumes mélangés."
+      },
+      "price": 5.5,
+      "image": "/menu/salades/rauwkost.jpg",
+      "allergens": ["eggs", "mustard", "sulphites"]
+    },
+    {
+      "id": 238,
+      "category": "salade",
+      "emoji": "🦐",
+      "nl": {
+        "name": "Salade scampi",
+        "description": "Frisse salade met geroerbakte scampi's."
+      },
+      "fr": {
+        "name": "Salade scampis",
+        "description": "Salade fraîche avec scampis sautés."
+      },
+      "price": 14.5,
+      "image": "/menu/salades/scampi.jpg",
+      "allergens": [
+        "celery",
+        "crustaceans",
+        "eggs",
+        "gluten",
+        "soy",
+        "sulphites"
+      ]
+    },
+    {
+      "id": 239,
+      "category": "salade",
+      "emoji": "🥗",
+      "nl": {
+        "name": "Salade noordzee",
+        "description": "Salade met verse Noordzee garnalen."
+      },
+      "fr": {
+        "name": "Salade Mer du Nord",
+        "description": "Salade avec crevettes fraîches de la Mer du Nord."
+      },
+      "price": 16,
+      "image": "/menu/salades/noordzee.jpg",
+      "allergens": [
+        "crustaceans",
+        "eggs",
+        "fish",
+        "gluten",
+        "milk",
+        "mustard",
+        "soy"
+      ]
+    },
+    {
+      "id": 240,
+      "category": "salade",
+      "emoji": "🧀",
+      "nl": {
+        "name": "Salade geitenkaas",
+        "description": "Frisse salade met warme, door spek omwikkelde geitenkaasjes."
+      },
+      "fr": {
+        "name": "Salade fromage de chèvre",
+        "description": "Salade fraîche avec de fromage de chèvre chaudes enveloppées de bacon."
+      },
+      "price": 13.1,
+      "image": "/menu/salades/geitenkaas.jpg",
+      "allergens": ["gluten", "milk"]
+    },
+    {
+      "id": 241,
+      "category": "salade",
+      "emoji": "🥗",
+      "nl": {
+        "name": "Salade Niçoise",
+        "description": "Klassieke Niçoise met tonijn, olijven en hardgekookt ei."
+      },
+      "fr": {
+        "name": "Salade Niçoise",
+        "description": "Classique niçoise avec thon, olives et œuf dur."
+      },
+      "price": 13.7,
+      "image": "/menu/salades/nicoise.jpg",
+      "allergens": ["eggs", "fish"]
+    },
+    {
+      "id": 242,
+      "category": "salade",
+      "emoji": "🥗",
+      "nl": {
+        "name": "Salade Kaaskroketten",
+        "description": "Schoteltje kaaskroketten geserveerd op een bedje van frisse sla."
+      },
+      "fr": {
+        "name": "Salade Croquettes de Fromage",
+        "description": "Assiette de croquettes de fromage servie sur un lit de salade fraîche."
+      },
+      "price": 13.6,
+      "image": "/menu/salades/geitenkaas.jpg",
+      "allergens": ["eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "id": 243,
+      "category": "salade",
+      "emoji": "🥗",
+      "nl": {
+        "name": "Salade Garnaalkroketten",
+        "description": "Schoteltje garnaalkroketten geserveerd op een bedje van frisse sla."
+      },
+      "fr": {
+        "name": "Salade Croquettes de Crevettes",
+        "description": "Assiette de croquettes de crevettes servie sur un lit de salade fraîche."
+      },
+      "price": 17.2,
+      "image": "/menu/salades/garnaalkroketten.jpg",
+      "allergens": ["celery", "crustaceans", "eggs", "gluten", "milk", "soy"]
+    },
+    {
+      "": "",
+      "__COMMENT__": "Dranken"
+    },
+    {
+      "": "",
+      "__COMMENT__": "Frisdranken"
+    },
+    {
+      "id": 264,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Coca-Cola"
+      },
+      "fr": {
+        "name": "Coca-Cola"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/coca cola.png",
+      "allergens": []
+    },
+    {
+      "id": 265,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Coca-Cola Zero"
+      },
+      "fr": {
+        "name": "Coca-Cola Zero"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/colazero.png",
+      "allergens": []
+    },
+    {
+      "id": 266,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Fanta"
+      },
+      "fr": {
+        "name": "Fanta"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/fanta.png",
+      "allergens": []
+    },
+    {
+      "id": 267,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Fanta Lemon"
+      },
+      "fr": {
+        "name": "Fanta Citron"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/fantalemon.png",
+      "allergens": []
+    },
+    {
+      "id": 268,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Sprite"
+      },
+      "fr": {
+        "name": "Sprite"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/sprite.png",
+      "allergens": []
+    },
+    {
+      "id": 269,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Ice Tea"
+      },
+      "fr": {
+        "name": "Ice Tea"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/icetea.png",
+      "allergens": []
+    },
+    {
+      "id": 270,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Ice Tea Green"
+      },
+      "fr": {
+        "name": "Ice Tea Green"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/iceteagreen.png",
+      "allergens": []
+    },
+    {
+      "id": 271,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Fuze Tea"
+      },
+      "fr": {
+        "name": "Fuze Tea"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/fuzetea.jpg",
+      "allergens": []
+    },
+    {
+      "id": 272,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Tropico"
+      },
+      "fr": {
+        "name": "Tropico"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/tropico.png",
+      "allergens": []
+    },
+    {
+      "id": 273,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Minute Maid"
+      },
+      "fr": {
+        "name": "Minute Maid"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/minutemaid.png",
+      "allergens": []
+    },
+    {
+      "id": 274,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Agrum"
+      },
+      "fr": {
+        "name": "Agrum"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/agrum.png",
+      "allergens": []
+    },
+    {
+      "id": 275,
+      "category": "drank",
+      "emoji": "🥤",
+      "nl": {
+        "name": "Gini"
+      },
+      "fr": {
+        "name": "Gini"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/gini.png",
+      "allergens": []
+    },
+    {
+      "id": 276,
+      "category": "drank",
+      "emoji": "🧃",
+      "nl": {
+        "name": "Capri-Sun"
+      },
+      "fr": {
+        "name": "Capri-Sun"
+      },
+      "price": 1.5,
+      "image": "/menu/drinks/capirsun.png",
+      "allergens": []
+    },
+    {
+      "": "",
+      "__COMMENT__": "Water"
+    },
+    {
+      "id": 297,
+      "category": "drank",
+      "emoji": "💧",
+      "nl": {
+        "name": "Plat water"
+      },
+      "fr": {
+        "name": "Eau plate"
+      },
+      "price": 2,
+      "image": "/menu/drinks/platwater.png",
+      "allergens": []
+    },
+    {
+      "id": 298,
+      "category": "drank",
+      "emoji": "💧",
+      "nl": {
+        "name": "Spuitwater"
+      },
+      "fr": {
+        "name": "Eau pétillante"
+      },
+      "price": 2,
+      "image": "/menu/drinks/spuitwater.png",
+      "allergens": []
+    },
+    {
+      "id": 299,
+      "category": "drank",
+      "emoji": "💧",
+      "nl": {
+        "name": "Tonnisteiner Citroen"
+      },
+      "fr": {
+        "name": "Tonnisteiner Citron"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/tonnisteinercitroen.png",
+      "allergens": []
+    },
+    {
+      "id": 300,
+      "category": "drank",
+      "emoji": "💧",
+      "nl": {
+        "name": "Tonnisteiner Orange"
+      },
+      "fr": {
+        "name": "Tonnisteiner Orange"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/tonnisteinerorange.png",
+      "allergens": []
+    },
+    {
+      "": "",
+      "__COMMENT__": "Bieren"
+    },
+    {
+      "id": 321,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Jupiler"
+      },
+      "fr": {
+        "name": "Jupiler"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/jupiler.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 322,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Jupiler 0.0%"
+      },
+      "fr": {
+        "name": "Jupiler 0.0%"
+      },
+      "price": 2.5,
+      "image": "/menu/drinks/jupiler00.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 323,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Hoegaarden"
+      },
+      "fr": {
+        "name": "Hoegaarden"
+      },
+      "price": 3,
+      "image": "/menu/drinks/hoegaarden.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 324,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Leffe Blond"
+      },
+      "fr": {
+        "name": "Leffe Blonde"
+      },
+      "price": 3,
+      "image": "/menu/drinks/leffeblond.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 325,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Leffe Bruin"
+      },
+      "fr": {
+        "name": "Leffe Brune"
+      },
+      "price": 3,
+      "image": "/menu/drinks/leffebruin.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 326,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Duvel"
+      },
+      "fr": {
+        "name": "Duvel"
+      },
+      "price": 3.5,
+      "image": "/menu/drinks/duvel.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 327,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Belle-Vue"
+      },
+      "fr": {
+        "name": "Belle-Vue"
+      },
+      "price": 3,
+      "image": "/menu/drinks/bellevue.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 328,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Rodenbach"
+      },
+      "fr": {
+        "name": "Rodenbach"
+      },
+      "price": 3,
+      "image": "/menu/drinks/rodenbach.png",
+      "allergens": []
+    },
+    {
+      "id": 329,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Omer"
+      },
+      "fr": {
+        "name": "Omer"
+      },
+      "price": 3,
+      "image": "/menu/drinks/omer.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "id": 330,
+      "category": "drank",
+      "emoji": "🍺",
+      "nl": {
+        "name": "Paix Dieu"
+      },
+      "fr": {
+        "name": "Paix Dieu"
+      },
+      "price": 4,
+      "image": "/menu/drinks/paixdieu.png",
+      "allergens": ["gluten"]
+    },
+    {
+      "": "",
+      "__COMMENT__": "Wijn"
+    },
+    {
+      "id": 351,
+      "category": "drank",
+      "emoji": "🍷",
+      "nl": {
+        "name": "Witte wijn"
+      },
+      "fr": {
+        "name": "Vin blanc"
+      },
+      "price": 3.5,
+      "image": "/menu/drinks/wittewijn.png",
+      "allergens": ["sulphites"]
+    },
+    {
+      "id": 352,
+      "category": "drank",
+      "emoji": "🍷",
+      "nl": {
+        "name": "Rosé wijn"
+      },
+      "fr": {
+        "name": "Vin rosé"
+      },
+      "price": 3.5,
+      "image": "/menu/drinks/rosewijn.png",
+      "allergens": ["sulphites"]
+    },
+    {
+      "id": 353,
+      "category": "drank",
+      "emoji": "🍷",
+      "nl": {
+        "name": "Rode wijn"
+      },
+      "fr": {
+        "name": "Vin rouge"
+      },
+      "price": 3.5,
+      "image": "/menu/drinks/rodewijn.png",
+      "allergens": ["sulphites"]
     }
   ]
 }

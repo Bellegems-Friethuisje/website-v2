@@ -16,6 +16,11 @@
   }
 }
 
+/* Prevent iOS Safari zoom on focus — must be outside @layer to win over utility classes */
+input, textarea, select {
+  font-size: 16px;
+}
+
 #page-content {
   opacity: 1;
   transition: opacity 0.2s ease;

@@ -37,9 +37,7 @@
   </div>
 
   <!-- Sticky category filter -->
-  <div
-    class="sticky top-16 z-40 bg-white border-b border-gray-100 shadow-sm"
-  >
+  <div class="sticky top-16 z-40 bg-white border-b border-gray-100 shadow-sm">
     <div class="max-w-5xl mx-auto px-4 lg:px-0">
       <div class="flex gap-2 py-3 overflow-x-auto no-scrollbar">
         <button
@@ -73,6 +71,48 @@
 
   <!-- Menu grid -->
   <div class="max-w-5xl mx-auto px-4 lg:px-0 py-10 min-h-[400px]">
+
+    <!-- Allergen filter -->
+    <div class="mb-8">
+      <button
+        @click="showAllergenFilter = !showAllergenFilter"
+        class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-gray-600 transition-colors"
+      >
+        <span :class="selectedAllergens.length ? 'text-red-500' : ''">🚫</span>
+        <span :class="selectedAllergens.length ? 'text-red-500 font-semibold' : ''">
+          {{ t({ nl: "Allergenen uitsluiten", fr: "Exclure des allergènes" }) }}
+          <span v-if="selectedAllergens.length">({{ selectedAllergens.length }})</span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="showAllergenFilter ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      <div v-if="showAllergenFilter" class="mt-3 p-4 bg-gray-50 rounded-2xl border border-gray-100">
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="(info, key) in allergenLegend"
+            :key="key"
+            @click="toggleAllergen(key)"
+            :class="[
+              'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold transition-all',
+              selectedAllergens.includes(key)
+                ? 'bg-red-500 text-white shadow-sm'
+                : 'bg-white border border-gray-200 text-gray-600 hover:border-red-300 hover:text-red-500',
+            ]"
+          >
+            {{ info.emoji }} {{ lang === "nl" ? info.nl : info.fr }}
+          </button>
+          <button
+            v-if="selectedAllergens.length"
+            @click="selectedAllergens = []"
+            class="text-xs text-gray-400 hover:text-gray-600 underline px-2"
+          >
+            {{ t({ nl: "Wis alles", fr: "Tout effacer" }) }}
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- Sauzen compact list -->
     <div v-if="showSauzen" class="mb-10">
       <h2
@@ -128,6 +168,8 @@
             :price="item.price"
             :category="item.category"
             :popular="item.popular ?? false"
+            :sides="item.sides"
+            :child-version="item.childVersion ?? false"
             @select="selectedItem = item"
           />
         </div>
@@ -140,7 +182,7 @@
     <p class="text-gray-400 text-xs border-t border-gray-100 pt-6">
       {{
         t({
-          nl: "* Allergenen omvatten niet de garniuren. Voor m eer gedetailleerde informatie over allergenen, neem contact op met ons personeel.",
+          nl: "* Allergenen omvatten niet de garniuren. Voor meer gedetailleerde informatie over allergenen, neem contact op met ons personeel.",
           fr: "* Les allergènes n'incluent pas les garnitures. Pour des informations plus détaillées sur les allergènes, veuillez contacter notre personnel.",
         })
       }}
@@ -164,19 +206,38 @@ import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
 import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
+import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
 
-const locations = [bellegems, takeaway];
+const locations = [bellegems, takeaway].filter(l => !l.hidden);
 const activeLocation = ref(locations[0].id);
 const activeCategory = ref("all");
 const selectedItem = ref<Record<string, any> | null>(null);
+const showAllergenFilter = ref(false);
+const selectedAllergens = ref<string[]>([]);
+
+const allergenLegend = allergensData._legend as Record<string, { emoji: string; nl: string; fr: string }>;
+
+function toggleAllergen(key: string) {
+  const idx = selectedAllergens.value.indexOf(key);
+  if (idx >= 0) selectedAllergens.value.splice(idx, 1);
+  else selectedAllergens.value.push(key);
+}
 
 const currentLocation = computed(
   () => locations.find((l) => l.id === activeLocation.value) ?? locations[0],
 );
 
 const locationMenu = computed(() => currentLocation.value.menu);
+
+const filteredMenu = computed(() => {
+  if (!selectedAllergens.value.length) return locationMenu.value;
+  return locationMenu.value.filter((item) => {
+    const itemAllergens: string[] = item.allergens ?? [];
+    return !selectedAllergens.value.some((a) => itemAllergens.includes(a));
+  });
+});
 
 const availableCategories = computed(
   () => currentLocation.value.categories ?? [],
@@ -197,12 +258,12 @@ const showSauzen = computed(
 );
 
 const sauzenItems = computed(() =>
-  locationMenu.value.filter((i) => i.category === "saus"),
+  filteredMenu.value.filter((i) => i.category === "saus"),
 );
 
 const catItemsMap = computed(() => {
   const map: Record<string, typeof locationMenu.value> = {};
-  for (const item of locationMenu.value) {
+  for (const item of filteredMenu.value) {
     if (!item.category) continue;
     (map[item.category] ??= []).push(item);
   }

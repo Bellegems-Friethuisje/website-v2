@@ -1,9 +1,11 @@
 {
   "id": "takeaway",
+  "hidden": true,
   "name": "Take-Away Shop",
-  "address": "Groot-Bellegemstraat, 8510 Bellegem",
-  "phone": "+3256000001",
-  "phoneDisplay": "056 00 00 01",
+  "address": "Doornikserijksweg 134, 8510 Bellegem",
+  "phone": "+3256229995",
+  "phoneDisplay": "056 22 99 95",
+  "mapsUrl": "https://www.google.com/maps/place/Bellegem's+Friethuisje/@50.7772452,3.3040134,211m/data=!3m1!1e3!4m6!3m5!1s0x47c3249f52517ed7:0x46006e35e77f11c9!8m2!3d50.7775904!4d3.3042113!16s%2Fg%2F1hc36r_kc?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D",
   "hours": [
     {
       "nl": "Maandag – Zondag",
