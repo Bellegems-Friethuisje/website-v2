@@ -624,6 +624,7 @@
         <a
           href="/reservaties"
           class="shrink-0 bg-white text-orange-500 font-bold px-7 py-3.5 rounded-xl hover:bg-orange-50 transition-colors text-lg whitespace-nowrap"
+          @click="trackEvent('reservation_click', { source: 'homepage_cta' })"
         >
           {{ t({ nl: "Reserveer nu", fr: "Réservez maintenant" }) }}
         </a>
@@ -635,6 +636,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useLang } from "../../composables/useLang";
+import { trackEvent } from "../../composables/useAnalytics";
 import { getIsOpen } from "../../composables/useIsOpen";
 import MenuCard from "../../components/MenuCard.vue";
 import FestiveBanner from "../../components/FestiveBanner.vue";

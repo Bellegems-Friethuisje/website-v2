@@ -214,6 +214,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useLang } from '../composables/useLang'
+import { trackEvent } from '../composables/useAnalytics'
 
 const { lang, t } = useLang()
 
@@ -410,6 +411,7 @@ async function submit() {
       }),
     })
     submitted.value = true
+    trackEvent('reservation_submit', { quantity: form.value.quantity, date: form.value.date })
   } catch (err) {
     console.error(err)
   } finally {

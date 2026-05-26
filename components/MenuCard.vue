@@ -1,7 +1,7 @@
 <template>
   <div
     class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-[box-shadow,transform] duration-300 hover:-translate-y-1 group cursor-pointer flex flex-col"
-    @click="$emit('select')"
+    @click="handleClick"
     style="will-change: transform"
   >
     <!-- Real photo or emoji fallback -->
@@ -68,10 +68,11 @@
 import { computed, ref } from "vue";
 import { useLang } from "../composables/useLang";
 import { useLazyImage } from "../composables/useLazyImage";
+import { trackEvent } from "../composables/useAnalytics";
 
 const { lang, t } = useLang();
 
-defineEmits<{ select: [] }>();
+const emit = defineEmits<{ select: [] }>();
 
 const props = defineProps<{
   name: string;
@@ -87,6 +88,11 @@ const props = defineProps<{
 
 const containerEl = ref<HTMLElement | null>(null);
 const { imgSrc, imgLoaded } = useLazyImage(containerEl, props.image);
+
+function handleClick() {
+  trackEvent('select_item', { item_name: props.name, item_category: props.category, price: props.price })
+  emit('select')
+}
 
 const popularLabel = computed(() => t({ nl: "Populair", fr: "Populaire" }));
 

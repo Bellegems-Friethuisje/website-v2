@@ -162,6 +162,7 @@
       <a
         href="/reservaties"
         class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-colors text-sm"
+        @click="trackEvent('reservation_click', { source: 'locaties_cta' })"
       >
         {{ t({ nl: "Reserveer nu!", fr: "Réservez maintenant!" }) }}
       </a>
@@ -172,6 +173,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useLang } from "../../composables/useLang";
+import { trackEvent } from "../../composables/useAnalytics";
 import { getIsOpen } from "../../composables/useIsOpen";
 import OpenBadge from "../../components/OpenBadge.vue";
 import bellegems from "../../data/locations/bellegems.json";

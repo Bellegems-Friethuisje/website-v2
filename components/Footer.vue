@@ -59,6 +59,7 @@
           <a
             href="/reservaties"
             class="inline-block bg-white text-orange-500 font-bold py-2 px-4 rounded-lg hover:bg-orange-100 transition-colors"
+            @click="trackEvent('reservation_click', { source: 'footer' })"
           >
             {{ t({ nl: "Reserveer hier", fr: "Réservez ici" }) }}
           </a>
@@ -75,6 +76,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useLang } from "../composables/useLang";
+import { trackEvent } from "../composables/useAnalytics";
 
 const { t } = useLang();
 
