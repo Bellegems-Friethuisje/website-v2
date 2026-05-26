@@ -27,6 +27,15 @@
   <meta name="twitter:image" content="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104452_dea8c2695a.jpg" />
 
   <component :is="'script'" type="application/ld+json" v-text="jsonLd" />
+
+  <!-- Google Analytics (only injected when a real measurement ID is set) -->
+  <component
+    v-if="gaId"
+    :is="'script'"
+    :async="true"
+    :src="`https://www.googletagmanager.com/gtag/js?id=${gaId}`"
+  />
+  <component v-if="gaId" :is="'script'" v-text="gtagBootstrap" />
 </template>
 
 <script setup lang="ts">
@@ -61,6 +70,13 @@ const PAGE_META: Record<string, { title: string; description: string }> = {
 
 const pageTitle = computed(() => PAGE_META[path.value]?.title ?? 'Bellegems Friethuisje')
 const pageDescription = computed(() => PAGE_META[path.value]?.description ?? 'Meer dan een frituur alleen – Bellegems Friethuisje')
+
+const _rawGaId = import.meta.env.PUBLIC_ENV__GOOGLE_ANALYTICS as string | undefined
+const gaId = _rawGaId && !_rawGaId.includes('XXXX') ? _rawGaId : null
+
+const gtagBootstrap = gaId
+  ? `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaId}');`
+  : ''
 
 const jsonLd = computed(() => JSON.stringify({
   '@context': 'https://schema.org',
