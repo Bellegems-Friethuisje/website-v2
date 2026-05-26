@@ -46,7 +46,7 @@
         <!-- Min. persons -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
           <div class="flex items-start gap-4">
-            <span class="text-3xl">👥</span>
+            <span class="text-3xl" aria-hidden="true">👥</span>
             <div>
               <p class="font-extrabold text-gray-900 text-base">
                 {{

@@ -35,7 +35,7 @@
         v-if="childVersion"
         class="absolute top-2 left-2 bg-blue-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow"
       >
-        👶 {{ t({ nl: "Kinderportie", fr: "Portion enfant" }) }}
+        <span aria-hidden="true">👶</span> {{ t({ nl: "Kinderportie", fr: "Portion enfant" }) }}
       </span>
     </div>
 
@@ -54,7 +54,7 @@
           v-for="side in resolvedSides"
           :key="side.key"
           class="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full"
-          >{{ side.emoji }} {{ side.label }}</span
+          ><span aria-hidden="true">{{ side.emoji }}</span> {{ side.label }}</span
         >
       </div>
       <span class="text-orange-500 font-extrabold text-lg mt-auto pt-2"

@@ -32,20 +32,23 @@
           class="h-40 bg-gradient-to-br from-orange-50 to-orange-100 relative flex items-center justify-center"
         >
           <div class="text-center">
-            <p class="text-4xl mb-1">📍</p>
+            <p class="text-4xl mb-1" aria-hidden="true">📍</p>
             <p class="text-orange-600 font-bold text-sm">{{ loc.name }}</p>
             <p class="text-orange-400 text-xs">{{ loc.address }}</p>
           </div>
         </div>
 
         <div class="p-6">
-          <h2 class="text-xl font-extrabold text-gray-900 mb-5">
-            {{ loc.name }}
-          </h2>
+          <div class="flex items-center justify-between mb-5">
+            <h2 class="text-xl font-extrabold text-gray-900">
+              {{ loc.name }}
+            </h2>
+            <OpenBadge :open="isOpenMap[loc.id]" />
+          </div>
 
           <!-- Address -->
           <div class="flex gap-3 mb-4">
-            <span class="text-orange-500 shrink-0 mt-0.5">📍</span>
+            <span class="text-orange-500 shrink-0 mt-0.5" aria-hidden="true">📍</span>
             <div>
               <p
                 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5"
@@ -58,7 +61,7 @@
 
           <!-- Hours -->
           <div class="flex gap-3 mb-4">
-            <span class="text-orange-500 shrink-0 mt-0.5">🕐</span>
+            <span class="text-orange-500 shrink-0 mt-0.5" aria-hidden="true">🕐</span>
             <div class="flex-1">
               <p
                 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2"
@@ -90,7 +93,7 @@
 
           <!-- Phone -->
           <div class="flex gap-3 mb-6">
-            <span class="text-orange-500 shrink-0 mt-0.5">📞</span>
+            <span class="text-orange-500 shrink-0 mt-0.5" aria-hidden="true">📞</span>
             <div>
               <p
                 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-0.5"
@@ -167,10 +170,19 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
 import { useLang } from "../../composables/useLang";
+import { getIsOpen } from "../../composables/useIsOpen";
+import OpenBadge from "../../components/OpenBadge.vue";
 import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
 
 const { lang, t } = useLang();
 const locations = [bellegems, takeaway];
+
+const isOpenMap = computed(() => {
+  const result: Record<string, boolean> = {}
+  for (const loc of locations) result[loc.id] = getIsOpen(loc.hours)
+  return result
+});
 </script>

@@ -72,6 +72,29 @@
   <!-- Menu grid -->
   <div class="max-w-5xl mx-auto px-4 lg:px-0 py-10 min-h-[400px]">
 
+    <!-- Search -->
+    <div class="relative mb-6">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
+      </svg>
+      <input
+        v-model="searchQuery"
+        type="search"
+        :placeholder="t({ nl: 'Zoek in het menu…', fr: 'Rechercher dans le menu…' })"
+        class="w-full bg-gray-50 border border-gray-200 rounded-xl py-3 pl-10 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition"
+      />
+      <button
+        v-if="searchQuery"
+        @click="searchQuery = ''"
+        class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition"
+        :aria-label="t({ nl: 'Zoekopdracht wissen', fr: 'Effacer la recherche' })"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
     <!-- Allergen filter -->
     <div class="mb-8">
       <button
@@ -113,6 +136,17 @@
         </div>
       </div>
     </div>
+    <!-- No search results -->
+    <div v-if="searchQuery.trim() && !sauzenItems.length && !visibleMainCategories.length" class="text-center py-20">
+      <p class="text-4xl mb-4" aria-hidden="true">🔍</p>
+      <p class="text-gray-500 font-medium">
+        {{ t({ nl: `Geen resultaten voor "${searchQuery}"`, fr: `Aucun résultat pour "${searchQuery}"` }) }}
+      </p>
+      <button @click="searchQuery = ''" class="mt-4 text-orange-500 font-semibold hover:text-orange-600 text-sm transition-colors">
+        {{ t({ nl: 'Zoekopdracht wissen', fr: 'Effacer la recherche' }) }}
+      </button>
+    </div>
+
     <!-- Sauzen compact list -->
     <div v-if="showSauzen" class="mb-10">
       <h2
@@ -200,7 +234,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useLang } from "../../composables/useLang";
 import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
@@ -216,6 +250,12 @@ const activeCategory = ref("all");
 const selectedItem = ref<Record<string, any> | null>(null);
 const showAllergenFilter = ref(false);
 const selectedAllergens = ref<string[]>([]);
+const searchQuery = ref("");
+
+watch(activeLocation, () => {
+  searchQuery.value = "";
+  activeCategory.value = "all";
+});
 
 const allergenLegend = allergensData._legend as Record<string, { emoji: string; nl: string; fr: string }>;
 
@@ -247,23 +287,35 @@ const mainCategories = computed(() =>
   availableCategories.value.filter((c) => !c.sauzen),
 );
 
-const visibleMainCategories = computed(() =>
-  activeCategory.value === "all"
+const visibleMainCategories = computed(() => {
+  const cats = activeCategory.value === "all"
     ? mainCategories.value
-    : mainCategories.value.filter((c) => c.id === activeCategory.value),
-);
+    : mainCategories.value.filter((c) => c.id === activeCategory.value);
+  if (!searchQuery.value.trim()) return cats;
+  return cats.filter((c) => (catItemsMap.value[c.id]?.length ?? 0) > 0);
+});
 
 const showSauzen = computed(
   () => activeCategory.value === "all" || activeCategory.value === "saus",
 );
 
 const sauzenItems = computed(() =>
-  filteredMenu.value.filter((i) => i.category === "saus"),
+  searchFilteredMenu.value.filter((i) => i.category === "saus"),
 );
+
+const searchFilteredMenu = computed(() => {
+  const q = searchQuery.value.trim().toLowerCase();
+  if (!q) return filteredMenu.value;
+  return filteredMenu.value.filter((item) => {
+    const name = (lang.value === "nl" ? item.nl?.name : item.fr?.name) ?? "";
+    const desc = (lang.value === "nl" ? item.nl?.description : item.fr?.description) ?? "";
+    return name.toLowerCase().includes(q) || desc.toLowerCase().includes(q);
+  });
+});
 
 const catItemsMap = computed(() => {
   const map: Record<string, typeof locationMenu.value> = {};
-  for (const item of filteredMenu.value) {
+  for (const item of searchFilteredMenu.value) {
     if (!item.category) continue;
     (map[item.category] ??= []).push(item);
   }

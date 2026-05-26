@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-2 group">
-          <span class="text-2xl transition-transform group-hover:scale-110 inline-block">🍟</span>
+          <span class="text-2xl transition-transform group-hover:scale-110 inline-block" aria-hidden="true">🍟</span>
           <div class="leading-tight">
             <span class="font-extrabold text-gray-900 text-base block">Bellegems</span>
             <span class="font-extrabold text-orange-500 text-base block -mt-1">Friethuisje</span>
@@ -73,7 +73,7 @@
       <!-- Header -->
       <div class="flex items-center justify-between px-5 h-16 border-b border-gray-100 shrink-0">
         <a href="/" class="flex items-center gap-2" @click="mobileOpen = false">
-          <span class="text-xl">🍟</span>
+          <span class="text-xl" aria-hidden="true">🍟</span>
           <div class="leading-tight">
             <span class="font-extrabold text-gray-900 text-sm block">Bellegems</span>
             <span class="font-extrabold text-orange-500 text-sm block -mt-1">Friethuisje</span>

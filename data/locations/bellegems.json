@@ -11,25 +11,29 @@
       "nl": "Maandag – Donderdag",
       "fr": "Lundi – Jeudi",
       "time": "11u00 – 14u30 | 17u00 – 22u00",
-      "closed": false
+      "closed": false,
+      "days": [1, 2, 3, 4]
     },
     {
       "nl": "Vrijdag",
       "fr": "Vendredi",
       "time": "11u00 – 14u30 | 17u00 – 23u00",
-      "closed": false
+      "closed": false,
+      "days": [5]
     },
     {
       "nl": "Zaterdag",
       "fr": "Samedi",
       "time": "11u00 – 23u00",
-      "closed": false
+      "closed": false,
+      "days": [6]
     },
     {
       "nl": "Zondag",
       "fr": "Dimanche",
       "time": "11u00 – 22u00",
-      "closed": false
+      "closed": false,
+      "days": [0]
     }
   ],
   "categories": [

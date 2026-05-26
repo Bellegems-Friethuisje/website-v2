@@ -5,7 +5,7 @@
         <!-- Brand -->
         <div>
           <div class="flex items-center gap-2 mb-3">
-            <span class="text-2xl">🍟</span>
+            <span class="text-2xl" aria-hidden="true">🍟</span>
             <h3 class="font-extrabold text-gray-900 text-lg">
               Bellegems Friethuisje
             </h3>
