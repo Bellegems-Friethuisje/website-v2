@@ -64,7 +64,10 @@
       "PowerShell($resp = Invoke-WebRequest -Uri \"https://www.bellegemsfriethuisje.be/menu\" -UseBasicParsing -MaximumRedirection 10 2>$null; $content = $resp.Content; $idx = $content.IndexOf\\(\"Cola\"\\); if \\($idx -ge 0\\) { $content.Substring\\([Math]::Max\\(0,$idx-500\\), 2000\\) } else { \"Cola not found. Length: \" + $content.Length })",
       "PowerShell($resp = Invoke-WebRequest -Uri \"https://www.bellegemsfriethuisje.be/menu\" -UseBasicParsing -MaximumRedirection 10 2>$null; $content = $resp.Content; $idx = $content.IndexOf\\(\"Jupiler\"\\); if \\($idx -ge 0\\) { $content.Substring\\([Math]::Max\\(0,$idx-100\\), 1000\\) } else { $idx2 = $content.IndexOf\\(\"drank\"\\); if \\($idx2 -ge 0\\) { $content.Substring\\([Math]::Max\\(0,$idx2-100\\), 500\\) } else { \"No drinks found on menu page\" } })",
       "PowerShell(node --version 2>$null; if \\($?\\) { \"node available\" } else { \"no node\" })",
-      "WebSearch"
+      "WebSearch",
+      "Bash(New-Item -ItemType File \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\pages\\\\+onPageTransitionEnd.ts\" -Force)",
+      "Bash(Out-Null)",
+      "Bash(Write-Host \"created\")"
     ]
   }
 }

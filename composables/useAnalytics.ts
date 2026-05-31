@@ -8,3 +8,4 @@ function gtag(...args: unknown[]) {
 export function trackEvent(name: string, params?: Record<string, unknown>) {
   gtag('event', name, params)
 }
+
