@@ -740,7 +740,7 @@ async function submit() {
   loading.value = true;
   try {
     await fetch(
-      "https://ordermailing.bellegemsfriethuisje.be/api/reservaties",
+      "https://ordermailing.bellegemsfriethuisje.be/api/reservations",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
