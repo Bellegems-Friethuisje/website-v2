@@ -53,8 +53,54 @@ function sitemapPlugin(): Plugin {
   };
 }
 
+function devApiPlugin(): Plugin {
+  return {
+    name: 'dev-api',
+    apply: 'serve',
+    configureServer(server) {
+      function parseBody(req: any): Promise<void> {
+        return new Promise((resolve) => {
+          let data = ''
+          req.on('data', (chunk: any) => (data += chunk))
+          req.on('end', () => {
+            try { req.body = data ? JSON.parse(data) : {} } catch { req.body = {} }
+            resolve()
+          })
+        })
+      }
+
+      function wrapRes(res: any) {
+        res.status = function (code: number) { this.statusCode = code; return this }
+        res.json = function (data: any) {
+          this.setHeader('Content-Type', 'application/json')
+          this.end(JSON.stringify(data))
+        }
+        return res
+      }
+
+      server.middlewares.use('/api/admin-auth', async (req: any, res: any) => {
+        await parseBody(req)
+        const { default: handler } = await server.ssrLoadModule('/api/admin-auth.js')
+        await handler(req, wrapRes(res))
+      })
+
+      server.middlewares.use('/api/menu-prices', async (req: any, res: any) => {
+        await parseBody(req)
+        const { default: handler } = await server.ssrLoadModule('/api/menu-prices.js')
+        await handler(req, wrapRes(res))
+      })
+
+      server.middlewares.use('/api/upload-image', async (req: any, res: any) => {
+        await parseBody(req)
+        const { default: handler } = await server.ssrLoadModule('/api/upload-image.js')
+        await handler(req, wrapRes(res))
+      })
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [vike(), tailwindcss(), vue(), sitemapPlugin()],
+  plugins: [vike(), tailwindcss(), vue(), sitemapPlugin(), devApiPlugin()],
   server: {
     host: "0.0.0.0",
     port: 3000,

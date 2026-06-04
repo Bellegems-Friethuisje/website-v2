@@ -234,7 +234,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, onMounted } from "vue";
 import { useLang } from "../../composables/useLang";
 import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
@@ -243,6 +243,17 @@ import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
+
+const menuStates = ref<Record<string, { prices: Record<string, number>, hidden: number[], custom: any[], customCategories: any[] }>>({});
+
+onMounted(async () => {
+  await Promise.all(locations.map(async (loc) => {
+    try {
+      const res = await fetch(`/api/menu-prices?location=${loc.id}`);
+      if (res.ok) menuStates.value[loc.id] = await res.json();
+    } catch {}
+  }));
+});
 
 const locations = [bellegems, takeaway].filter(l => !l.hidden);
 const activeLocation = ref(locations[0].id);
@@ -269,7 +280,14 @@ const currentLocation = computed(
   () => locations.find((l) => l.id === activeLocation.value) ?? locations[0],
 );
 
-const locationMenu = computed(() => currentLocation.value.menu);
+const locationMenu = computed(() => {
+  const loc = currentLocation.value;
+  const state = menuStates.value[loc.id] || { prices: {}, hidden: [], custom: [], customCategories: [] };
+  const base = loc.menu
+    .filter((item: any) => item.id && !state.hidden.includes(item.id))
+    .map((item: any) => ({ ...item, price: state.prices[String(item.id)] ?? item.price }));
+  return [...base, ...(state.custom || [])];
+});
 
 const filteredMenu = computed(() => {
   if (!selectedAllergens.value.length) return locationMenu.value;
@@ -279,9 +297,13 @@ const filteredMenu = computed(() => {
   });
 });
 
-const availableCategories = computed(
-  () => currentLocation.value.categories ?? [],
-);
+const availableCategories = computed(() => {
+  const loc = currentLocation.value;
+  const state = menuStates.value[loc.id] || {};
+  const base = loc.categories ?? [];
+  const custom = (state.customCategories || []).map((c: any) => ({ ...c, sauzen: false }));
+  return [...base, ...custom];
+});
 
 const mainCategories = computed(() =>
   availableCategories.value.filter((c) => !c.sauzen),

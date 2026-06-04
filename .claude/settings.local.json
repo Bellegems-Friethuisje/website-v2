@@ -67,7 +67,18 @@
       "WebSearch",
       "Bash(New-Item -ItemType File \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\pages\\\\+onPageTransitionEnd.ts\" -Force)",
       "Bash(Out-Null)",
-      "Bash(Write-Host \"created\")"
+      "Bash(Write-Host \"created\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\Elias\\\\Desktop\\\\frituur\\\\data\\\\locations\\\\bellegems.json\" | Measure-Object -Line\\).Lines)",
+      "WebFetch(domain:vike.dev)",
+      "WebFetch(domain:github.com)",
+      "Bash(xargs grep -l \"createDevServer\\\\|viteDevServer\\\\|createServer\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(node_modules/.bin/vike.exe --version)",
+      "Bash(npx vike *)",
+      "Bash(ls public/menu)",
+      "Bash(ls public *)"
     ]
   }
 }

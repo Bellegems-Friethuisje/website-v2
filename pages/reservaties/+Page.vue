@@ -12,8 +12,8 @@
     <p class="text-gray-500 text-lg max-w-xl">
       {{
         t({
-          nl: "Planning voor een grote groep? Vul het formulier in en we nemen contact op ter bevestiging.",
-          fr: "Vous planifiez pour un grand groupe ? Remplissez le formulaire et nous vous contacterons pour confirmer.",
+          nl: "Plannen voor een groepsuitje? Vul het formulier in en we nemen contact op ter bevestiging.",
+          fr: "Vous planifiez une sortie de groupe ? Remplissez le formulaire et nous vous contacterons pour confirmer.",
         })
       }}
     </p>
