@@ -112,13 +112,13 @@
         "description": "Portion enfant de frites croustillantes"
       },
       "price": 2.1,
-      "image": "/menu/frietjes/kinder.png",
+      "image": "/menu/frietjes/kinder.webp",
       "allergens": []
     },
     {
       "id": 2,
       "category": "friet",
-      "image": "/menu/frietjes/klein.png",
+      "image": "/menu/frietjes/klein.webp",
       "nl": {
         "name": "Kleine friet",
         "description": "Kleine portie knapperige Belgische frietjes"
@@ -134,7 +134,7 @@
     {
       "id": 3,
       "category": "friet",
-      "image": "/menu/frietjes/middel.png",
+      "image": "/menu/frietjes/middel.webp",
       "popular": true,
       "nl": {
         "name": "Middel friet",
@@ -151,7 +151,7 @@
     {
       "id": 4,
       "category": "friet",
-      "image": "/menu/frietjes/groot.png",
+      "image": "/menu/frietjes/groot.webp",
       "nl": {
         "name": "Grote friet",
         "description": "Knapperige Belgische frietjes, grote portie"
@@ -180,7 +180,7 @@
         "name": "Mayonnaise"
       },
       "price": 1.2,
-      "image": "/menu/saus/mayo.png",
+      "image": "/menu/saus/mayo.webp",
       "allergens": ["eggs", "milk", "mustard", "soy"]
     },
     {
@@ -196,7 +196,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/ketchup.png",
+      "image": "/menu/saus/ketchup.webp",
       "allergens": ["mustard"]
     },
     {
@@ -211,7 +211,7 @@
         "name": "Andalouse"
       },
       "price": 1.2,
-      "image": "/menu/saus/andalouse.png",
+      "image": "/menu/saus/andalouse.webp",
       "allergens": ["eggs", "mustard"]
     },
     {
@@ -225,7 +225,7 @@
         "name": "Cocktail"
       },
       "price": 1.2,
-      "image": "/menu/saus/coctail.png",
+      "image": "/menu/saus/coctail.webp",
       "allergens": ["eggs", "mustard"]
     },
     {
@@ -239,7 +239,7 @@
         "name": "Samouraï"
       },
       "price": 1.2,
-      "image": "/menu/saus/samourai.png",
+      "image": "/menu/saus/samourai.webp",
       "allergens": ["eggs", "mustard"]
     },
     {
@@ -255,7 +255,7 @@
         "description": ""
       },
       "price": 1.5,
-      "image": "/menu/saus/tartare.png",
+      "image": "/menu/saus/tartare.webp",
       "allergens": ["celery", "eggs", "mustard"]
     },
     {
@@ -271,7 +271,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/americaine.png",
+      "image": "/menu/saus/americaine.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
@@ -287,7 +287,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/joppie.png",
+      "image": "/menu/saus/joppie.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
@@ -303,7 +303,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/brazil.png",
+      "image": "/menu/saus/brazil.webp",
       "allergens": ["eggs", "fish", "gluten", "mustard", "soy"]
     },
     {
@@ -318,7 +318,7 @@
         "name": "Hannibal"
       },
       "price": 1.2,
-      "image": "/menu/saus/hannibal.png",
+      "image": "/menu/saus/hannibal.webp",
       "allergens": ["eggs", "gluten", "mustard", "soy"]
     },
     {
@@ -334,7 +334,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/bbq.png",
+      "image": "/menu/saus/bbq.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
@@ -350,7 +350,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/toscane.png",
+      "image": "/menu/saus/toscane.webp",
       "allergens": ["eggs", "mustard"]
     },
     {
@@ -381,7 +381,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/pepersaus.png",
+      "image": "/menu/saus/pepersaus.webp",
       "allergens": ["eggs", "gluten", "soy"]
     },
     {
@@ -397,7 +397,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/mammoet.png",
+      "image": "/menu/saus/mammoet.webp",
       "allergens": ["eggs", "gluten", "mustard"]
     },
     {
@@ -413,7 +413,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/loempia.png",
+      "image": "/menu/saus/loempia.webp",
       "allergens": ["soy"]
     },
     {
@@ -429,7 +429,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/curryketchup.png",
+      "image": "/menu/saus/curryketchup.webp",
       "allergens": ["mustard"]
     },
     {
@@ -445,7 +445,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/pickels.png",
+      "image": "/menu/saus/pickels.webp",
       "allergens": ["celery", "mustard"]
     },
     {
@@ -475,7 +475,7 @@
         "name": "Bicky jaune"
       },
       "price": 1.2,
-      "image": "/menu/saus/gelebicky.png",
+      "image": "/menu/saus/gelebicky.webp",
       "allergens": ["eggs", "mustard"]
     },
     {
@@ -489,7 +489,7 @@
         "name": "Bicky orange"
       },
       "price": 1.2,
-      "image": "/menu/saus/oranjebicky.png",
+      "image": "/menu/saus/oranjebicky.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "soy"]
     },
     {
@@ -503,7 +503,7 @@
         "name": "Curry jaune"
       },
       "price": 1.2,
-      "image": "/menu/saus/gelecurry.png",
+      "image": "/menu/saus/gelecurry.webp",
       "allergens": ["eggs", "mustard"]
     },
     {
@@ -517,7 +517,7 @@
         "name": "Sauce spéciale"
       },
       "price": 1.6,
-      "image": "/menu/saus/specialesaus.png",
+      "image": "/menu/saus/specialesaus.webp",
       "allergens": []
     },
     {
@@ -531,7 +531,7 @@
         "name": "3 sauces"
       },
       "price": 1.6,
-      "image": "/menu/saus/3sauzen.png",
+      "image": "/menu/saus/3sauzen.webp",
       "allergens": []
     },
     {
@@ -552,7 +552,7 @@
         "description": "Maison"
       },
       "price": 3.5,
-      "image": "/menu/warme-saus/pepersaus.jpg",
+      "image": "/menu/warme-saus/pepersaus.webp",
       "allergens": ["gluten", "milk"],
       "pairsWith": [196]
     },
@@ -560,7 +560,7 @@
       "id": 70,
       "category": "warme_saus",
       "emoji": "🫕",
-      "image": "/menu/warme-saus/bearnaise.jpg",
+      "image": "/menu/warme-saus/bearnaise.webp",
       "nl": {
         "name": "Bearnaise warm",
         "description": "Warme bearnaisesaus"
@@ -577,7 +577,7 @@
       "id": 71,
       "category": "warme_saus",
       "emoji": "🍄",
-      "image": "/menu/warme-saus/champsaus.png",
+      "image": "/menu/warme-saus/champsaus.webp",
       "nl": {
         "name": "Champignonsaus warm",
         "description": "Romige champignonsaus"
@@ -603,7 +603,7 @@
         "description": ""
       },
       "price": 3,
-      "image": "/menu/warme-saus/scampisaus.png",
+      "image": "/menu/warme-saus/scampisaus.webp",
       "allergens": ["milk", "mustard"]
     },
     {
@@ -619,7 +619,7 @@
         "description": ""
       },
       "price": 3,
-      "image": "/menu/warme-saus/witloofsaus.png",
+      "image": "/menu/warme-saus/witloofsaus.webp",
       "allergens": ["eggs", "gluten", "milk"]
     },
     {
@@ -635,7 +635,7 @@
         "description": "Sauce tomate maison"
       },
       "price": 3.5,
-      "image": "/menu/warme-saus/tomatensaus.png",
+      "image": "/menu/warme-saus/tomatensaus.webp",
       "allergens": ["celery", "gluten", "milk", "mustard", "soy"]
     },
     {
@@ -652,7 +652,7 @@
         "description": "Riche sauce belge"
       },
       "price": 2.4,
-      "image": "/menu/warme-saus/stoofvleessaus.png",
+      "image": "/menu/warme-saus/stoofvleessaus.webp",
       "allergens": ["celery", "gluten", "milk", "mustard", "soy", "sulphites"]
     },
     {
@@ -669,7 +669,7 @@
         "description": "Sauce carbonnade maison"
       },
       "price": 2.6,
-      "image": "/menu/warme-saus/stoofvleessaus.png",
+      "image": "/menu/warme-saus/stoofvleessaus.webp",
       "allergens": ["gluten", "milk", "mustard", "soy", "sulphites"]
     },
     {
@@ -690,7 +690,7 @@
         "description": "Notre burger maison avec de la laitue, des tomates et de la sauce cheddar"
       },
       "price": 6.5,
-      "image": "/menu/burgers/bellburger.png",
+      "image": "/menu/burgers/bellburger.webp",
       "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
@@ -707,7 +707,7 @@
         "description": "Délicieux sandwich avec un hamburger"
       },
       "price": 3,
-      "image": "/menu/burgers/bickynatuur.png",
+      "image": "/menu/burgers/bickynatuur.webp",
       "allergens": ["gluten", "sesame"]
     },
     {
@@ -723,7 +723,7 @@
         "description": "Le classique avec sauce au choix, oignon et cornichon"
       },
       "price": 4,
-      "image": "/menu/burgers/bicky.png",
+      "image": "/menu/burgers/bicky.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
@@ -739,7 +739,7 @@
         "description": "Délicieux sandwich avec un hamburger et sauce au choix"
       },
       "price": 3.5,
-      "image": "/menu/burgers/bickyketchup.png",
+      "image": "/menu/burgers/bickyketchup.webp",
       "allergens": ["celery", "gluten", "mustard", "sesame", "soy"]
     },
     {
@@ -755,7 +755,7 @@
         "description": "Délicieux sandwich avec un hamburger de poulet et sauce au choix"
       },
       "price": 4.3,
-      "image": "/menu/burgers/bickychicken.png",
+      "image": "/menu/burgers/bickychicken.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
@@ -771,7 +771,7 @@
         "description": "Délicieux sandwich avec un hamburger et une tranche de fromage"
       },
       "price": 4.3,
-      "image": "/menu/burgers/bickycheese.png",
+      "image": "/menu/burgers/bickycheese.webp",
       "allergens": [
         "celery",
         "eggs",
@@ -795,7 +795,7 @@
         "description": "Un bickyburger avec un mexicano"
       },
       "price": 4.5,
-      "image": "/menu/burgers/bickeyrib.png",
+      "image": "/menu/burgers/bickeyrib.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
@@ -811,7 +811,7 @@
         "description": "Un burger de cabillaud avec sauce tartare et salade"
       },
       "price": 4.5,
-      "image": "/menu/burgers/bickyfish.png",
+      "image": "/menu/burgers/bickyfish.webp",
       "allergens": ["celery", "eggs", "fish", "gluten", "mustard", "sesame"]
     },
     {
@@ -827,7 +827,7 @@
         "description": "Le célèbre bicky avec une touche croustillante"
       },
       "price": 4.2,
-      "image": "/menu/burgers/bickycrispy.png",
+      "image": "/menu/burgers/bickycrispy.webp",
       "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
     },
     {
@@ -843,7 +843,7 @@
         "description": "Notre variante végétarienne du bickyburger"
       },
       "price": 3.8,
-      "image": "/menu/burgers/veggieburger.png",
+      "image": "/menu/burgers/veggieburger.webp",
       "allergens": [
         "celery",
         "eggs",
@@ -870,7 +870,7 @@
         "name": "Fricadelle"
       },
       "price": 1.8,
-      "image": "/menu/snacks/frikandel.png",
+      "image": "/menu/snacks/frikandel.webp",
       "allergens": ["gluten", "soy"]
     },
     {
@@ -884,7 +884,7 @@
         "name": "Fricadelle spéciale"
       },
       "price": 2.8,
-      "image": "/menu/snacks/frikandelspeciaal.png",
+      "image": "/menu/snacks/frikandelspeciaal.webp",
       "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
@@ -898,7 +898,7 @@
         "name": "Hamburgerschijf"
       },
       "price": 2.4,
-      "image": "/menu/snacks/hamburgerschijf.png",
+      "image": "/menu/snacks/hamburgerschijf.webp",
       "allergens": ["celery", "gluten", "soy"]
     },
     {
@@ -912,7 +912,7 @@
         "name": "Saté ardennais"
       },
       "price": 3.6,
-      "image": "/menu/snacks/ardeense.png",
+      "image": "/menu/snacks/ardeense.webp",
       "allergens": ["celery", "gluten"]
     },
     {
@@ -927,7 +927,7 @@
         "name": "Brochette de viande"
       },
       "price": 3.8,
-      "image": "/menu/snacks/vleesbrochette.png",
+      "image": "/menu/snacks/vleesbrochette.webp",
       "allergens": ["mustard"]
     },
     {
@@ -941,7 +941,7 @@
         "name": "Bâtonnets de mozzarella"
       },
       "price": 3.5,
-      "image": "/menu/snacks/mozarellasticks.png",
+      "image": "/menu/snacks/mozarellasticks.webp",
       "allergens": ["gluten", "milk"]
     },
     {
@@ -955,7 +955,7 @@
         "name": "Zigeunerstick"
       },
       "price": 3.5,
-      "image": "/menu/snacks/zigeunerstick.png",
+      "image": "/menu/snacks/zigeunerstick.webp",
       "allergens": ["gluten", "soy"]
     },
     {
@@ -969,7 +969,7 @@
         "name": "Saté merguez"
       },
       "price": 3.5,
-      "image": "/menu/snacks/mergueze.png",
+      "image": "/menu/snacks/mergueze.webp",
       "allergens": ["soy"]
     },
     {
@@ -983,7 +983,7 @@
         "name": "Viandel épicé"
       },
       "price": 2.6,
-      "image": "/menu/snacks/spicyviandel.png",
+      "image": "/menu/snacks/spicyviandel.webp",
       "allergens": ["celery", "gluten", "milk", "soy"],
       "pairsWith": [29, 31, 34]
     },
@@ -998,7 +998,7 @@
         "name": "Brochette de poisson"
       },
       "price": 3.9,
-      "image": "/menu/snacks/visbrochette.png",
+      "image": "/menu/snacks/visbrochette.webp",
       "allergens": ["celery", "fish", "gluten", "milk", "soy"]
     },
     {
@@ -1012,7 +1012,7 @@
         "name": "Soufflé au fromage"
       },
       "price": 3.1,
-      "image": "/menu/snacks/kaassouffle.png",
+      "image": "/menu/snacks/kaassouffle.webp",
       "allergens": ["gluten", "milk"]
     },
     {
@@ -1026,7 +1026,7 @@
         "name": "Mini lucifers"
       },
       "price": 3.7,
-      "image": "/menu/snacks/minilucifers.png",
+      "image": "/menu/snacks/minilucifers.webp",
       "allergens": ["celery", "gluten", "milk", "soy"]
     },
     {
@@ -1040,7 +1040,7 @@
         "name": "Mini-megamix"
       },
       "price": 3.8,
-      "image": "/menu/snacks/minimegamix.png",
+      "image": "/menu/snacks/minimegamix.webp",
       "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
@@ -1054,7 +1054,7 @@
         "name": "Crizly épicé"
       },
       "price": 4.3,
-      "image": "/menu/snacks/crizzly.png",
+      "image": "/menu/snacks/crizzly.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1068,7 +1068,7 @@
         "name": "Poulycroc"
       },
       "price": 4.7,
-      "image": "/menu/snacks/kipcorn.png",
+      "image": "/menu/snacks/kipcorn.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1083,7 +1083,7 @@
         "name": "Pilons de poulet"
       },
       "price": 4.7,
-      "image": "/menu/snacks/kippenboutjes.png",
+      "image": "/menu/snacks/kippenboutjes.webp",
       "allergens": []
     },
     {
@@ -1097,7 +1097,7 @@
         "name": "Stick de dinde"
       },
       "price": 4,
-      "image": "/menu/snacks/kalkoenstick.png",
+      "image": "/menu/snacks/kalkoenstick.webp",
       "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
     {
@@ -1112,7 +1112,7 @@
         "name": "Viandel"
       },
       "price": 2.6,
-      "image": "/menu/snacks/viandel.png",
+      "image": "/menu/snacks/viandel.webp",
       "allergens": ["celery", "gluten", "milk", "soy"]
     },
     {
@@ -1126,7 +1126,7 @@
         "name": "Viandel spécial"
       },
       "price": 3.6,
-      "image": "/menu/snacks/viandelspeciaal.png",
+      "image": "/menu/snacks/viandelspeciaal.webp",
       "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
@@ -1140,7 +1140,7 @@
         "name": "Mexicano"
       },
       "price": 3.2,
-      "image": "/menu/snacks/mexicano.png",
+      "image": "/menu/snacks/mexicano.webp",
       "allergens": ["gluten", "soy"]
     },
     {
@@ -1154,7 +1154,7 @@
         "name": "Croquette de viande"
       },
       "price": 3.7,
-      "image": "/menu/snacks/vleeskroket.png",
+      "image": "/menu/snacks/vleeskroket.webp",
       "allergens": ["gluten", "soy"]
     },
     {
@@ -1169,7 +1169,7 @@
         "name": "Boulet"
       },
       "price": 2.5,
-      "image": "/menu/snacks/boulet.png",
+      "image": "/menu/snacks/boulet.webp",
       "allergens": ["gluten"]
     },
     {
@@ -1183,7 +1183,7 @@
         "name": "Boulet spécial"
       },
       "price": 3.5,
-      "image": "/menu/snacks/bouletspeciaal.png",
+      "image": "/menu/snacks/bouletspeciaal.webp",
       "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
     },
     {
@@ -1198,7 +1198,7 @@
         "name": "Doigts de poulet"
       },
       "price": 3.9,
-      "image": "/menu/snacks/kipfingers.png",
+      "image": "/menu/snacks/kipfingers.webp",
       "allergens": ["gluten", "soy"]
     },
     {
@@ -1212,7 +1212,7 @@
         "name": "Kippets"
       },
       "price": 3.7,
-      "image": "/menu/snacks/kipnuggets.png",
+      "image": "/menu/snacks/kipnuggets.webp",
       "allergens": ["celery", "eggs", "gluten", "sulphites"]
     },
     {
@@ -1226,7 +1226,7 @@
         "name": "Taco"
       },
       "price": 4.1,
-      "image": "/menu/snacks/taco.png",
+      "image": "/menu/snacks/taco.webp",
       "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
     {
@@ -1240,7 +1240,7 @@
         "name": "Bitterballen"
       },
       "price": 3.2,
-      "image": "/menu/snacks/bitterballen.png",
+      "image": "/menu/snacks/bitterballen.webp",
       "allergens": ["gluten", "soy"]
     },
     {
@@ -1254,7 +1254,7 @@
         "name": "Ribster"
       },
       "price": 3.4,
-      "image": "/menu/snacks/ribster.png",
+      "image": "/menu/snacks/ribster.webp",
       "allergens": ["celery", "gluten", "soy"]
     },
     {
@@ -1268,7 +1268,7 @@
         "name": "Mammouth"
       },
       "price": 2.9,
-      "image": "/menu/snacks/mammoet.png",
+      "image": "/menu/snacks/mammoet.webp",
       "allergens": ["eggs", "gluten", "mustard", "soy"]
     },
     {
@@ -1282,7 +1282,7 @@
         "name": "Mini nems"
       },
       "price": 3.8,
-      "image": "/menu/snacks/miniloempias.png",
+      "image": "/menu/snacks/miniloempias.webp",
       "allergens": ["celery", "eggs", "gluten", "soy"]
     },
     {
@@ -1296,7 +1296,7 @@
         "name": "Nem"
       },
       "price": 4.5,
-      "image": "/menu/snacks/loempia.png",
+      "image": "/menu/snacks/loempia.webp",
       "allergens": ["gluten", "peanuts", "sesame", "soy"]
     },
     {
@@ -1310,7 +1310,7 @@
         "name": "Cheese crack"
       },
       "price": 3,
-      "image": "/menu/snacks/cheesecrack.png",
+      "image": "/menu/snacks/cheesecrack.webp",
       "allergens": ["gluten", "lupin", "milk"]
     },
     {
@@ -1324,7 +1324,7 @@
         "name": "Croquette aux crevettes"
       },
       "price": 4.8,
-      "image": "/menu/snacks/garnaalkroket.png",
+      "image": "/menu/snacks/garnaalkroket.webp",
       "allergens": ["crustaceans", "eggs", "fish", "gluten", "milk", "soy"]
     },
     {
@@ -1338,7 +1338,7 @@
         "name": "Saucisse à l'ail"
       },
       "price": 3.5,
-      "image": "/menu/snacks/lookworst.png",
+      "image": "/menu/snacks/lookworst.webp",
       "allergens": ["eggs", "gluten", "milk", "soy"]
     },
     {
@@ -1352,7 +1352,7 @@
         "name": "Bockwurst"
       },
       "price": 3.5,
-      "image": "/menu/snacks/bockworst.png",
+      "image": "/menu/snacks/bockworst.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1366,7 +1366,7 @@
         "name": "Donut poulet-fromage"
       },
       "price": 2.9,
-      "image": "/menu/snacks/kipkaasdonut.png",
+      "image": "/menu/snacks/kipkaasdonut.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1380,7 +1380,7 @@
         "name": "Boulettes bami"
       },
       "price": 3.4,
-      "image": "/menu/snacks/bamiballetjes.png",
+      "image": "/menu/snacks/bamiballetjes.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1394,7 +1394,7 @@
         "name": "Saucisse du chasseur"
       },
       "price": 3.8,
-      "image": "/menu/snacks/jagerworst.jpg",
+      "image": "/menu/snacks/jagerworst.webp",
       "allergens": ["celery", "eggs", "gluten", "milk", "sesame", "soy"]
     },
     {
@@ -1408,7 +1408,7 @@
         "name": "Boulettes de fromage"
       },
       "price": 3.2,
-      "image": "/menu/snacks/kaasballetjes.jpg",
+      "image": "/menu/snacks/kaasballetjes.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1423,7 +1423,7 @@
         "name": "Brochette de dinde maison"
       },
       "price": 4.2,
-      "image": "/menu/snacks/kalkoenborchette-huis.jpg",
+      "image": "/menu/snacks/kalkoenborchette-huis.webp",
       "allergens": []
     },
     {
@@ -1437,7 +1437,7 @@
         "name": "Brochette de scampi"
       },
       "price": 5.9,
-      "image": "/menu/snacks/scampibrochette.jpg",
+      "image": "/menu/snacks/scampibrochette.webp",
       "allergens": ["crustaceans"]
     },
     {
@@ -1451,7 +1451,7 @@
         "name": "Vuurvreter"
       },
       "price": 3.4,
-      "image": "/menu/snacks/vuurvreter.jpg",
+      "image": "/menu/snacks/vuurvreter.webp",
       "allergens": ["gluten"]
     },
     {
@@ -1465,7 +1465,7 @@
         "name": "Dynamite"
       },
       "price": 3.4,
-      "image": "/menu/snacks/dynamite.png",
+      "image": "/menu/snacks/dynamite.webp",
       "allergens": ["gluten", "milk", "soy"]
     },
     {
@@ -1479,7 +1479,7 @@
         "name": "Brochette de poulet artisanale"
       },
       "price": 3.8,
-      "image": "/menu/snacks/artisanalekipbrochette.png",
+      "image": "/menu/snacks/artisanalekipbrochette.webp",
       "allergens": []
     },
     {
@@ -1500,7 +1500,7 @@
         "description": "Un de nos classiques, mijoté dans la bière brune."
       },
       "price": 16,
-      "image": "/menu/plats/toofvlees.jpg",
+      "image": "/menu/plats/toofvlees.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
       "allergens": ["gluten", "milk", "mustard", "soy", "sulphites"],
@@ -1519,7 +1519,7 @@
         "description": "Croquettes de poulet crémeuses en sauce blanche."
       },
       "price": 14,
-      "image": "/menu/plats/volauvent.jpg",
+      "image": "/menu/plats/volauvent.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
       "allergens": ["eggs", "gluten", "milk"]
@@ -1538,7 +1538,7 @@
         "description": "Boulettes maison en sauce tomate généreuse."
       },
       "price": 14,
-      "image": "/menu/plats/balletjes.jpg",
+      "image": "/menu/plats/balletjes.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
       "allergens": ["celery", "gluten", "milk", "mustard", "soy"],
@@ -1557,7 +1557,7 @@
         "description": "Chicons gratinés enveloppés de jambon."
       },
       "price": 15.2,
-      "image": "/menu/plats/witloof.jpg",
+      "image": "/menu/plats/witloof.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["eggs", "gluten", "milk"]
@@ -1575,7 +1575,7 @@
         "description": "Demi-poulet grillé juteux."
       },
       "price": 14.7,
-      "image": "/menu/plats/halfhaantje.jpg",
+      "image": "/menu/plats/halfhaantje.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["milk", "mustard"]
@@ -1594,7 +1594,7 @@
         "description": "Brochette de boeuf tendre maison."
       },
       "price": 19.7,
-      "image": "/menu/plats/rundbrochette.jpg",
+      "image": "/menu/plats/rundbrochette.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["celery"],
@@ -1613,7 +1613,7 @@
         "description": "Cassolette crémeuse de poissons et fruits de mer."
       },
       "price": 19.5,
-      "image": "/menu/plats/vispannetje.jpg",
+      "image": "/menu/plats/vispannetje.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["celery", "crustaceans", "fish", "gluten", "milk"]
@@ -1632,7 +1632,7 @@
         "description": "Scampis en sauce crème douce."
       },
       "price": 16.5,
-      "image": "/menu/plats/scampicreme.jpg",
+      "image": "/menu/plats/scampicreme.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["crustaceans", "milk", "mustard"]
@@ -1650,7 +1650,7 @@
         "description": "Scampis en sauce diabolique épicée."
       },
       "price": 16.5,
-      "image": "/menu/plats/scampidiabolique.jpg",
+      "image": "/menu/plats/scampidiabolique.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["crustaceans", "gluten", "milk"]
@@ -1668,7 +1668,7 @@
         "description": "Scampis en sauce curry aromatique."
       },
       "price": 16.5,
-      "image": "/menu/plats/scampicurry.png",
+      "image": "/menu/plats/scampicurry.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["crustaceans", "gluten", "milk", "mustard", "sulphites"]
@@ -1686,7 +1686,7 @@
         "description": "Omelette légère au choix."
       },
       "price": 12.5,
-      "image": "/menu/plats/omelet.jpg",
+      "image": "/menu/plats/omelet.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
       "allergens": ["eggs", "milk"]
@@ -1705,7 +1705,7 @@
         "description": "Américain frais préparé avec garnitures classiques."
       },
       "price": 16,
-      "image": "/menu/plats/prepare.jpg",
+      "image": "/menu/plats/prepare.webp",
       "childVersion": true,
       "allergens": ["eggs", "mustard"],
       "pairsWith": [25]
@@ -1723,7 +1723,7 @@
         "description": "Steak tartare de bœuf préparé à la classique."
       },
       "price": 15.5,
-      "image": "/menu/plats/steaktartare.jpg",
+      "image": "/menu/plats/steaktartare.webp",
       "childVersion": true,
       "allergens": ["eggs", "mustard"]
     },
@@ -1740,7 +1740,7 @@
         "description": "Pâté fermier artisanal de notre préparation."
       },
       "price": 14,
-      "image": "/menu/plats/boerenpate.jpg",
+      "image": "/menu/plats/boerenpate.webp",
       "childVersion": true,
       "allergens": ["eggs", "milk", "mustard", "sulphites"]
     },
@@ -1757,7 +1757,7 @@
         "description": "Charcuterie froide avec garnitures."
       },
       "price": 14.5,
-      "image": "/menu/plats/koudeschotel.jpg",
+      "image": "/menu/plats/koudeschotel.webp",
       "childVersion": false,
       "allergens": [
         "celery",
@@ -1782,7 +1782,7 @@
         "description": "Tomate fraîche garnie de crevettes de la Mer du Nord."
       },
       "price": 23,
-      "image": "/menu/plats/tomaatgarnaal.jpg",
+      "image": "/menu/plats/tomaatgarnaal.webp",
       "childVersion": true,
       "allergens": ["crustaceans", "eggs", "gluten", "milk", "soy"],
       "pairsWith": [25, 28]
@@ -1800,7 +1800,7 @@
         "description": "Tomate fraîche garnie de salade de thon."
       },
       "price": 14.2,
-      "image": "/menu/plats/tomaattonijn.jpg",
+      "image": "/menu/plats/tomaattonijn.webp",
       "childVersion": true,
       "allergens": ["eggs", "fish", "milk", "mustard", "soy"]
     },
@@ -1818,7 +1818,7 @@
         "description": "Salade de thon accompagnée de pêches."
       },
       "price": 14.2,
-      "image": "/menu/plats/tonijnperzik.jpg",
+      "image": "/menu/plats/tonijnperzik.webp",
       "childVersion": true,
       "allergens": ["eggs", "fish", "milk", "mustard", "soy"]
     },
@@ -1836,7 +1836,7 @@
         "description": "Spaghetti bolognaise maison."
       },
       "price": 12,
-      "image": "/menu/plats/spaghetti.jpg",
+      "image": "/menu/plats/spaghetti.webp",
       "childVersion": true,
       "allergens": ["celery", "gluten", "milk", "soy"]
     },
@@ -1853,7 +1853,7 @@
         "description": "Tagliatelli maison à la sauce carbonara crémeuse."
       },
       "price": 13,
-      "image": "/menu/plats/tagliatellecarbonara.jpg",
+      "image": "/menu/plats/tagliatellecarbonara.webp",
       "childVersion": true,
       "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
@@ -1870,7 +1870,7 @@
         "description": "Macaroni maison à la sauce viande et fromage."
       },
       "price": 12,
-      "image": "/menu/plats/macaroni.jpg",
+      "image": "/menu/plats/macaroni.webp",
       "childVersion": true,
       "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
@@ -1887,7 +1887,7 @@
         "description": "Couches de pâtes à la sauce viande et béchamel."
       },
       "price": 12.5,
-      "image": "/menu/plats/lasagne.jpg",
+      "image": "/menu/plats/lasagne.webp",
       "childVersion": false,
       "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
@@ -1904,7 +1904,7 @@
         "description": "Sandwich grillé au jambon et fromage fondu."
       },
       "price": 9.5,
-      "image": "/menu/plats/croque.jpg",
+      "image": "/menu/plats/croque.webp",
       "childVersion": false,
       "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
     },
@@ -1912,7 +1912,7 @@
       "id": 214,
       "category": "maaltijd",
       "emoji": "🥪",
-      "image": "/menu/plats/croqueboem.jpg",
+      "image": "/menu/plats/croqueboem.webp",
       "nl": {
         "name": "Croque Boem Boem",
         "description": "Onze speciale croque met extra beleg."
@@ -1929,7 +1929,7 @@
       "id": 215,
       "category": "maaltijd",
       "emoji": "🥪",
-      "image": "/menu/plats/croquehawai.jpg",
+      "image": "/menu/plats/croquehawai.webp",
       "nl": {
         "name": "Croque hawaï",
         "description": "Croque monsieur met ananas."
@@ -1959,7 +1959,7 @@
         "description": "Salade croustillante, filet de poulet, croûtons et sauce César."
       },
       "price": 13.7,
-      "image": "/menu/salades/caesar.jpg",
+      "image": "/menu/salades/caesar.webp",
       "allergens": ["eggs", "gluten", "milk", "mustard"]
     },
     {
@@ -1975,7 +1975,7 @@
         "description": "Salade fraîche de légumes mélangés."
       },
       "price": 5.5,
-      "image": "/menu/salades/rauwkost.jpg",
+      "image": "/menu/salades/rauwkost.webp",
       "allergens": ["eggs", "mustard", "sulphites"]
     },
     {
@@ -1991,7 +1991,7 @@
         "description": "Salade fraîche avec scampis sautés."
       },
       "price": 14.5,
-      "image": "/menu/salades/scampi.jpg",
+      "image": "/menu/salades/scampi.webp",
       "allergens": [
         "celery",
         "crustaceans",
@@ -2014,7 +2014,7 @@
         "description": "Salade avec crevettes fraîches de la Mer du Nord."
       },
       "price": 16,
-      "image": "/menu/salades/noordzee.jpg",
+      "image": "/menu/salades/noordzee.webp",
       "allergens": [
         "crustaceans",
         "eggs",
@@ -2038,7 +2038,7 @@
         "description": "Salade fraîche avec de fromage de chèvre chaudes enveloppées de bacon."
       },
       "price": 13.1,
-      "image": "/menu/salades/geitenkaas.jpg",
+      "image": "/menu/salades/geitenkaas.webp",
       "allergens": ["gluten", "milk"]
     },
     {
@@ -2054,7 +2054,7 @@
         "description": "Classique niçoise avec thon, olives et œuf dur."
       },
       "price": 13.7,
-      "image": "/menu/salades/nicoise.jpg",
+      "image": "/menu/salades/nicoise.webp",
       "allergens": ["eggs", "fish"]
     },
     {
@@ -2070,7 +2070,7 @@
         "description": "Assiette de croquettes de fromage servie sur un lit de salade fraîche."
       },
       "price": 13.6,
-      "image": "/menu/salades/geitenkaas.jpg",
+      "image": "/menu/salades/geitenkaas.webp",
       "allergens": ["eggs", "gluten", "milk", "soy"]
     },
     {
@@ -2086,7 +2086,7 @@
         "description": "Assiette de croquettes de crevettes servie sur un lit de salade fraîche."
       },
       "price": 17.2,
-      "image": "/menu/salades/garnaalkroketten.jpg",
+      "image": "/menu/salades/garnaalkroketten.webp",
       "allergens": ["celery", "crustaceans", "eggs", "gluten", "milk", "soy"]
     },
     {
@@ -2108,7 +2108,7 @@
         "name": "Coca-Cola"
       },
       "price": 2.5,
-      "image": "/menu/drinks/coca cola.png",
+      "image": "/menu/drinks/coca cola.webp",
       "allergens": []
     },
     {
@@ -2122,7 +2122,7 @@
         "name": "Coca-Cola Zero"
       },
       "price": 2.5,
-      "image": "/menu/drinks/colazero.png",
+      "image": "/menu/drinks/colazero.webp",
       "allergens": []
     },
     {
@@ -2136,7 +2136,7 @@
         "name": "Fanta"
       },
       "price": 2.5,
-      "image": "/menu/drinks/fanta.png",
+      "image": "/menu/drinks/fanta.webp",
       "allergens": []
     },
     {
@@ -2150,7 +2150,7 @@
         "name": "Fanta Citron"
       },
       "price": 2.5,
-      "image": "/menu/drinks/fantalemon.png",
+      "image": "/menu/drinks/fantalemon.webp",
       "allergens": []
     },
     {
@@ -2164,7 +2164,7 @@
         "name": "Sprite"
       },
       "price": 2.5,
-      "image": "/menu/drinks/sprite.png",
+      "image": "/menu/drinks/sprite.webp",
       "allergens": []
     },
     {
@@ -2178,7 +2178,7 @@
         "name": "Ice Tea"
       },
       "price": 2.5,
-      "image": "/menu/drinks/icetea.png",
+      "image": "/menu/drinks/icetea.webp",
       "allergens": []
     },
     {
@@ -2192,7 +2192,7 @@
         "name": "Ice Tea Green"
       },
       "price": 2.5,
-      "image": "/menu/drinks/iceteagreen.png",
+      "image": "/menu/drinks/iceteagreen.webp",
       "allergens": []
     },
     {
@@ -2206,7 +2206,7 @@
         "name": "Fuze Tea"
       },
       "price": 2.5,
-      "image": "/menu/drinks/fuzetea.jpg",
+      "image": "/menu/drinks/fuzetea.webp",
       "allergens": []
     },
     {
@@ -2220,7 +2220,7 @@
         "name": "Tropico"
       },
       "price": 2.5,
-      "image": "/menu/drinks/tropico.png",
+      "image": "/menu/drinks/tropico.webp",
       "allergens": []
     },
     {
@@ -2234,7 +2234,7 @@
         "name": "Minute Maid"
       },
       "price": 2.5,
-      "image": "/menu/drinks/minutemaid.png",
+      "image": "/menu/drinks/minutemaid.webp",
       "allergens": []
     },
     {
@@ -2248,7 +2248,7 @@
         "name": "Agrum"
       },
       "price": 2.5,
-      "image": "/menu/drinks/agrum.png",
+      "image": "/menu/drinks/agrum.webp",
       "allergens": []
     },
     {
@@ -2262,7 +2262,7 @@
         "name": "Gini"
       },
       "price": 2.5,
-      "image": "/menu/drinks/gini.png",
+      "image": "/menu/drinks/gini.webp",
       "allergens": []
     },
     {
@@ -2276,7 +2276,7 @@
         "name": "Capri-Sun"
       },
       "price": 1.5,
-      "image": "/menu/drinks/capirsun.png",
+      "image": "/menu/drinks/capirsun.webp",
       "allergens": []
     },
     {
@@ -2294,7 +2294,7 @@
         "name": "Eau plate"
       },
       "price": 2,
-      "image": "/menu/drinks/platwater.png",
+      "image": "/menu/drinks/platwater.webp",
       "allergens": []
     },
     {
@@ -2308,7 +2308,7 @@
         "name": "Eau pétillante"
       },
       "price": 2,
-      "image": "/menu/drinks/spuitwater.png",
+      "image": "/menu/drinks/spuitwater.webp",
       "allergens": []
     },
     {
@@ -2322,7 +2322,7 @@
         "name": "Tonnisteiner Citron"
       },
       "price": 2.5,
-      "image": "/menu/drinks/tonnisteinercitroen.png",
+      "image": "/menu/drinks/tonnisteinercitroen.webp",
       "allergens": []
     },
     {
@@ -2336,7 +2336,7 @@
         "name": "Tonnisteiner Orange"
       },
       "price": 2.5,
-      "image": "/menu/drinks/tonnisteinerorange.png",
+      "image": "/menu/drinks/tonnisteinerorange.webp",
       "allergens": []
     },
     {
@@ -2354,7 +2354,7 @@
         "name": "Jupiler"
       },
       "price": 2.5,
-      "image": "/menu/drinks/jupiler.png",
+      "image": "/menu/drinks/jupiler.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2368,7 +2368,7 @@
         "name": "Jupiler 0.0%"
       },
       "price": 2.5,
-      "image": "/menu/drinks/jupiler00.png",
+      "image": "/menu/drinks/jupiler00.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2382,7 +2382,7 @@
         "name": "Hoegaarden"
       },
       "price": 3,
-      "image": "/menu/drinks/hoegaarden.png",
+      "image": "/menu/drinks/hoegaarden.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2396,7 +2396,7 @@
         "name": "Leffe Blonde"
       },
       "price": 3,
-      "image": "/menu/drinks/leffeblond.png",
+      "image": "/menu/drinks/leffeblond.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2410,7 +2410,7 @@
         "name": "Leffe Brune"
       },
       "price": 3,
-      "image": "/menu/drinks/leffebruin.png",
+      "image": "/menu/drinks/leffebruin.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2424,7 +2424,7 @@
         "name": "Duvel"
       },
       "price": 3.5,
-      "image": "/menu/drinks/duvel.png",
+      "image": "/menu/drinks/duvel.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2438,7 +2438,7 @@
         "name": "Belle-Vue"
       },
       "price": 3,
-      "image": "/menu/drinks/bellevue.png",
+      "image": "/menu/drinks/bellevue.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2452,7 +2452,7 @@
         "name": "Rodenbach"
       },
       "price": 3,
-      "image": "/menu/drinks/rodenbach.png",
+      "image": "/menu/drinks/rodenbach.webp",
       "allergens": []
     },
     {
@@ -2466,7 +2466,7 @@
         "name": "Omer"
       },
       "price": 3,
-      "image": "/menu/drinks/omer.png",
+      "image": "/menu/drinks/omer.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2480,7 +2480,7 @@
         "name": "Paix Dieu"
       },
       "price": 4,
-      "image": "/menu/drinks/paixdieu.png",
+      "image": "/menu/drinks/paixdieu.webp",
       "allergens": ["gluten"]
     },
     {
@@ -2498,7 +2498,7 @@
         "name": "Vin blanc"
       },
       "price": 3.5,
-      "image": "/menu/drinks/wittewijn.png",
+      "image": "/menu/drinks/wittewijn.webp",
       "allergens": ["sulphites"]
     },
     {
@@ -2512,7 +2512,7 @@
         "name": "Vin rosé"
       },
       "price": 3.5,
-      "image": "/menu/drinks/rosewijn.png",
+      "image": "/menu/drinks/rosewijn.webp",
       "allergens": ["sulphites"]
     },
     {
@@ -2526,7 +2526,7 @@
         "name": "Vin rouge"
       },
       "price": 3.5,
-      "image": "/menu/drinks/rodewijn.png",
+      "image": "/menu/drinks/rodewijn.webp",
       "allergens": ["sulphites"]
     }
   ]

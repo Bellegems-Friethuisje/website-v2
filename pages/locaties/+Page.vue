@@ -1,11 +1,11 @@
 <template>
   <!-- Header -->
   <section class="relative h-56 overflow-hidden">
-    <img
-      src="https://strapi.bellegemsfriethuisje.be/uploads/20230520_DSC_07914_921e483a24.jpg"
-      alt="Locaties"
-      class="w-full h-full object-cover object-center"
-    />
+    <picture>
+      <source srcset="/site/locaties.avif" type="image/avif" />
+      <source srcset="/site/locaties.webp" type="image/webp" />
+      <img src="/site/locaties.webp" alt="Locaties" class="w-full h-full object-cover object-center" />
+    </picture>
     <div class="absolute inset-0 bg-gray-950/65 flex items-center">
       <div class="max-w-5xl mx-auto px-4 lg:px-0 w-full">
         <p

@@ -4,13 +4,11 @@
     class="relative overflow-hidden h-[90vh] min-h-[560px] max-h-[780px]"
   >
     <div class="absolute inset-0">
-      <img
-        src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104452_dea8c2695a.jpg"
-        alt="Bellegems Friethuisje"
-        fetchpriority="high"
-        decoding="async"
-        class="w-full h-full object-cover object-center"
-      />
+      <picture>
+        <source srcset="/site/hero.avif" type="image/avif" />
+        <source srcset="/site/hero.webp" type="image/webp" />
+        <img src="/site/hero.webp" alt="Bellegems Friethuisje" fetchpriority="high" decoding="async" class="w-full h-full object-cover object-center" />
+      </picture>
       <div
         class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/50 to-transparent"
       />
@@ -210,41 +208,31 @@
 
       <!-- Images -->
       <div class="lg:col-span-2 grid grid-cols-2 gap-3 lg:sticky lg:top-24">
-        <img
-          src="https://strapi.bellegemsfriethuisje.be/uploads/large_20220417_104452_dea8c2695a.jpg"
-          alt="Bellegems Friethuisje buiten"
-          loading="lazy"
-          decoding="async"
-          class="col-span-2 h-52 w-full object-cover rounded-2xl"
-        />
-        <img
-          src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_105458_b3b7e1d676.jpg"
-          alt="Sfeer binnen"
-          loading="lazy"
-          decoding="async"
-          class="h-36 w-full object-cover rounded-2xl"
-        />
-        <img
-          src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_105146_6ff5e0da63.jpg"
-          alt="Zaal"
-          loading="lazy"
-          decoding="async"
-          class="h-36 w-full object-cover rounded-2xl"
-        />
-        <img
-          src="https://strapi.bellegemsfriethuisje.be/uploads/DSC_07923_c92311a02a.jpg"
-          alt="Bellegems Friethuisje zaal"
-          loading="lazy"
-          decoding="async"
-          class="h-36 w-full object-cover rounded-2xl"
-        />
-        <img
-          src="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104808_7d920f05c2.jpg"
-          alt="Ingang"
-          loading="lazy"
-          decoding="async"
-          class="h-36 w-full object-cover rounded-2xl"
-        />
+        <picture class="col-span-2">
+          <source srcset="/site/story-exterior.avif" type="image/avif" />
+          <source srcset="/site/story-exterior.webp" type="image/webp" />
+          <img src="/site/story-exterior.webp" alt="Bellegems Friethuisje buiten" loading="lazy" decoding="async" class="h-52 w-full object-cover rounded-2xl" />
+        </picture>
+        <picture>
+          <source srcset="/site/story-interior.avif" type="image/avif" />
+          <source srcset="/site/story-interior.webp" type="image/webp" />
+          <img src="/site/story-interior.webp" alt="Sfeer binnen" loading="lazy" decoding="async" class="h-36 w-full object-cover rounded-2xl" />
+        </picture>
+        <picture>
+          <source srcset="/site/story-dining.avif" type="image/avif" />
+          <source srcset="/site/story-dining.webp" type="image/webp" />
+          <img src="/site/story-dining.webp" alt="Zaal" loading="lazy" decoding="async" class="h-36 w-full object-cover rounded-2xl" />
+        </picture>
+        <picture>
+          <source srcset="/site/story-hall.avif" type="image/avif" />
+          <source srcset="/site/story-hall.webp" type="image/webp" />
+          <img src="/site/story-hall.webp" alt="Bellegems Friethuisje zaal" loading="lazy" decoding="async" class="h-36 w-full object-cover rounded-2xl" />
+        </picture>
+        <picture>
+          <source srcset="/site/story-entrance.avif" type="image/avif" />
+          <source srcset="/site/story-entrance.webp" type="image/webp" />
+          <img src="/site/story-entrance.webp" alt="Ingang" loading="lazy" decoding="async" class="h-36 w-full object-cover rounded-2xl" />
+        </picture>
       </div>
     </div>
   </section>
@@ -403,13 +391,11 @@
 
     <!-- Featured dish -->
     <div class="rounded-2xl overflow-hidden mb-5 relative h-64 group">
-      <img
-        src="https://strapi.bellegemsfriethuisje.be/uploads/small_DSC_1740_Half_haantje_6b1846afc8.jpg"
-        alt="Half haantje"
-        loading="lazy"
-        decoding="async"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-      />
+      <picture>
+        <source srcset="/site/featured-halfhaantje.avif" type="image/avif" />
+        <source srcset="/site/featured-halfhaantje.webp" type="image/webp" />
+        <img src="/site/featured-halfhaantje.webp" alt="Half haantje" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+      </picture>
       <div
         class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent flex items-end p-6"
       >
@@ -591,13 +577,11 @@
 
   <!-- Reservation CTA -->
   <section class="relative overflow-hidden h-64 flex items-center">
-    <img
-      src="https://strapi.bellegemsfriethuisje.be/uploads/medium_20220417_105904_aad992e322.jpg"
-      alt="Bellegems Friethuisje"
-      loading="lazy"
-      decoding="async"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
+    <picture>
+      <source srcset="/site/cta-bg.avif" type="image/avif" />
+      <source srcset="/site/cta-bg.webp" type="image/webp" />
+      <img src="/site/cta-bg.webp" alt="Bellegems Friethuisje" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover" />
+    </picture>
     <div class="absolute inset-0 bg-orange-600/85" />
     <div class="relative z-10 max-w-5xl mx-auto px-4 lg:px-0 w-full">
       <div

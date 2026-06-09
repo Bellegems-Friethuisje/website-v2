@@ -14,7 +14,7 @@
   <meta property="og:title" :content="pageTitle" />
   <meta property="og:description" :content="pageDescription" />
   <meta property="og:url" :content="canonicalUrl" />
-  <meta property="og:image" content="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104452_dea8c2695a.jpg" />
+  <meta property="og:image" content="https://www.bellegemsfriethuisje.be/site/hero.webp" />
   <meta property="og:image:alt" content="Bellegems Friethuisje – buiten" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="800" />
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" :content="pageTitle" />
   <meta name="twitter:description" :content="pageDescription" />
-  <meta name="twitter:image" content="https://strapi.bellegemsfriethuisje.be/uploads/20220417_104452_dea8c2695a.jpg" />
+  <meta name="twitter:image" content="https://www.bellegemsfriethuisje.be/site/hero.webp" />
 
   <component :is="'script'" type="application/ld+json" v-text="jsonLd" />
 
@@ -82,9 +82,9 @@ const jsonLd = computed(() => JSON.stringify({
   url: BASE_URL,
   telephone: '+3256229995',
   image: [
-    'https://strapi.bellegemsfriethuisje.be/uploads/20220417_104452_dea8c2695a.jpg',
-    'https://strapi.bellegemsfriethuisje.be/uploads/20230520_DSC_07914_921e483a24.jpg',
-    'https://strapi.bellegemsfriethuisje.be/uploads/DSC_07923_c92311a02a.jpg',
+    `${BASE_URL}/site/hero.webp`,
+    `${BASE_URL}/site/locaties.webp`,
+    `${BASE_URL}/site/story-hall.webp`,
   ],
   address: {
     '@type': 'PostalAddress',

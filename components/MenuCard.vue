@@ -6,17 +6,19 @@
   >
     <!-- Real photo or emoji fallback -->
     <div ref="containerEl" class="relative h-44 overflow-hidden bg-orange-50">
-      <img
-        v-if="imgSrc"
-        :src="imgSrc"
-        :alt="name"
-        decoding="async"
-        @load="imgLoaded = true"
-        :class="[
-          'w-full h-full object-cover group-hover:scale-105 transition-all duration-500',
-          imgLoaded ? 'opacity-100' : 'opacity-0',
-        ]"
-      />
+      <picture v-if="imgSrc">
+        <source :srcset="imgSrc.replace(/\.webp$/, '.avif')" type="image/avif" />
+        <img
+          :src="imgSrc"
+          :alt="name"
+          decoding="async"
+          @load="imgLoaded = true"
+          :class="[
+            'w-full h-full object-cover group-hover:scale-105 transition-all duration-500',
+            imgLoaded ? 'opacity-100' : 'opacity-0',
+          ]"
+        />
+      </picture>
       <div
         v-else
         class="w-full h-full flex items-center justify-center text-5xl"

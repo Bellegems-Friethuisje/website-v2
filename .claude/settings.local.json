@@ -78,7 +78,9 @@
       "Bash(node_modules/.bin/vike.exe --version)",
       "Bash(npx vike *)",
       "Bash(ls public/menu)",
-      "Bash(ls public *)"
+      "Bash(ls public *)",
+      "PowerShell(npm install *)",
+      "PowerShell(git *)"
     ]
   }
 }

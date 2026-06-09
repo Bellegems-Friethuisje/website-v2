@@ -230,7 +230,7 @@
         "description": "Maison"
       },
       "price": 1.2,
-      "image": "/menu/saus/mayo.png"
+      "image": "/menu/saus/mayo.webp"
     },
     {
       "id": 61,
@@ -245,7 +245,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/ketchup.png"
+      "image": "/menu/saus/ketchup.webp"
     },
     {
       "id": 62,
@@ -260,7 +260,7 @@
         "description": "Légèrement épicée"
       },
       "price": 1.2,
-      "image": "/menu/saus/andalouse.png"
+      "image": "/menu/saus/andalouse.webp"
     },
     {
       "id": 63,
@@ -275,7 +275,7 @@
         "description": "Crémeux"
       },
       "price": 1.2,
-      "image": "/menu/saus/coctail.png"
+      "image": "/menu/saus/coctail.webp"
     },
     {
       "id": 64,
@@ -290,7 +290,7 @@
         "description": "Épicée"
       },
       "price": 1.2,
-      "image": "/menu/saus/samourai.png"
+      "image": "/menu/saus/samourai.webp"
     },
     {
       "id": 66,
@@ -305,7 +305,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/tartare.png"
+      "image": "/menu/saus/tartare.webp"
     },
     {
       "id": 67,
@@ -320,7 +320,7 @@
         "description": ""
       },
       "price": 1.2,
-      "image": "/menu/saus/americaine.png"
+      "image": "/menu/saus/americaine.webp"
     },
     {
       "id": 68,
@@ -333,7 +333,7 @@
         "name": "Bicky jaune"
       },
       "price": 1.2,
-      "image": "/menu/saus/gelebicky.png"
+      "image": "/menu/saus/gelebicky.webp"
     },
     {
       "id": 69,
@@ -346,7 +346,7 @@
         "name": "Bicky orange"
       },
       "price": 1.2,
-      "image": "/menu/saus/oranjebicky.png"
+      "image": "/menu/saus/oranjebicky.webp"
     },
     {
       "id": 70,
@@ -359,7 +359,7 @@
         "name": "Curry jaune"
       },
       "price": 1.2,
-      "image": "/menu/saus/gelecurry.png"
+      "image": "/menu/saus/gelecurry.webp"
     },
     {
       "id": 71,
@@ -372,7 +372,7 @@
         "name": "Sauce spéciale"
       },
       "price": 1.2,
-      "image": "/menu/saus/specialesaus.png"
+      "image": "/menu/saus/specialesaus.webp"
     },
     {
       "id": 72,
@@ -385,7 +385,7 @@
         "name": "3 sauces"
       },
       "price": 3.0,
-      "image": "/menu/saus/3sauzen.png"
+      "image": "/menu/saus/3sauzen.webp"
     }
   ]
 }

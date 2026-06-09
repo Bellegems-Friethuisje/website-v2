@@ -2,7 +2,9 @@
   "scripts": {
     "dev": "vike dev",
     "build": "vike build",
-    "preview": "vike build && vike preview"
+    "preview": "vike build && vike preview",
+    "optimize-images": "node scripts/optimize-images.js",
+    "download-strapi-images": "node scripts/download-strapi-images.js"
   },
   "dependencies": {
     "@universal-middleware/core": "^0.4.17",
@@ -17,6 +19,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "@types/express": "^5.0.6",
     "@vitejs/plugin-vue": "^6.0.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.11"
