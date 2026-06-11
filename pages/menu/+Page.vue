@@ -38,8 +38,36 @@
 
   <!-- Sticky category filter -->
   <div class="sticky top-16 z-40 bg-white border-b border-gray-100 shadow-sm">
-    <div class="max-w-5xl mx-auto px-4 lg:px-0">
-      <div class="flex gap-2 py-3 overflow-x-auto no-scrollbar">
+    <div class="max-w-5xl mx-auto px-4 lg:px-0 relative">
+      <!-- Left arrow -->
+      <button
+        v-if="canScrollLeft"
+        @click="scrollCategories(-1)"
+        class="hidden sm:flex absolute left-0 top-0 bottom-0 z-10 items-center px-1.5 bg-gradient-to-r from-white via-white to-transparent"
+        :aria-label="t({ nl: 'Scroll naar links', fr: 'Défiler vers la gauche' })"
+      >
+        <span class="h-8 w-8 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-orange-500 hover:border-orange-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </span>
+      </button>
+
+      <!-- Right arrow -->
+      <button
+        v-if="canScrollRight"
+        @click="scrollCategories(1)"
+        class="hidden sm:flex absolute right-0 top-0 bottom-0 z-10 items-center px-1.5 bg-gradient-to-l from-white via-white to-transparent"
+        :aria-label="t({ nl: 'Scroll naar rechts', fr: 'Défiler vers la droite' })"
+      >
+        <span class="h-8 w-8 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-gray-500 hover:text-orange-500 hover:border-orange-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+      </button>
+
+      <div ref="categoryScroller" class="flex gap-2 py-3 overflow-x-auto category-scroll" @scroll="updateScrollState">
         <button
           @click="activeCategory = 'all'"
           :class="[
@@ -64,6 +92,30 @@
         >
           <span>{{ cat.emoji }}</span>
           <span>{{ lang === "nl" ? cat.nl : cat.fr }}</span>
+        </button>
+      </div>
+
+      <!-- Mobile scroll arrows -->
+      <div v-if="canScrollLeft || canScrollRight" class="flex sm:hidden justify-between pb-2">
+        <button
+          @click="scrollCategories(-1)"
+          :disabled="!canScrollLeft"
+          class="h-8 w-8 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-500 transition-colors disabled:opacity-30"
+          :aria-label="t({ nl: 'Scroll naar links', fr: 'Défiler vers la gauche' })"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <button
+          @click="scrollCategories(1)"
+          :disabled="!canScrollRight"
+          class="h-8 w-8 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-500 transition-colors disabled:opacity-30"
+          :aria-label="t({ nl: 'Scroll naar rechts', fr: 'Défiler vers la droite' })"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
         </button>
       </div>
     </div>
@@ -245,7 +297,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from "vue";
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from "vue";
 import { useLang } from "../../composables/useLang";
 import { trackEvent } from "../../composables/useAnalytics";
 import { useOrder } from "../../composables/useOrder";
@@ -289,6 +341,32 @@ function toggleAllergen(key: string) {
   if (idx >= 0) selectedAllergens.value.splice(idx, 1);
   else selectedAllergens.value.push(key);
 }
+
+const categoryScroller = ref<HTMLElement | null>(null);
+const canScrollLeft = ref(false);
+const canScrollRight = ref(false);
+
+function updateScrollState() {
+  const el = categoryScroller.value;
+  if (!el) return;
+  canScrollLeft.value = el.scrollLeft > 4;
+  canScrollRight.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 4;
+}
+
+function scrollCategories(direction: 1 | -1) {
+  const el = categoryScroller.value;
+  if (!el) return;
+  el.scrollBy({ left: direction * el.clientWidth * 0.7, behavior: "smooth" });
+}
+
+onMounted(() => {
+  updateScrollState();
+  window.addEventListener("resize", updateScrollState);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateScrollState);
+});
 
 const currentLocation = computed(
   () => locations.find((l) => l.id === activeLocation.value) ?? locations[0],
@@ -343,6 +421,10 @@ const availableCategories = computed(() => {
   return [...base, ...custom];
 });
 
+watch([availableCategories, activeLocation], () => {
+  nextTick(updateScrollState);
+});
+
 const mainCategories = computed(() =>
   availableCategories.value.filter((c) => !c.sauzen),
 );
@@ -388,10 +470,10 @@ function catItems(catId: string) {
 </script>
 
 <style scoped>
-.no-scrollbar::-webkit-scrollbar {
+.category-scroll::-webkit-scrollbar {
   display: none;
 }
-.no-scrollbar {
+.category-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
