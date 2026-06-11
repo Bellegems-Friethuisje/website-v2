@@ -59,9 +59,18 @@
           ><span aria-hidden="true">{{ side.emoji }}</span> {{ side.label }}</span
         >
       </div>
-      <span class="text-orange-500 font-extrabold text-lg mt-auto pt-2"
-        >€{{ price.toFixed(2) }}</span
-      >
+      <div class="flex items-center justify-between mt-auto pt-2">
+        <span class="text-orange-500 font-extrabold text-lg"
+          >€{{ price.toFixed(2) }}</span
+        >
+        <button
+          @click.stop="handleAdd"
+          class="h-11 w-11 rounded-full bg-orange-50 hover:bg-orange-500 active:bg-orange-500 text-orange-500 hover:text-white active:text-white font-extrabold text-xl transition-colors flex items-center justify-center shrink-0"
+          :aria-label="t({ nl: 'Toevoegen aan bestelling', fr: 'Ajouter à la commande' })"
+        >
+          +
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -74,7 +83,7 @@ import { trackEvent } from "../composables/useAnalytics";
 
 const { lang, t } = useLang();
 
-const emit = defineEmits<{ select: [] }>();
+const emit = defineEmits<{ select: []; add: [] }>();
 
 const props = defineProps<{
   name: string;
@@ -94,6 +103,10 @@ const { imgSrc, imgLoaded } = useLazyImage(containerEl, props.image);
 function handleClick() {
   trackEvent('select_item', { item_name: props.name, item_category: props.category, price: props.price })
   emit('select')
+}
+
+function handleAdd() {
+  emit('add')
 }
 
 const popularLabel = computed(() => t({ nl: "Populair", fr: "Populaire" }));

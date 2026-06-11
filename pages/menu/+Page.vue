@@ -173,9 +173,18 @@
               {{ lang === "nl" ? item.nl.description : item.fr.description }}
             </p>
           </div>
-          <span class="text-orange-500 font-bold text-sm ml-2 shrink-0"
-            >€{{ item.price.toFixed(2) }}</span
-          >
+          <div class="flex items-center gap-2 ml-2 shrink-0">
+            <span class="text-orange-500 font-bold text-sm"
+              >€{{ item.price.toFixed(2) }}</span
+            >
+            <button
+              @click.stop="addToOrder(item, 'sauce_list')"
+              class="h-11 w-11 rounded-full bg-orange-50 hover:bg-orange-500 active:bg-orange-500 text-orange-500 hover:text-white active:text-white font-extrabold text-lg transition-colors flex items-center justify-center shrink-0"
+              :aria-label="t({ nl: 'Toevoegen aan bestelling', fr: 'Ajouter à la commande' })"
+            >
+              +
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -205,6 +214,7 @@
             :sides="item.sides"
             :child-version="item.childVersion ?? false"
             @select="selectedItem = item"
+            @add="addToOrder(item, 'card')"
           />
         </div>
       </div>
@@ -230,12 +240,15 @@
     :menu="locationMenu"
     @close="selectedItem = null"
     @select="selectedItem = $event"
+    @add="addToOrder($event, 'modal')"
   />
 </template>
 
 <script setup lang="ts">
 import { ref, computed, watch, onMounted } from "vue";
 import { useLang } from "../../composables/useLang";
+import { trackEvent } from "../../composables/useAnalytics";
+import { useOrder } from "../../composables/useOrder";
 import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
 import bellegems from "../../data/locations/bellegems.json";
@@ -243,6 +256,7 @@ import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
+const { addItem } = useOrder();
 
 const menuStates = ref<Record<string, { prices: Record<string, number>, hidden: number[], custom: any[], customCategories: any[] }>>({});
 
@@ -279,6 +293,30 @@ function toggleAllergen(key: string) {
 const currentLocation = computed(
   () => locations.find((l) => l.id === activeLocation.value) ?? locations[0],
 );
+
+function addToOrder(item: Record<string, any>, source: string = "card") {
+  addItem(
+    {
+      key: `${currentLocation.value.id}-${item.id}`,
+      id: item.id,
+      name: { nl: item.nl.name, fr: item.fr.name },
+      price: item.price,
+      image: item.image,
+      emoji: item.emoji,
+      category: item.category,
+    },
+    currentLocation.value.id,
+    currentLocation.value.name,
+  );
+  trackEvent("add_to_preorder", {
+    item_id: item.id,
+    item_name: item.nl.name,
+    item_category: item.category,
+    price: item.price,
+    location: currentLocation.value.id,
+    source,
+  });
+}
 
 const locationMenu = computed(() => {
   const loc = currentLocation.value;

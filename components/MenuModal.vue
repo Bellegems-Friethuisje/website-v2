@@ -226,12 +226,18 @@
             </div>
 
             <!-- Footer action -->
-            <div class="p-4 pt-0 shrink-0">
+            <div class="p-4 pt-0 shrink-0 flex gap-3">
               <button
                 @click="$emit('close')"
-                class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-3.5 rounded-xl transition-colors text-sm"
+                class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-600 font-bold py-3.5 rounded-xl transition-colors text-sm"
               >
                 {{ t({ nl: "Sluiten", fr: "Fermer" }) }}
+              </button>
+              <button
+                @click="handleAdd"
+                class="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 rounded-xl transition-colors text-sm"
+              >
+                {{ t({ nl: "Toevoegen aan bestelling", fr: "Ajouter à la commande" }) }}
               </button>
             </div>
           </div>
@@ -254,7 +260,7 @@ const props = defineProps<{
   menu?: Record<string, any>[];
 }>();
 
-const emit = defineEmits<{ close: []; select: [item: Record<string, any>] }>();
+const emit = defineEmits<{ close: []; select: [item: Record<string, any>]; add: [item: Record<string, any>] }>();
 
 const isMounted = ref(false);
 onMounted(() => {
@@ -314,6 +320,11 @@ const pairedItems = computed(() => {
 
 function onKeydown(e: KeyboardEvent) {
   if (e.key === "Escape") emit("close");
+}
+
+function handleAdd() {
+  if (props.item) emit("add", props.item);
+  emit("close");
 }
 
 watch(

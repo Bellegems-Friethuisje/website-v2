@@ -432,6 +432,7 @@
         :price="item.price"
         :category="item.category"
         :popular="true"
+        @add="addToOrder(item)"
       />
     </div>
 
@@ -615,6 +616,9 @@
       </div>
     </div>
   </section>
+
+  <!-- Pre-order bubble -->
+  <PreorderBubble />
 </template>
 
 <script setup lang="ts">
@@ -622,6 +626,8 @@ import { computed } from "vue";
 import { useLang } from "../../composables/useLang";
 import { trackEvent } from "../../composables/useAnalytics";
 import { getIsOpen } from "../../composables/useIsOpen";
+import { useOrder } from "../../composables/useOrder";
+import PreorderBubble from "../../components/PreorderBubble.vue";
 import MenuCard from "../../components/MenuCard.vue";
 import FestiveBanner from "../../components/FestiveBanner.vue";
 import OpenBadge from "../../components/OpenBadge.vue";
@@ -629,6 +635,7 @@ import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
 
 const { lang, t } = useLang();
+const { addItem } = useOrder();
 
 const locations = [bellegems, takeaway];
 
@@ -641,4 +648,28 @@ const isOpenMap = computed(() => {
 const popularItems = computed(() =>
   bellegems.menu.filter((i) => i.popular).slice(0, 3),
 );
+
+function addToOrder(item: Record<string, any>) {
+  addItem(
+    {
+      key: `${bellegems.id}-${item.id}`,
+      id: item.id,
+      name: { nl: item.nl.name, fr: item.fr.name },
+      price: item.price,
+      image: item.image,
+      emoji: item.emoji,
+      category: item.category,
+    },
+    bellegems.id,
+    bellegems.name,
+  );
+  trackEvent("add_to_preorder", {
+    item_id: item.id,
+    item_name: item.nl.name,
+    item_category: item.category,
+    price: item.price,
+    location: bellegems.id,
+    source: "homepage_popular",
+  });
+}
 </script>
