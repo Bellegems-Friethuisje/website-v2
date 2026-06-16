@@ -144,6 +144,7 @@ const navLinks = computed(() => [
   { href: '/menu', label: t({ nl: 'Ons menu', fr: 'Notre menu' }) },
   { href: '/locaties', label: t({ nl: 'Locaties', fr: 'Emplacements' }) },
   { href: '/reservaties', label: t({ nl: 'Reservatie', fr: 'Réservation' }) },
+  { href: '/sollicitatie', label: t({ nl: 'Solliciteer', fr: 'Postuler' }) },
 ])
 
 function isActive(href: string): boolean {
