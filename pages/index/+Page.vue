@@ -349,6 +349,68 @@
     </div>
   </section>
 
+  <!-- Pre-order feature -->
+  <section class="bg-gray-900 py-16">
+    <div class="max-w-5xl mx-auto px-4 lg:px-0">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-orange-400 text-sm font-bold tracking-widest uppercase block mb-3">
+            {{ t({ nl: "Handig", fr: "Pratique" }) }}
+          </span>
+          <h2 class="text-4xl font-extrabold text-white mb-4 leading-tight">
+            {{ t({ nl: "Geen briefje meer nodig", fr: "Plus besoin de petit papier" }) }}
+          </h2>
+          <p class="text-gray-400 text-lg mb-6">
+            {{
+              t({
+                nl: "Stel je bestelling samen via ons menu en lees ze zo voor aan de kassa. Geen handgeschreven lijstje meer nodig.",
+                fr: "Composez votre commande via notre menu et lisez-la simplement à la caisse. Plus besoin de liste écrite à la main.",
+              })
+            }}
+          </p>
+          <a
+            href="/menu"
+            @click="trackEvent('preorder_click', { source: 'homepage_block' })"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-lg"
+          >
+            <span aria-hidden="true">🧾</span>
+            {{ t({ nl: "Start bestelling", fr: "Commencer ma commande" }) }}
+          </a>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <div class="text-3xl mb-3" aria-hidden="true">📝</div>
+            <h3 class="text-white font-extrabold mb-2">
+              {{ t({ nl: "Geen briefje", fr: "Sans papier" }) }}
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              {{
+                t({
+                  nl: "Bouw je bestelling op je telefoon in plaats van op een briefje te schrijven.",
+                  fr: "Composez votre commande sur votre téléphone au lieu de l'écrire sur papier.",
+                })
+              }}
+            </p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <div class="text-3xl mb-3" aria-hidden="true">👨‍👩‍👧</div>
+            <h3 class="text-white font-extrabold mb-2">
+              {{ t({ nl: "Samen bestellen", fr: "Commander ensemble" }) }}
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              {{
+                t({
+                  nl: "Deel de link met je familie — iedereen kan er zelf gerechten aan toevoegen.",
+                  fr: "Partagez le lien avec votre famille — chacun peut y ajouter ses propres plats.",
+                })
+              }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Popular dishes -->
   <section class="max-w-5xl mx-auto px-4 lg:px-0 py-20">
     <div class="flex items-end justify-between mb-10">
@@ -616,9 +678,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Pre-order bubble -->
-  <PreorderBubble />
 </template>
 
 <script setup lang="ts">
@@ -627,7 +686,6 @@ import { useLang } from "../../composables/useLang";
 import { trackEvent } from "../../composables/useAnalytics";
 import { getIsOpen } from "../../composables/useIsOpen";
 import { useOrder } from "../../composables/useOrder";
-import PreorderBubble from "../../components/PreorderBubble.vue";
 import MenuCard from "../../components/MenuCard.vue";
 import FestiveBanner from "../../components/FestiveBanner.vue";
 import OpenBadge from "../../components/OpenBadge.vue";

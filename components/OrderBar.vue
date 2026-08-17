@@ -2,7 +2,7 @@
   <Transition name="order-bar">
     <button
       v-if="totalCount > 0"
-      @click="openDrawer"
+      @click="handleOpen"
       class="fixed right-4 sm:right-6 z-40 bg-gray-900 hover:bg-gray-800 active:bg-gray-800 text-white font-bold pl-4 pr-5 py-3.5 min-h-12 rounded-full shadow-2xl shadow-gray-900/30 transition-colors flex items-center gap-3"
       style="bottom: max(1rem, env(safe-area-inset-bottom) + 0.75rem)"
     >
@@ -18,20 +18,18 @@
     </button>
   </Transition>
 
-  <OrderDrawer :open="open" @close="open = false" />
+  <OrderDrawer :open="drawerOpen" @close="closeDrawer" />
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useLang } from '../composables/useLang'
 import { trackEvent } from '../composables/useAnalytics'
 import { useOrder } from '../composables/useOrder'
 import OrderDrawer from './OrderDrawer.vue'
 
 const { t } = useLang()
-const { items, load } = useOrder()
-
-const open = ref(false)
+const { items, load, drawerOpen, openDrawer, closeDrawer } = useOrder()
 
 onMounted(() => {
   load()
@@ -40,9 +38,9 @@ onMounted(() => {
 const totalCount = computed(() => items.value.reduce((sum, i) => sum + i.qty, 0))
 const total = computed(() => items.value.reduce((sum, i) => sum + i.price * i.qty, 0))
 
-function openDrawer() {
+function handleOpen() {
   trackEvent('view_preorder', { item_count: totalCount.value, total: total.value })
-  open.value = true
+  openDrawer()
 }
 </script>
 

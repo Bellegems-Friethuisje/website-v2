@@ -18,6 +18,7 @@ const items = ref<OrderItem[]>([])
 const locationId = ref<string | null>(null)
 const locationName = ref<string>('')
 const shareId = ref<string | null>(null)
+const drawerOpen = ref(false)
 let loaded = false
 
 let pusherClient: any = null
@@ -174,5 +175,28 @@ export function useOrder() {
     }
   }
 
-  return { items, locationId, locationName, shareId, load, addItem, removeItem, setQty, clearOrder, shareOrder, joinShared }
+  function openDrawer() {
+    drawerOpen.value = true
+  }
+
+  function closeDrawer() {
+    drawerOpen.value = false
+  }
+
+  return {
+    items,
+    locationId,
+    locationName,
+    shareId,
+    drawerOpen,
+    load,
+    addItem,
+    removeItem,
+    setQty,
+    clearOrder,
+    shareOrder,
+    joinShared,
+    openDrawer,
+    closeDrawer,
+  }
 }
