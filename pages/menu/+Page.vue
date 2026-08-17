@@ -5,11 +5,30 @@
       <h1 class="text-5xl font-extrabold text-gray-900 mb-4">
         {{ t({ nl: "Ons menu", fr: "Notre menu" }) }}
       </h1>
-      <p class="text-gray-500 text-lg max-w-lg mx-auto">
+      <p class="text-gray-500 text-lg max-w-lg mx-auto mb-6">
         {{
           t({
             nl: "Vers bereid, elke dag opnieuw.",
             fr: "Préparé frais, chaque jour.",
+          })
+        }}
+      </p>
+      <button
+        @click="handleStartOrder"
+        class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 active:bg-gray-800 text-white font-bold px-6 py-3 min-h-11 rounded-xl transition-colors"
+      >
+        <span aria-hidden="true">🧾</span>
+        {{
+          orderCount > 0
+            ? t({ nl: `Bekijk bestelling (${orderCount})`, fr: `Voir ma commande (${orderCount})` })
+            : t({ nl: "Start bestelling", fr: "Commencer ma commande" })
+        }}
+      </button>
+      <p class="text-gray-400 text-xs mt-3">
+        {{
+          t({
+            nl: "Voeg gerechten toe en lees ze voor aan de kassa — deel de link en bestel samen met je familie.",
+            fr: "Ajoutez des plats et lisez-les à la caisse — partagez le lien et commandez ensemble en famille.",
           })
         }}
       </p>
@@ -308,7 +327,14 @@ import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
-const { addItem } = useOrder();
+const { items: orderItems, addItem, openDrawer } = useOrder();
+
+const orderCount = computed(() => orderItems.value.reduce((sum, i) => sum + i.qty, 0));
+
+function handleStartOrder() {
+  trackEvent("preorder_click", { source: "menu_header" });
+  openDrawer();
+}
 
 const menuStates = ref<Record<string, { prices: Record<string, number>, hidden: number[], custom: any[], customCategories: any[] }>>({});
 
