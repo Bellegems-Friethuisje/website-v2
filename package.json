@@ -10,6 +10,8 @@
     "@universal-middleware/core": "^0.4.17",
     "@vikejs/express": "^0.2.2",
     "express": "^5.2.1",
+    "pusher": "^5.3.4",
+    "pusher-js": "^8.6.0",
     "vike": "0.4.259",
     "vike-vue": "^0.9.11",
     "vue": "^3.5.34",

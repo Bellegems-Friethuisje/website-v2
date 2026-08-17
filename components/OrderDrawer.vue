@@ -20,6 +20,10 @@
                 <p v-if="locationName" class="text-gray-400 text-xs mt-0.5">
                   📍 {{ locationName }}
                 </p>
+                <p v-if="shareId" class="text-green-600 text-xs mt-0.5 font-semibold flex items-center gap-1">
+                  <span class="h-1.5 w-1.5 rounded-full bg-green-500 inline-block" aria-hidden="true"></span>
+                  {{ t({ nl: 'Gedeeld met familie', fr: 'Partagé avec la famille' }) }}
+                </p>
               </div>
               <button
                 @click="$emit('close')"
@@ -124,6 +128,14 @@
                   </p>
                 </div>
 
+                <button
+                  @click="handleShare"
+                  class="w-full flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold py-3 min-h-11 rounded-xl transition-colors text-sm"
+                >
+                  <span aria-hidden="true">👨‍👩‍👧</span>
+                  {{ shareCopied ? t({ nl: 'Link gekopieerd!', fr: 'Lien copié !' }) : t({ nl: 'Deel met familie', fr: 'Partager avec la famille' }) }}
+                </button>
+
                 <div class="flex gap-3">
                   <button
                     @click="handleClear"
@@ -155,7 +167,9 @@ import { trackEvent } from '../composables/useAnalytics'
 import { useOrder, type OrderItem } from '../composables/useOrder'
 
 const { lang, t } = useLang()
-const { items, locationName, setQty, removeItem, clearOrder } = useOrder()
+const { items, locationName, shareId, setQty, removeItem, clearOrder, shareOrder } = useOrder()
+
+const shareCopied = ref(false)
 
 defineProps<{ open: boolean }>()
 const emit = defineEmits<{ close: [] }>()
@@ -180,6 +194,26 @@ function decreaseQty(item: OrderItem) {
   }
   setQty(item.key, item.qty - 1)
   trackEvent('preorder_decrease_qty', { item_id: item.id, item_name: item.name.nl, qty: item.qty - 1 })
+}
+
+async function handleShare() {
+  const url = await shareOrder()
+  if (!url) return
+  trackEvent('preorder_share', { item_count: items.value.length, total: total.value })
+
+  if (navigator.share) {
+    try {
+      await navigator.share({ title: t({ nl: 'Onze bestelling', fr: 'Notre commande' }), url })
+    } catch {
+      // user cancelled the native share sheet — nothing to do
+    }
+    return
+  }
+  try {
+    await navigator.clipboard.writeText(url)
+    shareCopied.value = true
+    setTimeout(() => (shareCopied.value = false), 2500)
+  } catch {}
 }
 
 function handleClear() {

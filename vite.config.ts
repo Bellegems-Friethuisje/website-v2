@@ -95,6 +95,12 @@ function devApiPlugin(): Plugin {
         const { default: handler } = await server.ssrLoadModule('/api/upload-image.js')
         await handler(req, wrapRes(res))
       })
+
+      server.middlewares.use('/api/preorder', async (req: any, res: any) => {
+        await parseBody(req)
+        const { default: handler } = await server.ssrLoadModule('/api/preorder.js')
+        await handler(req, wrapRes(res))
+      })
     },
   }
 }
