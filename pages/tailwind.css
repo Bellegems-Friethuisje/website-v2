@@ -3,6 +3,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    touch-action: manipulation;
   }
   body {
     font-family: 'Open Sans', sans-serif;
