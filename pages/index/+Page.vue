@@ -693,7 +693,7 @@ import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
 
 const { lang, t } = useLang();
-const { addItem } = useOrder();
+const { shareId, addItem } = useOrder();
 
 const locations = [bellegems, takeaway];
 
@@ -728,6 +728,7 @@ function addToOrder(item: Record<string, any>) {
     price: item.price,
     location: bellegems.id,
     source: "homepage_popular",
+    is_shared: !!shareId.value,
   });
 }
 </script>

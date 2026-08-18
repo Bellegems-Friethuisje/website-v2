@@ -327,7 +327,7 @@ import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
-const { items: orderItems, addItem, openDrawer } = useOrder();
+const { items: orderItems, shareId, addItem, openDrawer } = useOrder();
 
 const orderCount = computed(() => orderItems.value.reduce((sum, i) => sum + i.qty, 0));
 
@@ -419,6 +419,7 @@ function addToOrder(item: Record<string, any>, source: string = "card") {
     price: item.price,
     location: currentLocation.value.id,
     source,
+    is_shared: !!shareId.value,
   });
 }
 
