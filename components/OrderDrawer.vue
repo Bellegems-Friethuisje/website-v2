@@ -183,17 +183,17 @@ const total = computed(() => items.value.reduce((sum, i) => sum + i.price * i.qt
 
 function increaseQty(item: OrderItem) {
   setQty(item.key, item.qty + 1)
-  trackEvent('preorder_increase_qty', { item_id: item.id, item_name: item.name.nl, qty: item.qty + 1 })
+  trackEvent('preorder_increase_qty', { item_id: item.id, item_name: item.name.nl, qty: item.qty + 1, is_shared: !!shareId.value })
 }
 
 function decreaseQty(item: OrderItem) {
   if (item.qty <= 1) {
     removeItem(item.key)
-    trackEvent('preorder_remove_item', { item_id: item.id, item_name: item.name.nl })
+    trackEvent('preorder_remove_item', { item_id: item.id, item_name: item.name.nl, is_shared: !!shareId.value })
     return
   }
   setQty(item.key, item.qty - 1)
-  trackEvent('preorder_decrease_qty', { item_id: item.id, item_name: item.name.nl, qty: item.qty - 1 })
+  trackEvent('preorder_decrease_qty', { item_id: item.id, item_name: item.name.nl, qty: item.qty - 1, is_shared: !!shareId.value })
 }
 
 async function handleShare() {
@@ -204,6 +204,7 @@ async function handleShare() {
   if (navigator.share) {
     try {
       await navigator.share({ title: t({ nl: 'Onze bestelling', fr: 'Notre commande' }), url })
+      trackEvent('preorder_share_completed', { method: 'native' })
     } catch {
       // user cancelled the native share sheet — nothing to do
     }
@@ -212,6 +213,7 @@ async function handleShare() {
   try {
     await navigator.clipboard.writeText(url)
     shareCopied.value = true
+    trackEvent('preorder_share_completed', { method: 'clipboard' })
     setTimeout(() => (shareCopied.value = false), 2500)
   } catch {}
 }
@@ -221,7 +223,7 @@ function handleClear() {
     t({ nl: 'Weet je zeker dat je je bestelling wilt wissen?', fr: 'Voulez-vous vraiment effacer votre commande ?' }),
   )
   if (ok) {
-    trackEvent('preorder_clear', { item_count: items.value.length, total: total.value })
+    trackEvent('preorder_clear', { item_count: items.value.length, total: total.value, is_shared: !!shareId.value })
     clearOrder()
   }
 }

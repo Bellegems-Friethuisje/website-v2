@@ -1,5 +1,6 @@
 import { ref, watch } from 'vue'
 import { useLang } from './useLang'
+import { trackEvent } from './useAnalytics'
 
 export interface OrderItem {
   key: string
@@ -176,6 +177,11 @@ export function useOrder() {
   }
 
   function openDrawer() {
+    trackEvent('view_preorder', {
+      item_count: items.value.reduce((sum, i) => sum + i.qty, 0),
+      total: items.value.reduce((sum, i) => sum + i.price * i.qty, 0),
+      is_shared: !!shareId.value,
+    })
     drawerOpen.value = true
   }
 
