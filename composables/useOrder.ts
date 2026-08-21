@@ -138,6 +138,17 @@ export function useOrder() {
   async function shareOrder(): Promise<string | null> {
     if (typeof window === 'undefined') return null
 
+    if (shareId.value) {
+      // an existing share can have expired (12h TTL) since it was created —
+      // verify it's still live before handing out the same link again
+      try {
+        const check = await fetch(`/api/preorder?id=${shareId.value}`)
+        if (!check.ok) shareId.value = null
+      } catch {
+        shareId.value = null
+      }
+    }
+
     if (!shareId.value) {
       try {
         const res = await fetch('/api/preorder', {
