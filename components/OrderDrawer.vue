@@ -50,13 +50,22 @@
                   })
                 }}
               </p>
-              <a
-                href="/menu"
-                @click="trackEvent('preorder_view_menu', { source: 'empty_drawer' }); $emit('close')"
-                class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-colors"
-              >
-                {{ t({ nl: 'Bekijk het menu', fr: 'Voir le menu' }) }}
-              </a>
+              <div class="flex flex-col items-center gap-3">
+                <a
+                  href="/menu"
+                  @click="trackEvent('preorder_view_menu', { source: 'empty_drawer' }); $emit('close')"
+                  class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-colors"
+                >
+                  {{ t({ nl: 'Bekijk het menu', fr: 'Voir le menu' }) }}
+                </a>
+                <button
+                  @click="handleShare"
+                  class="inline-flex items-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold px-6 py-3 min-h-11 rounded-xl transition-colors text-sm"
+                >
+                  <span aria-hidden="true">👨‍👩‍👧</span>
+                  {{ shareCopied ? t({ nl: 'Link gekopieerd!', fr: 'Lien copié !' }) : t({ nl: 'Deel met familie', fr: 'Partager avec la famille' }) }}
+                </button>
+              </div>
             </div>
 
             <template v-else>
