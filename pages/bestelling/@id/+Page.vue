@@ -70,8 +70,6 @@
       </div>
     </template>
   </section>
-
-  <PreorderInfoModal :open="showInfo" source="join_page" @close="showInfo = false" />
 </template>
 
 <script setup lang="ts">
@@ -80,18 +78,15 @@ import { usePageContext } from 'vike-vue/usePageContext'
 import { useLang } from '../../../composables/useLang'
 import { useOrder } from '../../../composables/useOrder'
 import { trackEvent } from '../../../composables/useAnalytics'
-import PreorderInfoModal from '../../../components/PreorderInfoModal.vue'
 
 const { t } = useLang()
 const pageContext = usePageContext()
-const { load, joinShared, markIntroSeen } = useOrder()
+const { load, joinShared, markIntroSeen, openIntro } = useOrder()
 
 const status = ref<'loading' | 'joined' | 'not_found'>('loading')
-const showInfo = ref(false)
 
 function openInfo() {
-  trackEvent('preorder_info_open', { source: 'join_page' })
-  showInfo.value = true
+  openIntro('join_page')
 }
 
 onMounted(async () => {

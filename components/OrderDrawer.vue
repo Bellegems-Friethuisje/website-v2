@@ -186,8 +186,6 @@
       </div>
     </Transition>
   </Teleport>
-
-  <PreorderInfoModal :open="showInfo" source="order_drawer" @close="closeInfo" />
 </template>
 
 <script setup lang="ts">
@@ -195,14 +193,12 @@ import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import { useLang } from '../composables/useLang'
 import { trackEvent } from '../composables/useAnalytics'
 import { useOrder, type OrderItem } from '../composables/useOrder'
-import PreorderInfoModal from './PreorderInfoModal.vue'
 
 const { lang, t } = useLang()
-const { items, locationName, shareId, introSeen, setQty, removeItem, clearOrder, shareOrder, markIntroSeen } = useOrder()
+const { items, locationName, shareId, introSeen, setQty, removeItem, clearOrder, shareOrder, openIntro } = useOrder()
 
 const shareCopied = ref(false)
 const shareError = ref(false)
-const showInfo = ref(false)
 
 const props = defineProps<{ open: boolean }>()
 const emit = defineEmits<{ close: [] }>()
@@ -216,19 +212,13 @@ watch(
   () => props.open,
   (isOpen) => {
     if (isOpen && !introSeen.value) {
-      showInfo.value = true
+      openIntro('order_drawer')
     }
   },
 )
 
 function openInfo() {
-  trackEvent('preorder_info_open', { source: 'drawer_header' })
-  showInfo.value = true
-}
-
-function closeInfo() {
-  showInfo.value = false
-  markIntroSeen()
+  openIntro('drawer_header')
 }
 
 const total = computed(() => items.value.reduce((sum, i) => sum + i.price * i.qty, 0))

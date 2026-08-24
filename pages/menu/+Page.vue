@@ -41,8 +41,6 @@
     </div>
   </div>
 
-  <PreorderInfoModal :open="showInfo" source="menu_header" @close="closeInfo" />
-
   <!-- Location selector -->
   <div class="bg-white border-b border-gray-100">
     <div class="max-w-5xl mx-auto px-4 lg:px-0 py-4 flex gap-3 flex-wrap">
@@ -330,13 +328,12 @@ import { trackEvent } from "../../composables/useAnalytics";
 import { useOrder } from "../../composables/useOrder";
 import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
-import PreorderInfoModal from "../../components/PreorderInfoModal.vue";
 import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
-const { items: orderItems, shareId, addItem, openDrawer, markIntroSeen } = useOrder();
+const { items: orderItems, shareId, addItem, openDrawer, openIntro } = useOrder();
 
 const orderCount = computed(() => orderItems.value.reduce((sum, i) => sum + i.qty, 0));
 
@@ -345,14 +342,8 @@ function handleStartOrder() {
   openDrawer();
 }
 
-const showInfo = ref(false);
 function openInfo() {
-  trackEvent("preorder_info_open", { source: "menu_header" });
-  showInfo.value = true;
-}
-function closeInfo() {
-  showInfo.value = false;
-  markIntroSeen();
+  openIntro("menu_header");
 }
 
 const menuStates = ref<Record<string, { prices: Record<string, number>, hidden: number[], custom: any[], customCategories: any[] }>>({});
