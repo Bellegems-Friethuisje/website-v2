@@ -31,9 +31,17 @@
             fr: "Ajoutez des plats et lisez-les à la caisse — partagez le lien et commandez ensemble en famille.",
           })
         }}
+        <button
+          @click="openInfo"
+          class="text-orange-500 hover:text-orange-600 font-bold underline underline-offset-2 ml-1"
+        >
+          {{ t({ nl: 'Hoe werkt dit?', fr: 'Comment ça marche ?' }) }}
+        </button>
       </p>
     </div>
   </div>
+
+  <PreorderInfoModal :open="showInfo" source="menu_header" @close="closeInfo" />
 
   <!-- Location selector -->
   <div class="bg-white border-b border-gray-100">
@@ -322,18 +330,29 @@ import { trackEvent } from "../../composables/useAnalytics";
 import { useOrder } from "../../composables/useOrder";
 import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
+import PreorderInfoModal from "../../components/PreorderInfoModal.vue";
 import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
 
 const { lang, t } = useLang();
-const { items: orderItems, shareId, addItem, openDrawer } = useOrder();
+const { items: orderItems, shareId, addItem, openDrawer, markIntroSeen } = useOrder();
 
 const orderCount = computed(() => orderItems.value.reduce((sum, i) => sum + i.qty, 0));
 
 function handleStartOrder() {
   trackEvent("preorder_click", { source: "menu_header" });
   openDrawer();
+}
+
+const showInfo = ref(false);
+function openInfo() {
+  trackEvent("preorder_info_open", { source: "menu_header" });
+  showInfo.value = true;
+}
+function closeInfo() {
+  showInfo.value = false;
+  markIntroSeen();
 }
 
 const menuStates = ref<Record<string, { prices: Record<string, number>, hidden: number[], custom: any[], customCategories: any[] }>>({});

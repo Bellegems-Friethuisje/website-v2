@@ -12,12 +12,21 @@
           {{ totalCount }}
         </span>
       </span>
-      <span class="text-sm">
+      <span class="text-sm flex items-center gap-1.5">
         {{ t({ nl: 'Mijn bestelling', fr: 'Ma commande' }) }} · ~€{{ total.toFixed(2) }}
+        <span
+          v-if="shareId"
+          class="inline-flex items-center gap-1 text-[10px] font-extrabold text-green-400 uppercase tracking-wide"
+          :aria-label="t({ nl: 'Live gedeeld met familie', fr: 'Partagé en direct avec la famille' })"
+        >
+          <span class="h-1.5 w-1.5 rounded-full bg-green-400 inline-block" aria-hidden="true"></span>
+          {{ t({ nl: 'live', fr: 'en direct' }) }}
+        </span>
       </span>
     </button>
   </Transition>
 
+  <AddedToast />
   <OrderDrawer :open="drawerOpen" @close="closeDrawer" />
 </template>
 
@@ -26,9 +35,10 @@ import { computed, onMounted } from 'vue'
 import { useLang } from '../composables/useLang'
 import { useOrder } from '../composables/useOrder'
 import OrderDrawer from './OrderDrawer.vue'
+import AddedToast from './AddedToast.vue'
 
 const { t } = useLang()
-const { items, load, drawerOpen, openDrawer, closeDrawer } = useOrder()
+const { items, shareId, load, drawerOpen, openDrawer, closeDrawer } = useOrder()
 
 onMounted(() => {
   load()

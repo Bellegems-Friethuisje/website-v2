@@ -1,0 +1,1340 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1787575533.1030862,
+    "seen": 1787578266.7418246,
+    "ast_hash": "ff5812fd47774a702763aaa29700fc97",
+    "semantic_hash": "ff5812fd47774a702763aaa29700fc97"
+  },
+  "api/admin-auth.js": {
+    "mtime": 1787575533.1032338,
+    "seen": 1787578266.7418282,
+    "ast_hash": "af0ecfb22305385ee665917988dbabc6",
+    "semantic_hash": "af0ecfb22305385ee665917988dbabc6"
+  },
+  "api/index.js": {
+    "mtime": 1787575533.1033802,
+    "seen": 1787578266.7418296,
+    "ast_hash": "9f9296d7157bc347e30f0736b28aa6f1",
+    "semantic_hash": "9f9296d7157bc347e30f0736b28aa6f1"
+  },
+  "api/menu-prices.js": {
+    "mtime": 1787575533.1033802,
+    "seen": 1787578266.7418306,
+    "ast_hash": "f2bd7725a77f34e6c78e7e42fdf67527",
+    "semantic_hash": "f2bd7725a77f34e6c78e7e42fdf67527"
+  },
+  "api/preorder.js": {
+    "mtime": 1787575533.1033802,
+    "seen": 1787578266.7418315,
+    "ast_hash": "03c837ea0ecdc7b3434338460dfe518e",
+    "semantic_hash": "03c837ea0ecdc7b3434338460dfe518e"
+  },
+  "api/reservaties.js": {
+    "mtime": 1787575533.1033802,
+    "seen": 1787578266.7418323,
+    "ast_hash": "e1afffa7d5773ffeeb6f9757196195fb",
+    "semantic_hash": "e1afffa7d5773ffeeb6f9757196195fb"
+  },
+  "api/upload-image.js": {
+    "mtime": 1787575533.1033802,
+    "seen": 1787578266.741833,
+    "ast_hash": "9cffb7ba869080baf610ca63097de815",
+    "semantic_hash": "9cffb7ba869080baf610ca63097de815"
+  },
+  "components/FestiveBanner.vue": {
+    "mtime": 1787575533.1034017,
+    "seen": 1787578266.7418337,
+    "ast_hash": "e328ac808a262872ec7011f9ee55e45d",
+    "semantic_hash": "e328ac808a262872ec7011f9ee55e45d"
+  },
+  "components/Footer.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.7418344,
+    "ast_hash": "28ac991640eced4a7e5b5ba27a65abca",
+    "semantic_hash": "28ac991640eced4a7e5b5ba27a65abca"
+  },
+  "components/MenuCard.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.7418354,
+    "ast_hash": "0cb265c8bb4af66895b65c9385a36bbf",
+    "semantic_hash": "0cb265c8bb4af66895b65c9385a36bbf"
+  },
+  "components/MenuModal.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.741836,
+    "ast_hash": "67f8a72938df59cc1db81c5e3bd2b007",
+    "semantic_hash": "67f8a72938df59cc1db81c5e3bd2b007"
+  },
+  "components/Navbar.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.7418368,
+    "ast_hash": "6d56b689af64423b67bc51f8ed2c2767",
+    "semantic_hash": "6d56b689af64423b67bc51f8ed2c2767"
+  },
+  "components/OpenBadge.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.7418375,
+    "ast_hash": "718fbe7787f2b029c63e86f0fad28c0d",
+    "semantic_hash": "718fbe7787f2b029c63e86f0fad28c0d"
+  },
+  "components/OrderBar.vue": {
+    "mtime": 1787578539.7599247,
+    "seen": 1787579136.9149897,
+    "ast_hash": "d8fdd7aa35353ce9116e96b03d452b66",
+    "semantic_hash": ""
+  },
+  "components/OrderDrawer.vue": {
+    "mtime": 1787578906.260576,
+    "seen": 1787579136.914991,
+    "ast_hash": "0f0f639ba8ed933e59210429b1dd83f1",
+    "semantic_hash": ""
+  },
+  "components/ReservationForm.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.7418396,
+    "ast_hash": "c062ebe7cebc1cfc4110d07f696e8968",
+    "semantic_hash": "c062ebe7cebc1cfc4110d07f696e8968"
+  },
+  "components/SollicitatieForm.vue": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.7418404,
+    "ast_hash": "161e88828338b0cb999804418dfd9ee9",
+    "semantic_hash": "161e88828338b0cb999804418dfd9ee9"
+  },
+  "composables/useAnalytics.ts": {
+    "mtime": 1787575533.104116,
+    "seen": 1787578266.741841,
+    "ast_hash": "9a596a37eddb25763866737d370a3a4a",
+    "semantic_hash": "9a596a37eddb25763866737d370a3a4a"
+  },
+  "composables/useIsOpen.ts": {
+    "mtime": 1787575533.1047223,
+    "seen": 1787578266.741842,
+    "ast_hash": "2efdb312f12c2141f2b8cbe9613403a8",
+    "semantic_hash": "2efdb312f12c2141f2b8cbe9613403a8"
+  },
+  "composables/useLang.ts": {
+    "mtime": 1787575533.1047223,
+    "seen": 1787578266.7418427,
+    "ast_hash": "4b4f5a82cdcca3024e525426fb64d6df",
+    "semantic_hash": "4b4f5a82cdcca3024e525426fb64d6df"
+  },
+  "composables/useLazyImage.ts": {
+    "mtime": 1787575533.1047223,
+    "seen": 1787578266.7418432,
+    "ast_hash": "fbbc0c8ebb533d894dc270a3fe800937",
+    "semantic_hash": "fbbc0c8ebb533d894dc270a3fe800937"
+  },
+  "composables/useOrder.ts": {
+    "mtime": 1787578508.8191428,
+    "seen": 1787579136.9149988,
+    "ast_hash": "64bd72818c87dc3261d2b21cb6c2d4cf",
+    "semantic_hash": ""
+  },
+  "data/allergenes.json": {
+    "mtime": 1787575533.1047223,
+    "seen": 1787578266.741845,
+    "ast_hash": "fe90c560ad624dd79cfe5dcb6fee2186",
+    "semantic_hash": "fe90c560ad624dd79cfe5dcb6fee2186"
+  },
+  "data/allergens.json": {
+    "mtime": 1787575533.1050272,
+    "seen": 1787578266.7418456,
+    "ast_hash": "2987ee9c061d4f22a14bd0a9bff24fa6",
+    "semantic_hash": "2987ee9c061d4f22a14bd0a9bff24fa6"
+  },
+  "data/categories.json": {
+    "mtime": 1787575533.1050272,
+    "seen": 1787578266.7418463,
+    "ast_hash": "03dde7452ace8c2f7c8b71e7642e179e",
+    "semantic_hash": "03dde7452ace8c2f7c8b71e7642e179e"
+  },
+  "data/locations/bellegems.json": {
+    "mtime": 1787575533.1050272,
+    "seen": 1787578266.741847,
+    "ast_hash": "32f39d554ef860278d267bf0971c963a",
+    "semantic_hash": "32f39d554ef860278d267bf0971c963a"
+  },
+  "data/locations/takeaway.json": {
+    "mtime": 1787575533.105313,
+    "seen": 1787578266.7418478,
+    "ast_hash": "74d0657c0ffcc3dcc0e475065a725ad2",
+    "semantic_hash": "74d0657c0ffcc3dcc0e475065a725ad2"
+  },
+  "package.json": {
+    "mtime": 1787575533.105313,
+    "seen": 1787578266.7418485,
+    "ast_hash": "952a76ceaee61249a2c3d592496554a4",
+    "semantic_hash": "952a76ceaee61249a2c3d592496554a4"
+  },
+  "pages/+Head.vue": {
+    "mtime": 1787575533.105313,
+    "seen": 1787578266.7418494,
+    "ast_hash": "5c33bcac367a2f9ca5d80ae62bd34acd",
+    "semantic_hash": "5c33bcac367a2f9ca5d80ae62bd34acd"
+  },
+  "pages/+Layout.vue": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.74185,
+    "ast_hash": "1addb0dd960b09185f788f44e410bba3",
+    "semantic_hash": "1addb0dd960b09185f788f44e410bba3"
+  },
+  "pages/+config.ts": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.7418506,
+    "ast_hash": "c96e3d664c10015bea184a3f13d6dbfe",
+    "semantic_hash": "c96e3d664c10015bea184a3f13d6dbfe"
+  },
+  "pages/+onCreateApp.ts": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.7418513,
+    "ast_hash": "830d895f7415260db77503ef11430206",
+    "semantic_hash": "830d895f7415260db77503ef11430206"
+  },
+  "pages/+onPageTransitionEnd.ts": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.741852,
+    "ast_hash": "a434aab73e7cf8eac3caecbbc5610608",
+    "semantic_hash": "a434aab73e7cf8eac3caecbbc5610608"
+  },
+  "pages/+onPageTransitionStart.ts": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.7418528,
+    "ast_hash": "e038d1e62f247bf3d591023580ff488d",
+    "semantic_hash": "e038d1e62f247bf3d591023580ff488d"
+  },
+  "pages/_error/+Page.vue": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.7418535,
+    "ast_hash": "675216ebd1fffe4f9e4c74aa5d679c92",
+    "semantic_hash": "675216ebd1fffe4f9e4c74aa5d679c92"
+  },
+  "pages/admin/+Page.vue": {
+    "mtime": 1787575533.1058817,
+    "seen": 1787578266.7418542,
+    "ast_hash": "203f122222856dc60b7fae28baad2aff",
+    "semantic_hash": "203f122222856dc60b7fae28baad2aff"
+  },
+  "pages/admin/+config.ts": {
+    "mtime": 1787575533.106235,
+    "seen": 1787578266.741855,
+    "ast_hash": "02f0ff5ef5b5adc6340839fe764a5fde",
+    "semantic_hash": "02f0ff5ef5b5adc6340839fe764a5fde"
+  },
+  "pages/bestelling/@id/+Page.vue": {
+    "mtime": 1787578578.9356537,
+    "seen": 1787579136.915013,
+    "ast_hash": "2c071b25172f2967dc6f873534b5a0a6",
+    "semantic_hash": ""
+  },
+  "pages/index/+Page.vue": {
+    "mtime": 1787575533.1062968,
+    "seen": 1787578266.7418563,
+    "ast_hash": "8f778ac51424f7ce099133007566414f",
+    "semantic_hash": "8f778ac51424f7ce099133007566414f"
+  },
+  "pages/locaties/+Page.vue": {
+    "mtime": 1787575533.1062968,
+    "seen": 1787578266.741857,
+    "ast_hash": "714189d47757db684fc62918fa3fc2bd",
+    "semantic_hash": "714189d47757db684fc62918fa3fc2bd"
+  },
+  "pages/menu/+Page.vue": {
+    "mtime": 1787578693.7978907,
+    "seen": 1787579136.9150157,
+    "ast_hash": "5f111767d8febeed74cae8f5d3cbb0f6",
+    "semantic_hash": ""
+  },
+  "pages/reservaties/+Page.vue": {
+    "mtime": 1787575533.1062968,
+    "seen": 1787578266.7418585,
+    "ast_hash": "463f23a074ff7affd99623cf87b4d635",
+    "semantic_hash": "463f23a074ff7affd99623cf87b4d635"
+  },
+  "pages/sollicitatie/+Page.vue": {
+    "mtime": 1787575533.1062968,
+    "seen": 1787578266.7418594,
+    "ast_hash": "da493c5dcad1312f6a74590c1affa9ae",
+    "semantic_hash": "da493c5dcad1312f6a74590c1affa9ae"
+  },
+  "scripts/apply-allergens.mjs": {
+    "mtime": 1787575533.1334014,
+    "seen": 1787578266.7418604,
+    "ast_hash": "d28544158b057c6415b6e380213dbf4b",
+    "semantic_hash": "d28544158b057c6415b6e380213dbf4b"
+  },
+  "scripts/download-strapi-images.js": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.741861,
+    "ast_hash": "c8d5f971a886a7d9cb71aa5cdd2be261",
+    "semantic_hash": "c8d5f971a886a7d9cb71aa5cdd2be261"
+  },
+  "scripts/optimize-images.js": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.7418618,
+    "ast_hash": "03edc533788b2f1d2a82e320c6990f03",
+    "semantic_hash": "03edc533788b2f1d2a82e320c6990f03"
+  },
+  "scripts/reorder-ids.mjs": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.7418623,
+    "ast_hash": "28db3e9802243e8f79f487311db793ed",
+    "semantic_hash": "28db3e9802243e8f79f487311db793ed"
+  },
+  "server.prod.ts": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.7418633,
+    "ast_hash": "e48f6793f5ee7be07da80e3eae4a30cd",
+    "semantic_hash": "e48f6793f5ee7be07da80e3eae4a30cd"
+  },
+  "server.ts": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.741864,
+    "ast_hash": "00b0c3d8dac8cc721cc933e1157b9287",
+    "semantic_hash": "00b0c3d8dac8cc721cc933e1157b9287"
+  },
+  "tsconfig.json": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.7418647,
+    "ast_hash": "a2ed127f8cb54df7cdc4a713f37bcd64",
+    "semantic_hash": "a2ed127f8cb54df7cdc4a713f37bcd64"
+  },
+  "vercel.json": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.7418652,
+    "ast_hash": "8fe25b8c60c5ac03028ddd747b0ffcbc",
+    "semantic_hash": "8fe25b8c60c5ac03028ddd747b0ffcbc"
+  },
+  "vite.config.ts": {
+    "mtime": 1787575533.1346865,
+    "seen": 1787578266.7418659,
+    "ast_hash": "6f6f37c560a4eaa5f138daeeb45a42c7",
+    "semantic_hash": "6f6f37c560a4eaa5f138daeeb45a42c7"
+  },
+  "README.md": {
+    "mtime": 1787575533.1032338,
+    "seen": 1787578266.7418668,
+    "ast_hash": "5c272cb9dbf740eea0cf0ab2ad7705e0",
+    "semantic_hash": "5c272cb9dbf740eea0cf0ab2ad7705e0"
+  },
+  "docs/pairings-proposal.md": {
+    "mtime": 1787575533.105313,
+    "seen": 1787578266.7418675,
+    "ast_hash": "f346cab5cbbbf17ea75f7749a75f7693",
+    "semantic_hash": "f346cab5cbbbf17ea75f7749a75f7693"
+  },
+  "public/robots.txt": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787578266.7418683,
+    "ast_hash": "8a51a3b8fdd1fc7d23a187e6e219e1b3",
+    "semantic_hash": "8a51a3b8fdd1fc7d23a187e6e219e1b3"
+  },
+  "qguard.md": {
+    "mtime": 1787575533.1334014,
+    "seen": 1787578266.741869,
+    "ast_hash": "d44f0f072127d2378a45fe5994302c73",
+    "semantic_hash": "d44f0f072127d2378a45fe5994302c73"
+  },
+  "components/AddedToast.vue": {
+    "mtime": 1787578841.4719658,
+    "seen": 1787579136.914982,
+    "ast_hash": "114fb0ccfd707689b2beb06cfc6429df",
+    "semantic_hash": ""
+  },
+  "components/PreorderInfoModal.vue": {
+    "mtime": 1787578524.4580321,
+    "seen": 1787579136.9149919,
+    "ast_hash": "e06f7ae69b9888fbd05c1d67d53a899b",
+    "semantic_hash": ""
+  },
+  "assets/logo.svg": {
+    "mtime": 1787575533.1033802,
+    "seen": 1787579136.91503,
+    "ast_hash": "80716e82d0c40764d08f78812c78e30b",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bellburger.webp": {
+    "mtime": 1787575533.1072636,
+    "seen": 1787579136.915031,
+    "ast_hash": "5cb52e2b6669a47af953394f9dae4b2e",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickeyrib.webp": {
+    "mtime": 1787575533.1072636,
+    "seen": 1787579136.915032,
+    "ast_hash": "170862896fa436b78f917effbecfaf3a",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bicky.webp": {
+    "mtime": 1787575533.1072636,
+    "seen": 1787579136.9150326,
+    "ast_hash": "53aabd1b314bc1aab9f3b337609f1883",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickycheese.webp": {
+    "mtime": 1787575533.1072636,
+    "seen": 1787579136.9150333,
+    "ast_hash": "66059a17add956ab3931ef8031e45fa6",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickychicken.webp": {
+    "mtime": 1787575533.1074016,
+    "seen": 1787579136.915034,
+    "ast_hash": "173ef59c08575ce2cb13fed225081e64",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickycrispy.webp": {
+    "mtime": 1787575533.1074016,
+    "seen": 1787579136.9150348,
+    "ast_hash": "8c517248b0cc4e7a63be881f49c45b5e",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickyfish.webp": {
+    "mtime": 1787575533.1074016,
+    "seen": 1787579136.915036,
+    "ast_hash": "1d8c9cb24fcb22da1e728966d1f7bcd6",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickyketchup.webp": {
+    "mtime": 1787575533.1074016,
+    "seen": 1787579136.9150367,
+    "ast_hash": "c8821a8b3759835e85069b13e8fe8752",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/bickynatuur.webp": {
+    "mtime": 1787575533.1084015,
+    "seen": 1787579136.9150372,
+    "ast_hash": "fab64ce5b5fe59fd54159195706053e8",
+    "semantic_hash": ""
+  },
+  "public/menu/burgers/veggieburger.webp": {
+    "mtime": 1787575533.1084015,
+    "seen": 1787579136.9150379,
+    "ast_hash": "f18c652856882f006d0d9dba527ef0b1",
+    "semantic_hash": ""
+  },
+  "public/menu/custom/images__1_.webp": {
+    "mtime": 1787575533.109412,
+    "seen": 1787579136.9150388,
+    "ast_hash": "8144ec68756b626d76c67f56595393f4",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/agrum.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150395,
+    "ast_hash": "a715d19c3efe8e5a87434b8af95b3fb5",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/bellevue.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150405,
+    "ast_hash": "391b5851784fafdedbe748240fde2600",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/capirsun.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150412,
+    "ast_hash": "302de5497d2614d57dcb367ec1b60743",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/coca cola.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150422,
+    "ast_hash": "e362bf57aa175cd6450ad9be6221fcd3",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/colazero.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150429,
+    "ast_hash": "ba4e823757f208277e148204af916e9f",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/duvel.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150436,
+    "ast_hash": "7a4c4be575dfb126cf5fbd0f2639656c",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/fanta.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150443,
+    "ast_hash": "7f6eb06b78861e41b8f05c5ecc54debe",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/fantalemon.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.915045,
+    "ast_hash": "ffe63790431c582d6e71628dcbd6a333",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/fuzetea.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.9150462,
+    "ast_hash": "a57c0b01c8f2a86846a7c0bdc9786c73",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/gini.webp": {
+    "mtime": 1787575533.1095965,
+    "seen": 1787579136.915047,
+    "ast_hash": "d1261af15ed0ff96471ff8d719691d23",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/hoegaarden.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.9150476,
+    "ast_hash": "fbb3140f47a3630d1292ab850e84ea3c",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/icetea.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.9150484,
+    "ast_hash": "d5cd260352789c4165d6eb9261fae0c1",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/iceteagreen.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.9150493,
+    "ast_hash": "9341a1f55e9fe010f2dcd8d2f111cf23",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/jupiler.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.91505,
+    "ast_hash": "e9d0d2a6399ba630f03e9492682a6eca",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/jupiler00.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.9150507,
+    "ast_hash": "0964b84b8a0885484e034ec169604512",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/leffeblond.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.9150515,
+    "ast_hash": "acba28ba7ea5f5f83cec14dc7e5960b7",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/leffebruin.webp": {
+    "mtime": 1787575533.1104016,
+    "seen": 1787579136.9150531,
+    "ast_hash": "bc60f11bc35debf929d8b505d67c3ff3",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/minutemaid.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.915054,
+    "ast_hash": "a0db89dd296ea1cd535c13287fc25f07",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/omer.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150548,
+    "ast_hash": "57fd419df805b9ec5477d6bb9f34c86a",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/paixdieu.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150555,
+    "ast_hash": "71ef7d7666de461ab88c1167d216a83c",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/platwater.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150565,
+    "ast_hash": "c70f47682fac805fc1e5c2d3fd6b4c39",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/rodenbach.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150572,
+    "ast_hash": "ff465166d90a26152a67dd5e1c6c50a4",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/rodewijn.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.915058,
+    "ast_hash": "875bd5841f6bc39217c28955d53fa031",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/rosewijn.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150586,
+    "ast_hash": "f5139d1ff0684a2990c6c40f91215038",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/sprite.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150596,
+    "ast_hash": "a24a64501189903be55f672261bd0e05",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/spuitwater.webp": {
+    "mtime": 1787575533.1114016,
+    "seen": 1787579136.9150603,
+    "ast_hash": "7b8bb0805bcfe85ba66f0dd75d0b2ab4",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/tonnisteinercitroen.webp": {
+    "mtime": 1787575533.1124015,
+    "seen": 1787579136.915061,
+    "ast_hash": "87f59d6f869e676594dae946d48a80ad",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/tonnisteinerorange.webp": {
+    "mtime": 1787575533.1124015,
+    "seen": 1787579136.9150617,
+    "ast_hash": "3fd1023b11ce05ab7b0a7bb156f59d80",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/tropico.webp": {
+    "mtime": 1787575533.1124015,
+    "seen": 1787579136.9150624,
+    "ast_hash": "2dd53adb7f00ad7e1c8840fea548b511",
+    "semantic_hash": ""
+  },
+  "public/menu/drinks/wittewijn.webp": {
+    "mtime": 1787575533.1124015,
+    "seen": 1787579136.9150634,
+    "ast_hash": "161764016dd3564650d784652c2976cd",
+    "semantic_hash": ""
+  },
+  "public/menu/frietjes/groot.webp": {
+    "mtime": 1787575533.1135294,
+    "seen": 1787579136.915064,
+    "ast_hash": "b328cda461d90e4f45efd9d4f5e15c88",
+    "semantic_hash": ""
+  },
+  "public/menu/frietjes/kinder.webp": {
+    "mtime": 1787575533.1135294,
+    "seen": 1787579136.9150648,
+    "ast_hash": "3022573e01f7d77e1a57b255356ae0c6",
+    "semantic_hash": ""
+  },
+  "public/menu/frietjes/klein.webp": {
+    "mtime": 1787575533.1135294,
+    "seen": 1787579136.9150655,
+    "ast_hash": "16e0484f65aa6009163ec205506f1ee0",
+    "semantic_hash": ""
+  },
+  "public/menu/frietjes/middel.webp": {
+    "mtime": 1787575533.1135294,
+    "seen": 1787579136.9150665,
+    "ast_hash": "168da2466b785070a7e55eb268ae0341",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/balletjes.webp": {
+    "mtime": 1787575533.1141279,
+    "seen": 1787579136.9150672,
+    "ast_hash": "40345c1804311ed35da542a3ef62cb50",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/boerenpate.webp": {
+    "mtime": 1787575533.1141279,
+    "seen": 1787579136.915068,
+    "ast_hash": "008ffe3fa8420a4a6a50a1d83863752c",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/croque.webp": {
+    "mtime": 1787575533.1141279,
+    "seen": 1787579136.9150686,
+    "ast_hash": "c2bbb22291c7e73005f2f8e73d08ba97",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/croqueboem.webp": {
+    "mtime": 1787575533.1141279,
+    "seen": 1787579136.9150693,
+    "ast_hash": "14d9e5277e72c1f88569eeb1043d409d",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/croquehawai.webp": {
+    "mtime": 1787575533.1144016,
+    "seen": 1787579136.9150703,
+    "ast_hash": "9a54aae7d667ac55fdf8ce24149bc90d",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/halfhaantje.webp": {
+    "mtime": 1787575533.1144016,
+    "seen": 1787579136.915071,
+    "ast_hash": "ad4986c420b362571b808b8028fb52e6",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/koudeschotel.webp": {
+    "mtime": 1787575533.1144016,
+    "seen": 1787579136.9150717,
+    "ast_hash": "d7217d932ac62d315b3c93620270685e",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/lasagne.webp": {
+    "mtime": 1787575533.1154015,
+    "seen": 1787579136.9150724,
+    "ast_hash": "f3838c920d5befab1107bf0878b75320",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/macaroni.webp": {
+    "mtime": 1787575533.1154015,
+    "seen": 1787579136.9150734,
+    "ast_hash": "09009c0a38a82a4d2daab07fa8466c90",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/omelet.webp": {
+    "mtime": 1787575533.1154015,
+    "seen": 1787579136.9150739,
+    "ast_hash": "7a4dd454db134c83eb8932eb6a6b0945",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/prepare.webp": {
+    "mtime": 1787575533.1154015,
+    "seen": 1787579136.9150746,
+    "ast_hash": "7fba357846ac28914d4fc90e96badceb",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/rundbrochette.webp": {
+    "mtime": 1787575533.1164014,
+    "seen": 1787579136.9150753,
+    "ast_hash": "62f39e70a1071d6c25b3aec815d70364",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/scampicreme.webp": {
+    "mtime": 1787575533.1164014,
+    "seen": 1787579136.9150763,
+    "ast_hash": "88b650cb3e55dad437ae7a51f75c7975",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/scampicurry.webp": {
+    "mtime": 1787575533.1164014,
+    "seen": 1787579136.915077,
+    "ast_hash": "9a8eb2d2b46b48021a96890ff8225ce1",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/scampidiabolique.webp": {
+    "mtime": 1787575533.1164014,
+    "seen": 1787579136.9150777,
+    "ast_hash": "793a1c687a04aaee87846e67e4538978",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/spaghetti.webp": {
+    "mtime": 1787575533.1174016,
+    "seen": 1787579136.9150784,
+    "ast_hash": "298143bb3233a2c36c1860f5e87f2a26",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/steaktartare.webp": {
+    "mtime": 1787575533.1174016,
+    "seen": 1787579136.915079,
+    "ast_hash": "60cc2a89687c9cb96f9f8767adc46a1a",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/tagliatellecarbonara.webp": {
+    "mtime": 1787575533.1174016,
+    "seen": 1787579136.9150798,
+    "ast_hash": "7d2efd5cf41e1e7fdbf41c598a92210f",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/tomaatgarnaal.webp": {
+    "mtime": 1787575533.1174016,
+    "seen": 1787579136.9150808,
+    "ast_hash": "8fc3bc1ab45cf52c58b3203673758d02",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/tomaattonijn.webp": {
+    "mtime": 1787575533.1184015,
+    "seen": 1787579136.9150815,
+    "ast_hash": "b239eac9808990c1cae3f40048f7c9d4",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/tonijnperzik.webp": {
+    "mtime": 1787575533.1184015,
+    "seen": 1787579136.9150822,
+    "ast_hash": "b42fd85ae6c62856674ff00835b1bceb",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/toofvlees.webp": {
+    "mtime": 1787575533.1184015,
+    "seen": 1787579136.9150832,
+    "ast_hash": "9434750276d4e28b6c42677141b6bc0f",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/vispannetje.webp": {
+    "mtime": 1787575533.1184015,
+    "seen": 1787579136.915084,
+    "ast_hash": "080a24dbaf85dd97b8038f8669acdd15",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/volauvent.webp": {
+    "mtime": 1787575533.1194015,
+    "seen": 1787579136.9150848,
+    "ast_hash": "2a69ea4537d0bdf1c5a59b00d36d45b4",
+    "semantic_hash": ""
+  },
+  "public/menu/plats/witloof.webp": {
+    "mtime": 1787575533.1194015,
+    "seen": 1787579136.9150853,
+    "ast_hash": "bc274efb3a394a30a2083f9f5e2b35ac",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/caesar.webp": {
+    "mtime": 1787575533.1204128,
+    "seen": 1787579136.915086,
+    "ast_hash": "43323869e0c1295f5f957bd5d3799053",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/calamares.webp": {
+    "mtime": 1787575533.1204128,
+    "seen": 1787579136.9150867,
+    "ast_hash": "85a87fd32ced92f501c25c5a039c0c52",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/garnaalkroketten.webp": {
+    "mtime": 1787575533.1204128,
+    "seen": 1787579136.9150877,
+    "ast_hash": "7f0994cc5b79575551ee5ed954b33138",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/geitenkaas.webp": {
+    "mtime": 1787575533.1204128,
+    "seen": 1787579136.9150887,
+    "ast_hash": "f93c1abbcec2d1d947a1599f97930f21",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/kaaskroketjes.webp": {
+    "mtime": 1787575533.1204128,
+    "seen": 1787579136.9150891,
+    "ast_hash": "b7cef41ff9d2fc559db4617a2cf93d04",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/nicoise.webp": {
+    "mtime": 1787575533.1204128,
+    "seen": 1787579136.91509,
+    "ast_hash": "6b6c38769185a1fecfe0026727d6757b",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/noordzee.webp": {
+    "mtime": 1787575533.1214015,
+    "seen": 1787579136.915091,
+    "ast_hash": "f7c1dbdd703317667b42d72d123573ad",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/rauwkost.webp": {
+    "mtime": 1787575533.1214015,
+    "seen": 1787579136.9150918,
+    "ast_hash": "0bac472e208e1172282fc180ec4ba5c0",
+    "semantic_hash": ""
+  },
+  "public/menu/salades/scampi.webp": {
+    "mtime": 1787575533.1214015,
+    "seen": 1787579136.9150925,
+    "ast_hash": "83825e22f99d65f4ac917e84f5fe9a48",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/3sauzen.webp": {
+    "mtime": 1787575533.1224015,
+    "seen": 1787579136.9150932,
+    "ast_hash": "7b79c27a0c03bac34876912e83b96e08",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/americaine.webp": {
+    "mtime": 1787575533.1224015,
+    "seen": 1787579136.915094,
+    "ast_hash": "a4b86ef2f7f22e965340b08de46e7a87",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/andalouse.webp": {
+    "mtime": 1787575533.1224015,
+    "seen": 1787579136.9150949,
+    "ast_hash": "371b8096dce27900a00bc8d37c5bfe2d",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/bbq.webp": {
+    "mtime": 1787575533.1224015,
+    "seen": 1787579136.9150956,
+    "ast_hash": "04f300b3dbb4d90ea5ab1b1e776c90b9",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/brazil.webp": {
+    "mtime": 1787575533.1224015,
+    "seen": 1787579136.9150965,
+    "ast_hash": "f3ea39264be8580966a8eb7a49a28ec1",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/coctail.webp": {
+    "mtime": 1787575533.1224015,
+    "seen": 1787579136.9150972,
+    "ast_hash": "991c03cd6c29f3babbfe334989ff7b35",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/curryketchup.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.9150982,
+    "ast_hash": "01b9f0dd83abf91a37a5590b55f61af5",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/gelebicky.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.9150987,
+    "ast_hash": "98e008dd91d0fb7645202fb540e31118",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/gelecurry.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.9150994,
+    "ast_hash": "f325ddf4d26560a77a9806f893b71ff7",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/hannibal.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.9151003,
+    "ast_hash": "6bf498f3cd71561c7b322b93535a1782",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/joppie.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.9151013,
+    "ast_hash": "60f2b589534cbba522065f9491bcc109",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/ketchup.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.915102,
+    "ast_hash": "d6537d60659c165cdfe052fa05c8ca5d",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/loempia.webp": {
+    "mtime": 1787575533.1234014,
+    "seen": 1787579136.9151027,
+    "ast_hash": "d78d70c5bcb4b39dae15f866271e38c7",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/mammoet.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.9151034,
+    "ast_hash": "b8378395716dfa320b2587826c6edb29",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/mayo.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.9151042,
+    "ast_hash": "096e51d80ee34df1b1a6c4d236173160",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/oranjebicky.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.915105,
+    "ast_hash": "acbec584ecdea446349e6cce0cdb13a4",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/pepersaus.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.9151058,
+    "ast_hash": "80fb0d40879d0587b30d9c26c810c87e",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/pickels.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.9151065,
+    "ast_hash": "0c508d41035617e6ae70c554ef214ae3",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/samourai.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.9151073,
+    "ast_hash": "92514abd2f1125d464fcd4a3efd4d6e9",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/specialesaus.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.9151082,
+    "ast_hash": "34d806121196d94a3830fa64e759d445",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/tartare.webp": {
+    "mtime": 1787575533.1244016,
+    "seen": 1787579136.915109,
+    "ast_hash": "a1906f5a91d4ec49a9dfd607bd34648f",
+    "semantic_hash": ""
+  },
+  "public/menu/saus/toscane.webp": {
+    "mtime": 1787575533.1254015,
+    "seen": 1787579136.9151096,
+    "ast_hash": "d9101a4971e90ed0eeee365ba0d4441e",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/1680255793820.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.9151103,
+    "ast_hash": "4356863627c61c4f8512c43d545bb29b",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/ardeense.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.915111,
+    "ast_hash": "2ec406b9aed9d5f367ee40c87f992b42",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/artisalaekipbrochette.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.915112,
+    "ast_hash": "f33f6b8d21e56127cb30dfc59bd5544d",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/artisanalekipbrochette.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.9151127,
+    "ast_hash": "5d61b02cc159099cdd90b5ad76b32498",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/bamiballetjes.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.9151134,
+    "ast_hash": "d3cfca748e1a2ccd5f4958ea8a6a2e86",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/bitterballen.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.9151142,
+    "ast_hash": "62a1a9e7fdac7fae0bc560a243f34699",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/bockworst.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.915115,
+    "ast_hash": "18ea74c614a7fc06ff269705897fc88d",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/boulet.webp": {
+    "mtime": 1787575533.1261673,
+    "seen": 1787579136.9151158,
+    "ast_hash": "f033567507b9d0f6fe4146ceb769fe22",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/bouletspeciaal.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.9151168,
+    "ast_hash": "7d97275ce7845ed8d12db23ad589235e",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/cheesecrack.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.9151175,
+    "ast_hash": "d0b235c8de81d4c40af6f3a69180d817",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/crizzly.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.915118,
+    "ast_hash": "9f02f91ead7554a516fc4af86f6187c6",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/dynamite.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.91512,
+    "ast_hash": "4b2ec15ee4edb4583bfe7b91bee0d294",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/frikandel.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.9151206,
+    "ast_hash": "7b3a8b53cf8dff7a1f2ac3f42572cabb",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/frikandelspeciaal.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.9151213,
+    "ast_hash": "daf4ff9d437a32b8b11087b2c2d77efb",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/garnaalkroket.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.9151223,
+    "ast_hash": "b648bf37f1b7fb6c10d43f1ec6b01200",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/hamburgerschijf.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.915123,
+    "ast_hash": "24d1627a6d2a9e0f9ce2cdfde16b3bd3",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/jagerworst.webp": {
+    "mtime": 1787575533.1264014,
+    "seen": 1787579136.9151237,
+    "ast_hash": "bf45db63103a3f451cdeb94aa1850630",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kaasballetjes.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.9151244,
+    "ast_hash": "249bd34b7782cbbeaeb402562c2648fc",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kaassouffle.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.9151251,
+    "ast_hash": "66f2206800190a9fa85359c058616a6f",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kalkoenborchette-huis.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.915126,
+    "ast_hash": "5b132dc12193f4ba0ba639d17e811075",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kalkoenstick.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.9151268,
+    "ast_hash": "b148b27f36b65ce767addc9fc94da96a",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kipcorn.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.9151275,
+    "ast_hash": "703a37ecd1a7353ecc56879be0fae2cc",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kipfingers.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.915128,
+    "ast_hash": "613bd9d121ab7c85e18b62f7ac0eb311",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kipkaasdonut.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.9151292,
+    "ast_hash": "331c58ab3c246f8d3e1a5a62545d9839",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kipnuggets.webp": {
+    "mtime": 1787575533.1274016,
+    "seen": 1787579136.9151297,
+    "ast_hash": "b9a7d88e8d878812febcf99218ca048e",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/kippenboutjes.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151304,
+    "ast_hash": "179c8e5b4bde03cc80acb894f9d36e65",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/loempia.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151313,
+    "ast_hash": "fbf412559a54048ff886ef5afd0cde82",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/lookworst.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151318,
+    "ast_hash": "b36d40fa6493563f9ebf79a206fe2b1b",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/mammoet.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.915133,
+    "ast_hash": "2198116daff42341fb9e772ce829a31d",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/mergueze.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151337,
+    "ast_hash": "ea6e4d39351e818eb2a92d242306d350",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/mexicano.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151344,
+    "ast_hash": "63eb25fefb3076202580f603f2bb5475",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/miniloempias.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151351,
+    "ast_hash": "79f9aab2fbcb768b9fed21835499ca00",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/minilucifers.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.915136,
+    "ast_hash": "1cad4da992bbf3e6d34446ec816eb896",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/minimegamix.webp": {
+    "mtime": 1787575533.1284015,
+    "seen": 1787579136.9151368,
+    "ast_hash": "8f6f58a39a7e60d56816012533e474bf",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/mozarellasticks.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.9151375,
+    "ast_hash": "b2bdb4b0d69b14e3f4f99b6320f74f9f",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/ribster.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.9151382,
+    "ast_hash": "71d36590a508242ad1a98e28b8a6b0c0",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/scampibrochette.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.915139,
+    "ast_hash": "c7e4835d8aeaa2bd051dbfc77a7bbaaa",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/spicyviandel.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.91514,
+    "ast_hash": "455a7c410aa0406800367433d4504428",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/taco.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.9151406,
+    "ast_hash": "5774dea759390800cdccc8b3a42fa774",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/viandel.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.9151413,
+    "ast_hash": "5d18e5db8ec125641c86492f475fda0c",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/viandelspeciaal.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.915142,
+    "ast_hash": "9823841e929b5ea4fb88676a28cf83fc",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/visbrochette.webp": {
+    "mtime": 1787575533.1294014,
+    "seen": 1787579136.915143,
+    "ast_hash": "35c1d945c4acc362a05ded33d0802b30",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/vleesbrochette.webp": {
+    "mtime": 1787575533.1304014,
+    "seen": 1787579136.9151437,
+    "ast_hash": "8962cb22caceb029097171d520bfb4fb",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/vleeskroket.webp": {
+    "mtime": 1787575533.1304014,
+    "seen": 1787579136.9151444,
+    "ast_hash": "c69a18ce0b94be1600563b7215a6c507",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/vuurvreter.webp": {
+    "mtime": 1787575533.1304014,
+    "seen": 1787579136.9151452,
+    "ast_hash": "4c5ce3072c7705c53ca3d43bcf3691c0",
+    "semantic_hash": ""
+  },
+  "public/menu/snacks/zigeunerstick.webp": {
+    "mtime": 1787575533.1304014,
+    "seen": 1787579136.9151456,
+    "ast_hash": "7d98283e5c5042a7b06227644b0032ef",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/bearnaise.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151466,
+    "ast_hash": "bab36afcd2e7dc10890e154d7e075729",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/champsaus.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151473,
+    "ast_hash": "15b487dd918fe25f743150f333c6aba2",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/pepersaus.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.915148,
+    "ast_hash": "17209205d3fa9a441b8b7ed34e0ece9a",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/scampisaus.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151487,
+    "ast_hash": "573063796d4a15f501ab2743ac88a16b",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/spagsuas.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151495,
+    "ast_hash": "28e568a766aad8c6f8b3ac8650481ed9",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/stoofvleessaus.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151504,
+    "ast_hash": "8a1fdf764172b6000ec2061d8be3fece",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/tomatensaus.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151511,
+    "ast_hash": "bf8c73c0618c1110ab024956c6af6919",
+    "semantic_hash": ""
+  },
+  "public/menu/warme-saus/witloofsaus.webp": {
+    "mtime": 1787575533.1316369,
+    "seen": 1787579136.9151518,
+    "ast_hash": "5d558614ae327fca4f51476a823a8682",
+    "semantic_hash": ""
+  },
+  "public/site/cta-bg.webp": {
+    "mtime": 1787575533.132685,
+    "seen": 1787579136.9151525,
+    "ast_hash": "cad8f6f2d8d936f9ccb7766fc04f6d48",
+    "semantic_hash": ""
+  },
+  "public/site/featured-halfhaantje.webp": {
+    "mtime": 1787575533.132685,
+    "seen": 1787579136.9151535,
+    "ast_hash": "77e92a0c81b223bfd8bb90e9ee8693ff",
+    "semantic_hash": ""
+  },
+  "public/site/hero.webp": {
+    "mtime": 1787575533.132685,
+    "seen": 1787579136.9151542,
+    "ast_hash": "6eca61940f13f19a01305203712d3607",
+    "semantic_hash": ""
+  },
+  "public/site/locaties.webp": {
+    "mtime": 1787575533.132685,
+    "seen": 1787579136.915155,
+    "ast_hash": "ec46e8ef44138a13b13aea2d4d68ba11",
+    "semantic_hash": ""
+  },
+  "public/site/story-dining.webp": {
+    "mtime": 1787575533.132685,
+    "seen": 1787579136.9151556,
+    "ast_hash": "9a51af37c778b36a838d765df32b2013",
+    "semantic_hash": ""
+  },
+  "public/site/story-entrance.webp": {
+    "mtime": 1787575533.132685,
+    "seen": 1787579136.9151561,
+    "ast_hash": "88343220b0f8ee25b61d53b01acdb591",
+    "semantic_hash": ""
+  },
+  "public/site/story-exterior.webp": {
+    "mtime": 1787575533.1334014,
+    "seen": 1787579136.915157,
+    "ast_hash": "26b380bd7f58bb19cd8e3adf7548f7bb",
+    "semantic_hash": ""
+  },
+  "public/site/story-hall.webp": {
+    "mtime": 1787575533.1334014,
+    "seen": 1787579136.9151578,
+    "ast_hash": "3bf4301679b8a2fb305c505bb5da29c7",
+    "semantic_hash": ""
+  },
+  "public/site/story-interior.webp": {
+    "mtime": 1787575533.1334014,
+    "seen": 1787579136.9151587,
+    "ast_hash": "87c295afb4ca72c02ab74060ab2dafab",
+    "semantic_hash": ""
+  }
+}

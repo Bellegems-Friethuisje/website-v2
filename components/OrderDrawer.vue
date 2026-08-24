@@ -25,15 +25,28 @@
                   {{ t({ nl: 'Gedeeld met familie', fr: 'Partagé avec la famille' }) }}
                 </p>
               </div>
-              <button
-                @click="$emit('close')"
-                class="h-11 w-11 -m-2 rounded-full hover:bg-gray-100 active:bg-gray-100 transition-colors text-gray-400 flex items-center justify-center shrink-0"
-                :aria-label="t({ nl: 'Sluiten', fr: 'Fermer' })"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+              <div class="flex items-center gap-1 shrink-0">
+                <button
+                  @click="openInfo"
+                  class="h-11 w-11 -m-2 rounded-full hover:bg-gray-100 active:bg-gray-100 transition-colors text-gray-400 flex items-center justify-center shrink-0"
+                  :aria-label="t({ nl: 'Hoe werkt dit?', fr: 'Comment ça marche ?' })"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9" />
+                    <path stroke-linecap="round" d="M12 16v-5" />
+                    <path stroke-linecap="round" d="M12 8.25h.01" />
+                  </svg>
+                </button>
+                <button
+                  @click="$emit('close')"
+                  class="h-11 w-11 -m-2 rounded-full hover:bg-gray-100 active:bg-gray-100 transition-colors text-gray-400 flex items-center justify-center shrink-0"
+                  :aria-label="t({ nl: 'Sluiten', fr: 'Fermer' })"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <!-- Empty state -->
@@ -50,21 +63,24 @@
                   })
                 }}
               </p>
-              <div class="flex flex-col items-center gap-3">
+              <div class="flex flex-col gap-3">
                 <a
                   href="/menu"
                   @click="trackEvent('preorder_view_menu', { source: 'empty_drawer' }); $emit('close')"
-                  class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-colors"
+                  class="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 active:bg-orange-600 text-white font-bold py-3 min-h-11 rounded-xl transition-colors"
                 >
                   {{ t({ nl: 'Bekijk het menu', fr: 'Voir le menu' }) }}
                 </a>
                 <button
                   @click="handleShare"
-                  class="inline-flex items-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold px-6 py-3 min-h-11 rounded-xl transition-colors text-sm"
+                  class="w-full flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold py-3 min-h-11 rounded-xl transition-colors text-sm"
                 >
                   <span aria-hidden="true">👨‍👩‍👧</span>
                   {{ shareCopied ? t({ nl: 'Link gekopieerd!', fr: 'Lien copié !' }) : t({ nl: 'Deel met familie', fr: 'Partager avec la famille' }) }}
                 </button>
+                <p v-if="shareError" class="text-red-500 text-xs font-semibold">
+                  {{ t({ nl: 'Delen lukte niet — probeer het nog eens.', fr: "Le partage a échoué — réessayez." }) }}
+                </p>
               </div>
             </div>
 
@@ -144,6 +160,9 @@
                   <span aria-hidden="true">👨‍👩‍👧</span>
                   {{ shareCopied ? t({ nl: 'Link gekopieerd!', fr: 'Lien copié !' }) : t({ nl: 'Deel met familie', fr: 'Partager avec la famille' }) }}
                 </button>
+                <p v-if="shareError" class="text-red-500 text-xs font-semibold text-center -mt-2">
+                  {{ t({ nl: 'Delen lukte niet — probeer het nog eens.', fr: "Le partage a échoué — réessayez." }) }}
+                </p>
 
                 <div class="flex gap-3">
                   <button
@@ -167,26 +186,50 @@
       </div>
     </Transition>
   </Teleport>
+
+  <PreorderInfoModal :open="showInfo" source="order_drawer" @close="closeInfo" />
 </template>
 
 <script setup lang="ts">
-import { computed, ref, onMounted, onUnmounted } from 'vue'
+import { computed, ref, watch, onMounted, onUnmounted } from 'vue'
 import { useLang } from '../composables/useLang'
 import { trackEvent } from '../composables/useAnalytics'
 import { useOrder, type OrderItem } from '../composables/useOrder'
+import PreorderInfoModal from './PreorderInfoModal.vue'
 
 const { lang, t } = useLang()
-const { items, locationName, shareId, setQty, removeItem, clearOrder, shareOrder } = useOrder()
+const { items, locationName, shareId, introSeen, setQty, removeItem, clearOrder, shareOrder, markIntroSeen } = useOrder()
 
 const shareCopied = ref(false)
+const shareError = ref(false)
+const showInfo = ref(false)
 
-defineProps<{ open: boolean }>()
+const props = defineProps<{ open: boolean }>()
 const emit = defineEmits<{ close: [] }>()
 
 const isMounted = ref(false)
 onMounted(() => {
   isMounted.value = true
 })
+
+watch(
+  () => props.open,
+  (isOpen) => {
+    if (isOpen && !introSeen.value) {
+      showInfo.value = true
+    }
+  },
+)
+
+function openInfo() {
+  trackEvent('preorder_info_open', { source: 'drawer_header' })
+  showInfo.value = true
+}
+
+function closeInfo() {
+  showInfo.value = false
+  markIntroSeen()
+}
 
 const total = computed(() => items.value.reduce((sum, i) => sum + i.price * i.qty, 0))
 
@@ -206,8 +249,14 @@ function decreaseQty(item: OrderItem) {
 }
 
 async function handleShare() {
+  shareError.value = false
   const url = await shareOrder()
-  if (!url) return
+  if (!url) {
+    shareError.value = true
+    trackEvent('preorder_share_failed', { item_count: items.value.length })
+    setTimeout(() => (shareError.value = false), 4000)
+    return
+  }
   trackEvent('preorder_share', { item_count: items.value.length, total: total.value })
 
   if (navigator.share) {

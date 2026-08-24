@@ -20,7 +20,19 @@ const locationId = ref<string | null>(null)
 const locationName = ref<string>('')
 const shareId = ref<string | null>(null)
 const drawerOpen = ref(false)
+const lastAdded = ref<{ name: { nl: string; fr: string }; ts: number } | null>(null)
+const introSeen = ref(false)
 let loaded = false
+
+const INTRO_KEY = 'bf-preorder-intro-seen'
+
+function markIntroSeen() {
+  introSeen.value = true
+  if (typeof window === 'undefined') return
+  try {
+    localStorage.setItem(INTRO_KEY, '1')
+  } catch {}
+}
 
 let pusherClient: any = null
 let channel: any = null
@@ -90,6 +102,9 @@ export function useOrder() {
         shareId.value = data.shareId ?? null
       }
     } catch {}
+    try {
+      introSeen.value = localStorage.getItem(INTRO_KEY) === '1'
+    } catch {}
     watch([items, locationId, locationName, shareId], persist, { deep: true })
     if (shareId.value) subscribeToChannel(shareId.value)
   }
@@ -112,6 +127,7 @@ export function useOrder() {
     if (existing) existing.qty++
     else items.value.push({ ...item, qty: 1 })
     if (shareId.value) postAction('add', { item })
+    lastAdded.value = { name: item.name, ts: Date.now() }
     return true
   }
 
@@ -206,6 +222,8 @@ export function useOrder() {
     locationName,
     shareId,
     drawerOpen,
+    lastAdded,
+    introSeen,
     load,
     addItem,
     removeItem,
@@ -215,5 +233,6 @@ export function useOrder() {
     joinShared,
     openDrawer,
     closeDrawer,
+    markIntroSeen,
   }
 }
