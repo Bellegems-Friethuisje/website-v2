@@ -58,7 +58,7 @@
           <!-- go to reservation page -->
           <a
             href="/reservaties"
-            class="inline-block bg-white text-orange-500 font-bold py-2 px-4 rounded-lg hover:bg-orange-100 transition-colors"
+            class="inline-block bg-white text-orange-500 font-bold py-2.5 px-5 rounded-xl hover:bg-orange-100 transition-colors"
             @click="trackEvent('reservation_click', { source: 'footer' })"
           >
             {{ t({ nl: "Reserveer hier", fr: "Réservez ici" }) }}

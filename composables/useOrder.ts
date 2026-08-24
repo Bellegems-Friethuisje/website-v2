@@ -22,6 +22,8 @@ const shareId = ref<string | null>(null)
 const drawerOpen = ref(false)
 const lastAdded = ref<{ name: { nl: string; fr: string }; ts: number } | null>(null)
 const introSeen = ref(false)
+const showIntro = ref(false)
+const introSource = ref('auto_first_add')
 let loaded = false
 
 const INTRO_KEY = 'bf-preorder-intro-seen'
@@ -32,6 +34,17 @@ function markIntroSeen() {
   try {
     localStorage.setItem(INTRO_KEY, '1')
   } catch {}
+}
+
+function openIntro(source?: string) {
+  introSource.value = source ?? 'auto_first_add'
+  trackEvent('preorder_info_open', { source: introSource.value })
+  showIntro.value = true
+}
+
+function closeIntro() {
+  showIntro.value = false
+  markIntroSeen()
 }
 
 let pusherClient: any = null
@@ -128,6 +141,7 @@ export function useOrder() {
     else items.value.push({ ...item, qty: 1 })
     if (shareId.value) postAction('add', { item })
     lastAdded.value = { name: item.name, ts: Date.now() }
+    if (!introSeen.value) openIntro('auto_first_add')
     return true
   }
 
@@ -224,6 +238,8 @@ export function useOrder() {
     drawerOpen,
     lastAdded,
     introSeen,
+    showIntro,
+    introSource,
     load,
     addItem,
     removeItem,
@@ -234,5 +250,7 @@ export function useOrder() {
     openDrawer,
     closeDrawer,
     markIntroSeen,
+    openIntro,
+    closeIntro,
   }
 }

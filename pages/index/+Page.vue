@@ -50,7 +50,7 @@
         </a>
         <a
           href="/locaties"
-          class="border border-white/30 hover:border-white/60 text-white font-semibold px-7 py-3.5 rounded-xl transition-colors text-lg backdrop-blur-sm"
+          class="border border-white/30 hover:border-white/60 text-white font-bold px-7 py-3.5 rounded-xl transition-colors text-lg backdrop-blur-sm"
         >
           {{ t({ nl: "Locaties", fr: "Emplacements" }) }}
         </a>
