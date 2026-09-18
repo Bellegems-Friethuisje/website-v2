@@ -724,7 +724,8 @@
       },
       "price": 4,
       "image": "/menu/burgers/bicky.webp",
-      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"],
+      "options": ["onion", "sauce"]
     },
     {
       "id": 100,
@@ -740,7 +741,8 @@
       },
       "price": 3.5,
       "image": "/menu/burgers/bickyketchup.webp",
-      "allergens": ["celery", "gluten", "mustard", "sesame", "soy"]
+      "allergens": ["celery", "gluten", "mustard", "sesame", "soy"],
+      "options": ["onion", "sauce"]
     },
     {
       "id": 101,
@@ -756,7 +758,8 @@
       },
       "price": 4.3,
       "image": "/menu/burgers/bickychicken.webp",
-      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"],
+      "options": ["onion", "sauce"]
     },
     {
       "id": 102,
@@ -772,15 +775,8 @@
       },
       "price": 4.3,
       "image": "/menu/burgers/bickycheese.webp",
-      "allergens": [
-        "celery",
-        "eggs",
-        "gluten",
-        "milk",
-        "mustard",
-        "sesame",
-        "soy"
-      ]
+      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "sesame", "soy"],
+      "options": ["onion", "sauce"]
     },
     {
       "id": 103,
@@ -796,7 +792,8 @@
       },
       "price": 4.5,
       "image": "/menu/burgers/bickeyrib.webp",
-      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"],
+      "options": ["onion", "sauce"]
     },
     {
       "id": 104,
@@ -828,7 +825,8 @@
       },
       "price": 4.2,
       "image": "/menu/burgers/bickycrispy.webp",
-      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "mustard", "sesame", "soy"],
+      "options": ["onion", "sauce"]
     },
     {
       "id": 106,
@@ -844,15 +842,7 @@
       },
       "price": 3.8,
       "image": "/menu/burgers/veggieburger.webp",
-      "allergens": [
-        "celery",
-        "eggs",
-        "gluten",
-        "milk",
-        "mustard",
-        "sesame",
-        "soy"
-      ]
+      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "sesame", "soy"]
     },
     {
       "": "",
@@ -885,7 +875,8 @@
       },
       "price": 2.8,
       "image": "/menu/snacks/frikandelspeciaal.webp",
-      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
+      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"],
+      "options": ["onion", "sauce_ketchup"]
     },
     {
       "id": 129,
@@ -1127,7 +1118,8 @@
       },
       "price": 3.6,
       "image": "/menu/snacks/viandelspeciaal.webp",
-      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy"],
+      "options": ["onion", "sauce_ketchup"]
     },
     {
       "id": 146,
@@ -1184,7 +1176,8 @@
       },
       "price": 3.5,
       "image": "/menu/snacks/bouletspeciaal.webp",
-      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"]
+      "allergens": ["eggs", "gluten", "milk", "mustard", "soy"],
+      "options": ["onion", "sauce_ketchup"]
     },
     {
       "id": 150,
@@ -1339,7 +1332,8 @@
       },
       "price": 3.5,
       "image": "/menu/snacks/lookworst.webp",
-      "allergens": ["eggs", "gluten", "milk", "soy"]
+      "allergens": ["eggs", "gluten", "milk", "soy"],
+      "options": ["preparation"]
     },
     {
       "id": 161,
@@ -1395,7 +1389,8 @@
       },
       "price": 3.8,
       "image": "/menu/snacks/jagerworst.webp",
-      "allergens": ["celery", "eggs", "gluten", "milk", "sesame", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "milk", "sesame", "soy"],
+      "options": ["preparation"]
     },
     {
       "id": 165,
@@ -1504,7 +1499,8 @@
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
       "allergens": ["gluten", "milk", "mustard", "soy", "sulphites"],
-      "pairsWith": [25]
+      "pairsWith": [25],
+      "options": ["side", "portion"]
     },
     {
       "id": 192,
@@ -1522,7 +1518,8 @@
       "image": "/menu/plats/volauvent.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
-      "allergens": ["eggs", "gluten", "milk"]
+      "allergens": ["eggs", "gluten", "milk"],
+      "options": ["side", "portion"]
     },
     {
       "id": 193,
@@ -1542,7 +1539,8 @@
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
       "allergens": ["celery", "gluten", "milk", "mustard", "soy"],
-      "pairsWith": [25]
+      "pairsWith": [25],
+      "options": ["side", "portion"]
     },
     {
       "id": 194,
@@ -1560,7 +1558,8 @@
       "image": "/menu/plats/witloof.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
-      "allergens": ["eggs", "gluten", "milk"]
+      "allergens": ["eggs", "gluten", "milk"],
+      "options": ["side"]
     },
     {
       "id": 195,
@@ -1578,7 +1577,8 @@
       "image": "/menu/plats/halfhaantje.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
-      "allergens": ["milk", "mustard"]
+      "allergens": ["milk", "mustard"],
+      "options": ["side"]
     },
     {
       "id": 196,
@@ -1598,7 +1598,8 @@
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
       "allergens": ["celery"],
-      "pairsWith": [69, 70, 71, 25]
+      "pairsWith": [69, 70, 71, 25],
+      "options": ["side"]
     },
     {
       "id": 197,
@@ -1616,7 +1617,8 @@
       "image": "/menu/plats/vispannetje.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
-      "allergens": ["celery", "crustaceans", "fish", "gluten", "milk"]
+      "allergens": ["celery", "crustaceans", "fish", "gluten", "milk"],
+      "options": ["side"]
     },
     {
       "id": 198,
@@ -1635,7 +1637,8 @@
       "image": "/menu/plats/scampicreme.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
-      "allergens": ["crustaceans", "milk", "mustard"]
+      "allergens": ["crustaceans", "milk", "mustard"],
+      "options": ["side"]
     },
     {
       "id": 199,
@@ -1653,7 +1656,8 @@
       "image": "/menu/plats/scampidiabolique.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
-      "allergens": ["crustaceans", "gluten", "milk"]
+      "allergens": ["crustaceans", "gluten", "milk"],
+      "options": ["side"]
     },
     {
       "id": 200,
@@ -1671,7 +1675,8 @@
       "image": "/menu/plats/scampicurry.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": false,
-      "allergens": ["crustaceans", "gluten", "milk", "mustard", "sulphites"]
+      "allergens": ["crustaceans", "gluten", "milk", "mustard", "sulphites"],
+      "options": ["side"]
     },
     {
       "id": 201,
@@ -1689,7 +1694,8 @@
       "image": "/menu/plats/omelet.webp",
       "sides": ["friet", "puree", "pasta"],
       "childVersion": true,
-      "allergens": ["eggs", "milk"]
+      "allergens": ["eggs", "milk"],
+      "options": ["side", "portion"]
     },
     {
       "id": 202,
@@ -1708,7 +1714,8 @@
       "image": "/menu/plats/prepare.webp",
       "childVersion": true,
       "allergens": ["eggs", "mustard"],
-      "pairsWith": [25]
+      "pairsWith": [25],
+      "options": ["side", "portion"]
     },
     {
       "id": 203,
@@ -1725,7 +1732,8 @@
       "price": 15.5,
       "image": "/menu/plats/steaktartare.webp",
       "childVersion": true,
-      "allergens": ["eggs", "mustard"]
+      "allergens": ["eggs", "mustard"],
+      "options": ["side"]
     },
     {
       "id": 204,
@@ -1742,7 +1750,8 @@
       "price": 14,
       "image": "/menu/plats/boerenpate.webp",
       "childVersion": true,
-      "allergens": ["eggs", "milk", "mustard", "sulphites"]
+      "allergens": ["eggs", "milk", "mustard", "sulphites"],
+      "options": ["side", "portion"]
     },
     {
       "id": 205,
@@ -1759,15 +1768,8 @@
       "price": 14.5,
       "image": "/menu/plats/koudeschotel.webp",
       "childVersion": false,
-      "allergens": [
-        "celery",
-        "eggs",
-        "gluten",
-        "milk",
-        "mustard",
-        "soy",
-        "sulphites"
-      ]
+      "allergens": ["celery", "eggs", "gluten", "milk", "mustard", "soy", "sulphites"],
+      "options": ["side"]
     },
     {
       "id": 206,
@@ -1785,7 +1787,8 @@
       "image": "/menu/plats/tomaatgarnaal.webp",
       "childVersion": true,
       "allergens": ["crustaceans", "eggs", "gluten", "milk", "soy"],
-      "pairsWith": [25, 28]
+      "pairsWith": [25, 28],
+      "options": ["side", "portion"]
     },
     {
       "id": 207,
@@ -1802,7 +1805,8 @@
       "price": 14.2,
       "image": "/menu/plats/tomaattonijn.webp",
       "childVersion": true,
-      "allergens": ["eggs", "fish", "milk", "mustard", "soy"]
+      "allergens": ["eggs", "fish", "milk", "mustard", "soy"],
+      "options": ["side", "portion"]
     },
     {
       "id": 208,
@@ -1820,7 +1824,8 @@
       "price": 14.2,
       "image": "/menu/plats/tonijnperzik.webp",
       "childVersion": true,
-      "allergens": ["eggs", "fish", "milk", "mustard", "soy"]
+      "allergens": ["eggs", "fish", "milk", "mustard", "soy"],
+      "options": ["side", "portion"]
     },
     {
       "id": 209,
@@ -1838,7 +1843,8 @@
       "price": 12,
       "image": "/menu/plats/spaghetti.webp",
       "childVersion": true,
-      "allergens": ["celery", "gluten", "milk", "soy"]
+      "allergens": ["celery", "gluten", "milk", "soy"],
+      "options": ["portion"]
     },
     {
       "id": 210,
@@ -1855,7 +1861,8 @@
       "price": 13,
       "image": "/menu/plats/tagliatellecarbonara.webp",
       "childVersion": true,
-      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"],
+      "options": ["portion"]
     },
     {
       "id": 211,
@@ -1872,7 +1879,8 @@
       "price": 12,
       "image": "/menu/plats/macaroni.webp",
       "childVersion": true,
-      "allergens": ["celery", "eggs", "gluten", "milk", "soy"]
+      "allergens": ["celery", "eggs", "gluten", "milk", "soy"],
+      "options": ["portion"]
     },
     {
       "id": 212,
@@ -1960,7 +1968,8 @@
       },
       "price": 13.7,
       "image": "/menu/salades/caesar.webp",
-      "allergens": ["eggs", "gluten", "milk", "mustard"]
+      "allergens": ["eggs", "gluten", "milk", "mustard"],
+      "options": ["dressing"]
     },
     {
       "id": 237,
@@ -1976,7 +1985,8 @@
       },
       "price": 5.5,
       "image": "/menu/salades/rauwkost.webp",
-      "allergens": ["eggs", "mustard", "sulphites"]
+      "allergens": ["eggs", "mustard", "sulphites"],
+      "options": ["dressing"]
     },
     {
       "id": 238,
@@ -1992,14 +2002,8 @@
       },
       "price": 14.5,
       "image": "/menu/salades/scampi.webp",
-      "allergens": [
-        "celery",
-        "crustaceans",
-        "eggs",
-        "gluten",
-        "soy",
-        "sulphites"
-      ]
+      "allergens": ["celery", "crustaceans", "eggs", "gluten", "soy", "sulphites"],
+      "options": ["dressing"]
     },
     {
       "id": 239,
@@ -2015,15 +2019,8 @@
       },
       "price": 16,
       "image": "/menu/salades/noordzee.webp",
-      "allergens": [
-        "crustaceans",
-        "eggs",
-        "fish",
-        "gluten",
-        "milk",
-        "mustard",
-        "soy"
-      ]
+      "allergens": ["crustaceans", "eggs", "fish", "gluten", "milk", "mustard", "soy"],
+      "options": ["dressing"]
     },
     {
       "id": 240,
@@ -2039,7 +2036,8 @@
       },
       "price": 13.1,
       "image": "/menu/salades/geitenkaas.webp",
-      "allergens": ["gluten", "milk"]
+      "allergens": ["gluten", "milk"],
+      "options": ["dressing"]
     },
     {
       "id": 241,
@@ -2055,7 +2053,8 @@
       },
       "price": 13.7,
       "image": "/menu/salades/nicoise.webp",
-      "allergens": ["eggs", "fish"]
+      "allergens": ["eggs", "fish"],
+      "options": ["dressing"]
     },
     {
       "id": 242,

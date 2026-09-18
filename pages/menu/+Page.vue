@@ -319,6 +319,13 @@
     @select="selectedItem = $event"
     @add="addToOrder($event, 'modal')"
   />
+
+  <!-- Options modal (sauce, onions, ...) -->
+  <PropositionsModal
+    :item="pendingOptionsItem"
+    @close="pendingOptionsItem = null"
+    @confirm="handleOptionsConfirm"
+  />
 </template>
 
 <script setup lang="ts">
@@ -328,6 +335,7 @@ import { trackEvent } from "../../composables/useAnalytics";
 import { useOrder } from "../../composables/useOrder";
 import MenuCard from "../../components/MenuCard.vue";
 import MenuModal from "../../components/MenuModal.vue";
+import PropositionsModal, { type OptionSelection } from "../../components/PropositionsModal.vue";
 import bellegems from "../../data/locations/bellegems.json";
 import takeaway from "../../data/locations/takeaway.json";
 import allergensData from "../../data/allergens.json";
@@ -408,16 +416,39 @@ const currentLocation = computed(
   () => locations.find((l) => l.id === activeLocation.value) ?? locations[0],
 );
 
+const pendingOptionsItem = ref<Record<string, any> | null>(null);
+let pendingSource = "card";
+
 function addToOrder(item: Record<string, any>, source: string = "card") {
+  if (item.options?.length) {
+    pendingOptionsItem.value = item;
+    pendingSource = source;
+    return;
+  }
+  commitAdd(item, source);
+}
+
+function handleOptionsConfirm(selections: OptionSelection[]) {
+  const item = pendingOptionsItem.value;
+  pendingOptionsItem.value = null;
+  if (!item) return;
+  commitAdd(item, pendingSource, selections);
+}
+
+function commitAdd(item: Record<string, any>, source: string, selections?: OptionSelection[]) {
+  const keySuffix = selections?.length
+    ? "-" + selections.map((s) => `${s.groupKey}:${s.choiceId}`).join("-")
+    : "";
   addItem(
     {
-      key: `${currentLocation.value.id}-${item.id}`,
+      key: `${currentLocation.value.id}-${item.id}${keySuffix}`,
       id: item.id,
       name: { nl: item.nl.name, fr: item.fr.name },
       price: item.price,
       image: item.image,
       emoji: item.emoji,
       category: item.category,
+      ...(selections?.length && { options: selections }),
     },
     currentLocation.value.id,
     currentLocation.value.name,

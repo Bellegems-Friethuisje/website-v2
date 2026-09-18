@@ -11,6 +11,7 @@ export interface OrderItem {
   image?: string
   emoji?: string
   category: string
+  options?: { groupKey: string; choiceId: string; label: { nl: string; fr: string } }[]
 }
 
 const STORAGE_KEY = 'bf-preorder-v1'

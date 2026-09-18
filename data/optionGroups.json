@@ -1,0 +1,87 @@
+{
+  "onion": {
+    "nl": "Ui naar keuze",
+    "fr": "Oignon au choix",
+    "choices": [
+      { "id": "geen", "nl": "Geen ui", "fr": "Sans oignon" },
+      { "id": "vers", "nl": "Verse ui", "fr": "Oignon frais" },
+      { "id": "gebakken", "nl": "Gebakken ui", "fr": "Oignon frit" }
+    ]
+  },
+  "sauce": {
+    "nl": "Saus naar keuze",
+    "fr": "Sauce au choix",
+    "choices": [
+      { "id": "mayonaise", "nl": "Mayonaise", "fr": "Mayonnaise" },
+      { "id": "ketchup", "nl": "Ketchup", "fr": "Ketchup" },
+      { "id": "andalouse", "nl": "Andalouse", "fr": "Andalouse" },
+      { "id": "cocktail", "nl": "Cocktail", "fr": "Cocktail" },
+      { "id": "samurai", "nl": "Samurai", "fr": "Samouraï" },
+      { "id": "tartaar", "nl": "Tartaar", "fr": "Tartare" },
+      { "id": "americaine", "nl": "Américaine", "fr": "Américaine" },
+      { "id": "joppie", "nl": "Joppie", "fr": "Joppie" },
+      { "id": "brazil", "nl": "Brazil", "fr": "Brazil" },
+      { "id": "hannibal", "nl": "Hannibal", "fr": "Hannibal" },
+      { "id": "barbecue", "nl": "Barbecue", "fr": "Barbecue" },
+      { "id": "toscane", "nl": "Toscane", "fr": "Toscane" },
+      { "id": "bearnaise_koud", "nl": "Bearnaise koud", "fr": "Bearnaise froide" },
+      { "id": "pepersaus_koud", "nl": "Pepersaus koud", "fr": "Sauce poivre froide" },
+      { "id": "mammoetsaus", "nl": "Mammoetsaus", "fr": "Sauce mammouth" },
+      { "id": "loempiasaus", "nl": "Loempiasaus", "fr": "Sauce aigre-douce" },
+      { "id": "curry_ketchup", "nl": "Curry ketchup", "fr": "Ketchup curry" },
+      { "id": "piccalilli", "nl": "Piccalilli", "fr": "Piccalilli" },
+      { "id": "mosterd", "nl": "Mosterd", "fr": "Moutarde" },
+      { "id": "gele_bicky", "nl": "Gele Bicky", "fr": "Bicky jaune" },
+      { "id": "oranje_bicky", "nl": "Oranje Bicky", "fr": "Bicky orange" },
+      { "id": "gele_curry", "nl": "Gele curry", "fr": "Curry jaune" },
+      { "id": "speciale_saus", "nl": "Speciale saus", "fr": "Sauce spéciale" },
+      { "id": "drie_sauzen", "nl": "3 sauzen", "fr": "3 sauces" },
+      { "id": "geen_saus", "nl": "Geen saus", "fr": "Sans sauce" }
+    ]
+  },
+  "sauce_ketchup": {
+    "nl": "Saus naar keuze",
+    "fr": "Sauce au choix",
+    "choices": [
+      { "id": "ketchup", "nl": "Ketchup", "fr": "Ketchup" },
+      { "id": "curry_ketchup", "nl": "Curry ketchup", "fr": "Ketchup curry" }
+    ]
+  },
+  "preparation": {
+    "nl": "Bereiding naar keuze",
+    "fr": "Préparation au choix",
+    "choices": [
+      { "id": "gebakken", "nl": "Gebakken", "fr": "Cuite" },
+      { "id": "koud", "nl": "Koud", "fr": "Froide" }
+    ]
+  },
+  "side": {
+    "nl": "Bijgerecht naar keuze",
+    "fr": "Accompagnement au choix",
+    "choices": [
+      { "id": "friet", "nl": "Friet", "fr": "Frites" },
+      { "id": "puree", "nl": "Puree", "fr": "Purée" },
+      { "id": "pasta", "nl": "Pasta", "fr": "Pâtes" }
+    ]
+  },
+  "portion": {
+    "nl": "Portie naar keuze",
+    "fr": "Portion au choix",
+    "choices": [
+      { "id": "normaal", "nl": "Normale portie", "fr": "Portion normale" },
+      { "id": "kind", "nl": "Kinderportie", "fr": "Portion enfant" }
+    ]
+  },
+  "dressing": {
+    "nl": "Dressing naar keuze",
+    "fr": "Vinaigrette au choix",
+    "choices": [
+      { "id": "geen", "nl": "Geen dressing", "fr": "Sans vinaigrette" },
+      { "id": "honing_mosterd", "nl": "Honing-mosterd", "fr": "Miel-moutarde" },
+      { "id": "bieslook", "nl": "Bieslook", "fr": "Ciboulette" },
+      { "id": "tartaar", "nl": "Tartaar", "fr": "Tartare" },
+      { "id": "cocktail", "nl": "Cocktail", "fr": "Cocktail" },
+      { "id": "mayonaise", "nl": "Mayonaise", "fr": "Mayonnaise" }
+    ]
+  }
+}

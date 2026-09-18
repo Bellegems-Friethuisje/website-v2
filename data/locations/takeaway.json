@@ -115,7 +115,8 @@
         "name": "Fricandelle spéciale",
         "description": "Avec mayo, ketchup et oignons"
       },
-      "price": 2.8
+      "price": 2.8,
+      "options": ["onion", "sauce_ketchup"]
     },
     {
       "id": 7,

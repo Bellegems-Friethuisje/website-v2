@@ -63,36 +63,34 @@
                   })
                 }}
               </p>
-              <div class="flex flex-col gap-3">
-                <a
-                  href="/menu"
-                  @click="trackEvent('preorder_view_menu', { source: 'empty_drawer' }); $emit('close')"
-                  class="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 active:bg-orange-600 text-white font-bold py-3 min-h-11 rounded-xl transition-colors"
-                >
-                  {{ t({ nl: 'Bekijk het menu', fr: 'Voir le menu' }) }}
-                </a>
-                <button
-                  @click="handleShare"
-                  class="w-full flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold py-3 min-h-11 rounded-xl transition-colors text-sm"
-                >
-                  <span aria-hidden="true">👨‍👩‍👧</span>
-                  {{ shareCopied ? t({ nl: 'Link gekopieerd!', fr: 'Lien copié !' }) : t({ nl: 'Deel met familie', fr: 'Partager avec la famille' }) }}
-                </button>
-                <p v-if="shareError" class="text-red-500 text-xs font-semibold">
-                  {{ t({ nl: 'Delen lukte niet — probeer het nog eens.', fr: "Le partage a échoué — réessayez." }) }}
-                </p>
-              </div>
+              <a
+                href="/menu"
+                @click="trackEvent('preorder_view_menu', { source: 'empty_drawer' }); $emit('close')"
+                class="w-full flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 active:bg-orange-600 text-white font-bold py-3 min-h-11 rounded-xl transition-colors"
+              >
+                {{ t({ nl: 'Bekijk het menu', fr: 'Voir le menu' }) }}
+              </a>
+              <button
+                @click="handleShare"
+                class="w-full mt-3 flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold py-3 min-h-11 rounded-xl transition-colors text-sm"
+              >
+                <span aria-hidden="true">👨‍👩‍👧</span>
+                {{ t({ nl: 'Bestel samen', fr: 'Commander ensemble' }) }}
+              </button>
+              <p v-if="shareError" class="text-red-500 text-xs font-semibold mt-2">
+                {{ t({ nl: 'Delen lukte niet — probeer het nog eens.', fr: "Le partage a échoué — réessayez." }) }}
+              </p>
             </div>
 
             <template v-else>
               <!-- Items -->
-              <div class="overflow-y-auto p-5 space-y-3">
+              <div class="overflow-y-auto px-5 divide-y divide-gray-100">
                 <div
                   v-for="item in items"
                   :key="item.key"
-                  class="flex items-center gap-3 bg-gray-50 rounded-xl p-3"
+                  class="flex items-center gap-3 py-3"
                 >
-                  <div class="h-12 w-12 rounded-lg bg-orange-50 flex items-center justify-center text-2xl shrink-0 overflow-hidden">
+                  <div class="h-11 w-11 rounded-lg bg-orange-50 flex items-center justify-center text-xl shrink-0 overflow-hidden">
                     <img v-if="item.image" :src="item.image" :alt="lang === 'nl' ? item.name.nl : item.name.fr" class="h-full w-full object-cover" />
                     <span v-else>{{ item.emoji ?? '🍽️' }}</span>
                   </div>
@@ -100,89 +98,97 @@
                     <p class="font-bold text-gray-900 text-sm truncate">
                       {{ lang === 'nl' ? item.name.nl : item.name.fr }}
                     </p>
-                    <p class="text-orange-500 font-bold text-sm">
-                      €{{ (item.price * item.qty).toFixed(2) }}
+                    <p
+                      v-for="option in item.options"
+                      :key="option.groupKey"
+                      class="text-gray-400 text-xs truncate pl-2"
+                    >
+                      {{ lang === 'nl' ? option.label.nl : option.label.fr }}
                     </p>
                   </div>
-                  <div class="flex items-center gap-2 shrink-0">
-                    <button
-                      @click="decreaseQty(item)"
-                      class="h-11 w-11 rounded-full bg-white border border-gray-200 text-gray-600 text-lg font-bold hover:border-orange-300 hover:text-orange-500 active:bg-orange-50 transition-colors flex items-center justify-center"
-                      :aria-label="t({ nl: 'Verminder', fr: 'Diminuer' })"
-                    >
-                      −
-                    </button>
-                    <span class="w-6 text-center font-bold text-gray-900 text-sm">{{ item.qty }}</span>
-                    <button
-                      @click="increaseQty(item)"
-                      class="h-11 w-11 rounded-full bg-white border border-gray-200 text-gray-600 text-lg font-bold hover:border-orange-300 hover:text-orange-500 active:bg-orange-50 transition-colors flex items-center justify-center"
-                      :aria-label="t({ nl: 'Vermeerder', fr: 'Augmenter' })"
-                    >
-                      +
-                    </button>
+                  <div class="flex flex-col items-end gap-1 shrink-0">
+                    <span class="text-orange-500 font-bold text-sm">
+                      €{{ (item.price * item.qty).toFixed(2) }}
+                    </span>
+                    <div class="flex items-center gap-1">
+                      <button
+                        @click="decreaseQty(item)"
+                        class="h-8 w-8 rounded-full bg-white border border-gray-200 text-gray-600 font-bold hover:border-orange-300 hover:text-orange-500 active:bg-orange-50 transition-colors flex items-center justify-center"
+                        :aria-label="t({ nl: 'Verminder', fr: 'Diminuer' })"
+                      >
+                        −
+                      </button>
+                      <span class="w-5 text-center font-bold text-gray-900 text-sm">{{ item.qty }}</span>
+                      <button
+                        @click="increaseQty(item)"
+                        class="h-8 w-8 rounded-full bg-white border border-gray-200 text-gray-600 font-bold hover:border-orange-300 hover:text-orange-500 active:bg-orange-50 transition-colors flex items-center justify-center"
+                        :aria-label="t({ nl: 'Vermeerder', fr: 'Augmenter' })"
+                      >
+                        +
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- Footer -->
-              <div class="p-5 pt-3 border-t border-gray-100 shrink-0 space-y-4">
-                <div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-bold text-gray-900">{{ t({ nl: 'Totaal (geschat)', fr: 'Total (estimé)' }) }}</span>
-                    <span class="font-extrabold text-orange-500 text-2xl">€{{ total.toFixed(2) }}</span>
-                  </div>
-                  <p class="text-gray-400 text-xs mt-1">
-                    {{
-                      t({
-                        nl: 'Richtprijs — prijzen voor ter plaatse en om mee te nemen kunnen verschillen.',
-                        fr: 'Prix indicatif — les prix sur place et à emporter peuvent différer.',
-                      })
-                    }}
-                  </p>
+              <div class="p-5 pt-4 border-t border-gray-100 shrink-0 space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-gray-900">{{ t({ nl: 'Totaal (geschat)', fr: 'Total (estimé)' }) }}</span>
+                  <span class="font-extrabold text-orange-500 text-2xl">€{{ total.toFixed(2) }}</span>
                 </div>
 
-                <div class="bg-orange-50 border border-orange-100 rounded-xl p-4 flex items-start gap-3">
-                  <span class="text-2xl shrink-0" aria-hidden="true">💬</span>
-                  <p class="text-orange-700 text-sm font-semibold leading-snug">
-                    {{
-                      t({
-                        nl: 'Lees deze bestelling gewoon voor aan de kassa.',
-                        fr: 'Lisez simplement cette commande à la caisse.',
-                      })
-                    }}
-                  </p>
-                </div>
+                <a
+                  href="/menu"
+                  @click="trackEvent('preorder_view_menu', { source: 'drawer_continue' }); $emit('close')"
+                  class="w-full bg-orange-500 hover:bg-orange-600 active:bg-orange-600 text-white font-bold py-3.5 min-h-11 rounded-xl transition-colors text-sm text-center flex items-center justify-center"
+                >
+                  {{ t({ nl: 'Verder kiezen', fr: 'Continuer' }) }}
+                </a>
 
                 <button
                   @click="handleShare"
                   class="w-full flex items-center justify-center gap-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white active:bg-gray-900 active:text-white font-bold py-3 min-h-11 rounded-xl transition-colors text-sm"
                 >
                   <span aria-hidden="true">👨‍👩‍👧</span>
-                  {{ shareCopied ? t({ nl: 'Link gekopieerd!', fr: 'Lien copié !' }) : t({ nl: 'Deel met familie', fr: 'Partager avec la famille' }) }}
+                  {{ t({ nl: 'Bestel samen', fr: 'Commander ensemble' }) }}
                 </button>
-                <p v-if="shareError" class="text-red-500 text-xs font-semibold text-center -mt-2">
+                <p v-if="shareError" class="text-red-500 text-xs font-semibold text-center">
                   {{ t({ nl: 'Delen lukte niet — probeer het nog eens.', fr: "Le partage a échoué — réessayez." }) }}
                 </p>
 
-                <div class="flex gap-3">
-                  <button
-                    @click="handleClear"
-                    class="flex-1 bg-gray-100 hover:bg-gray-200 active:bg-gray-200 text-gray-600 font-bold py-3.5 min-h-11 rounded-xl transition-colors text-sm"
-                  >
-                    {{ t({ nl: 'Bestelling wissen', fr: 'Effacer la commande' }) }}
-                  </button>
-                  <a
-                    href="/menu"
-                    @click="trackEvent('preorder_view_menu', { source: 'drawer_continue' }); $emit('close')"
-                    class="flex-1 bg-orange-500 hover:bg-orange-600 active:bg-orange-600 text-white font-bold py-3.5 min-h-11 rounded-xl transition-colors text-sm text-center flex items-center justify-center"
-                  >
-                    {{ t({ nl: 'Verder kiezen', fr: 'Continuer' }) }}
-                  </a>
-                </div>
+                <button
+                  @click="handleClear"
+                  class="w-full text-center text-gray-400 hover:text-gray-600 font-semibold underline underline-offset-2 text-xs"
+                >
+                  {{ t({ nl: 'Bestelling wissen', fr: 'Effacer la commande' }) }}
+                </button>
               </div>
             </template>
           </div>
         </Transition>
+      </div>
+    </Transition>
+  </Teleport>
+
+  <!-- Copied-to-clipboard confirmation -->
+  <Teleport to="body" :disabled="!isMounted">
+    <Transition name="share-toast">
+      <div
+        v-if="shareCopied"
+        class="fixed left-1/2 -translate-x-1/2 z-[60] bg-gray-900 text-white text-sm font-bold pl-3 pr-4 py-2.5 rounded-full shadow-xl flex items-center gap-2 pointer-events-none max-w-[85vw]"
+        style="bottom: max(1.5rem, calc(env(safe-area-inset-bottom) + 1.25rem))"
+        role="status"
+        aria-live="polite"
+      >
+        <span class="h-5 w-5 rounded-full bg-green-500 flex items-center justify-center shrink-0" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </span>
+        <span class="truncate">
+          {{ t({ nl: 'Link gekopieerd — stuur hem door naar je familie!', fr: 'Lien copié — envoyez-le à votre famille !' }) }}
+        </span>
       </div>
     </Transition>
   </Teleport>
@@ -249,21 +255,15 @@ async function handleShare() {
   }
   trackEvent('preorder_share', { item_count: items.value.length, total: total.value })
 
-  if (navigator.share) {
-    try {
-      await navigator.share({ title: t({ nl: 'Onze bestelling', fr: 'Notre commande' }), url })
-      trackEvent('preorder_share_completed', { method: 'native' })
-    } catch {
-      // user cancelled the native share sheet — nothing to do
-    }
-    return
-  }
   try {
     await navigator.clipboard.writeText(url)
     shareCopied.value = true
     trackEvent('preorder_share_completed', { method: 'clipboard' })
     setTimeout(() => (shareCopied.value = false), 2500)
-  } catch {}
+  } catch {
+    shareError.value = true
+    setTimeout(() => (shareError.value = false), 4000)
+  }
 }
 
 function handleClear() {
@@ -330,5 +330,21 @@ onUnmounted(() => {
       transform 0.3s cubic-bezier(0.32, 0.72, 0, 1),
       opacity 0.2s ease;
   }
+}
+
+.share-toast-enter-active {
+  transition:
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.2s ease;
+}
+.share-toast-leave-active {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+.share-toast-enter-from,
+.share-toast-leave-to {
+  transform: translate(-50%, 10px);
+  opacity: 0;
 }
 </style>
