@@ -21,7 +21,7 @@
     "id": 668936,
     "name": "Stoofvleessaus",
     "category": "Sauce hot",
-    "allergens": "Bevat: gerst, gluten, soja, mosterd, melk, lactose, tarwe, sulfiet, selderij."
+    "allergens": "Bevat: gerst, gluten, soja, mosterd, lactose, melk, tarwe, sulfiet, selderij."
   },
   {
     "id": 668938,
@@ -175,9 +175,9 @@
   },
   {
     "id": 1257254,
-    "name": "Scampis Diabolique",
+    "name": "Scampi’s Diabolique",
     "category": "Prepared dishes",
-    "allergens": "Bevat: melk, lactose, schaaldieren, gluten, tarwe."
+    "allergens": "Bevat: schaaldieren, lactose, melk, gluten, tarwe."
   },
   {
     "id": 668968,
@@ -225,7 +225,7 @@
     "id": 668977,
     "name": "Mammoet",
     "category": "Snacks",
-    "allergens": "Bevat: gerst, mosterd, ei, gluten, soja."
+    "allergens": "Bevat: gerst, mosterd, ei, gluten, soja, tarwe."
   },
   {
     "id": 1506609,
@@ -253,7 +253,7 @@
   },
   {
     "id": 668980,
-    "name": "Mini loempias",
+    "name": "Mini loempia’s",
     "category": "Snacks",
     "allergens": "Bevat: soja, gluten, tarwe, sesam, pinda."
   },
@@ -271,7 +271,7 @@
   },
   {
     "id": 1940279,
-    "name": "scampis saus",
+    "name": "scampi’s saus",
     "category": "Sauce cold",
     "allergens": ""
   },
@@ -285,7 +285,7 @@
     "id": 654648,
     "name": "Stoofvlees",
     "category": "Prepared dishes",
-    "allergens": "Bevat: sulfiet, mosterd, gerst, gluten, melk, lactose, soja, tarwe."
+    "allergens": "Bevat: lactose, melk, soja, mosterd, gerst, gluten, tarwe, sulfiet."
   },
   {
     "id": 668985,
@@ -327,7 +327,7 @@
     "id": 654656,
     "name": "Vol-au-vent",
     "category": "Prepared dishes",
-    "allergens": "Bevat: tarwe, gluten, lactose, melk, ei."
+    "allergens": "Bevat: lactose, melk, ei, tarwe, gluten."
   },
   {
     "id": 668993,
@@ -343,9 +343,9 @@
   },
   {
     "id": 860995,
-    "name": "BELLsaus",
+    "name": "BELL’saus",
     "category": "Sauce cold",
-    "allergens": "Bevat: ei, mosterd, tarwe, soja, gluten."
+    "allergens": "Bevat: tarwe, ei, soja, gluten, mosterd."
   },
   {
     "id": 668995,
@@ -360,6 +360,12 @@
     "allergens": "Bevat: vis, melk, lactose, soja, ei, mosterd."
   },
   {
+    "id": 1975364,
+    "name": "Dynamite",
+    "category": "",
+    "allergens": "Bevat: melk, soja, lactose, tarwe, gluten."
+  },
+  {
     "id": 668996,
     "name": "Mosselen in potje",
     "category": "Shellfish",
@@ -369,7 +375,7 @@
     "id": 654660,
     "name": "Tomatensaus",
     "category": "Sauce hot",
-    "allergens": "Bevat: melk, selderij, soja, lactose, gluten, tarwe, mosterd."
+    "allergens": "Bevat: tarwe, gluten, mosterd, melk, selderij, soja, lactose."
   },
   {
     "id": 1335621,
@@ -511,7 +517,7 @@
   },
   {
     "id": 1256811,
-    "name": "Scampis crème",
+    "name": "Scampi’s crème",
     "category": "Prepared dishes",
     "allergens": "Bevat: schaaldieren, lactose, melk, mosterd."
   },
@@ -525,7 +531,7 @@
     "id": 658546,
     "name": "Béchamel",
     "category": "Sauce hot",
-    "allergens": "Bevat: tarwe, gluten, melk, lactose."
+    "allergens": "Bevat: melk, lactose, tarwe, gluten."
   },
   {
     "id": 669042,
@@ -577,15 +583,15 @@
   },
   {
     "id": 669055,
-    "name": "BELLBurger",
+    "name": "BELL’Burger",
     "category": "Burgers",
-    "allergens": "Bevat: melk, lactose, ei, mosterd, gluten, soja, tarwe."
+    "allergens": "Bevat: tarwe, ei, soja, gluten, melk, lactose, mosterd."
   },
   {
     "id": 669058,
     "name": "Stoofvleessaus v/h huis",
     "category": "Sauce hot",
-    "allergens": "Bevat: gerst, gluten, soja, mosterd, melk, lactose, tarwe, sulfiet."
+    "allergens": "Bevat: gerst, gluten, soja, mosterd, lactose, melk, tarwe, sulfiet."
   },
   {
     "id": 1290371,
@@ -787,7 +793,7 @@
   },
   {
     "id": 658592,
-    "name": "Scampis natuur",
+    "name": "Scampi’s natuur",
     "category": "Shellfish",
     "allergens": "Bevat: schaaldieren, lactose, melk."
   },
@@ -847,7 +853,7 @@
   },
   {
     "id": 658605,
-    "name": "Scampis Noordzee salade",
+    "name": "Scampi’s Noordzee salade",
     "category": "Shellfish",
     "allergens": "Bevat: schaaldieren."
   },
@@ -879,7 +885,7 @@
     "id": 669106,
     "name": "Bicky oranje saus",
     "category": "Sauce cold",
-    "allergens": "Bevat: selderij, ei, mosterd, gluten, tarwe, soja."
+    "allergens": "Bevat: ei, mosterd, selderij, gluten, tarwe, soja."
   },
   {
     "id": 669108,
@@ -975,7 +981,7 @@
     "id": 668872,
     "name": "Stoofvlees",
     "category": "Prepared dishes",
-    "allergens": "Bevat: gerst, gluten, soja, mosterd, melk, lactose, tarwe, sulfiet."
+    "allergens": "Bevat: gerst, gluten, soja, mosterd, lactose, melk, tarwe, sulfiet."
   },
   {
     "id": 669128,
@@ -985,7 +991,7 @@
   },
   {
     "id": 658633,
-    "name": "BELLBurger (vlees)",
+    "name": "BELL’Burger (vlees)",
     "category": "Meat preparations of crunched meat",
     "allergens": "Bevat: soja."
   },
@@ -1005,7 +1011,7 @@
     "id": 658635,
     "name": "Stoofvleessaus",
     "category": "Sauce hot",
-    "allergens": "Bevat: melk, sulfiet, sesam, spelt, macadamianoten, tarwe, schaaldieren, khorasantarwe, selderij, hazelnoten, vis, ei, pinda, gerst, haver, pistachenoten, weekdieren, cashewnoten, lupine, walnoten, soja, rogge, amandelen, paranoten, noten, mosterd, pecannoten, lactose, gluten."
+    "allergens": "Bevat: gluten, melk, lactose, soja, tarwe, gerst, mosterd, sulfiet, sesam, spelt, macadamianoten, schaaldieren, khorasantarwe, selderij, hazelnoten, vis, ei, pinda, haver, pistachenoten, weekdieren, cashewnoten, lupine, walnoten, rogge, amandelen, paranoten, noten, pecannoten."
   },
   {
     "id": 669131,
@@ -1107,13 +1113,13 @@
     "id": 1314525,
     "name": "Scampi diabolique pasta",
     "category": "Prepared dishes",
-    "allergens": "Bevat: schaaldieren, lactose, melk, gluten, tarwe, ei."
+    "allergens": "Bevat: tarwe, ei, gluten, melk, lactose, schaaldieren."
   },
   {
     "id": 669149,
     "name": "Omer",
     "category": "Beer",
-    "allergens": "Bevat: gluten, gerst."
+    "allergens": "Bevat: gluten, gerst, tarwe."
   },
   {
     "id": 669151,
@@ -1125,7 +1131,7 @@
     "id": 1891551,
     "name": "ZalmLasagne",
     "category": "Prepared dishes",
-    "allergens": "Bevat: melk, lactose, tarwe, gluten, vis."
+    "allergens": "Bevat: lactose, melk, vis, tarwe, gluten."
   },
   {
     "id": 1314528,
@@ -1143,7 +1149,7 @@
     "id": 1891553,
     "name": "ZalmTagliatelli",
     "category": "Prepared dishes",
-    "allergens": "Bevat: tarwe, gluten, melk, lactose, ei, vis."
+    "allergens": "Bevat: tarwe, ei, gluten, vis, lactose, melk."
   },
   {
     "id": 1424354,
@@ -1267,7 +1273,7 @@
   },
   {
     "id": 668915,
-    "name": "Salade Scampis (gepaneerd)",
+    "name": "Salade Scampi’s (gepaneerd)",
     "category": "Salads",
     "allergens": "Bevat: sulfiet, schaaldieren, soja, selderij, tarwe, gluten, ei."
   },
@@ -1281,7 +1287,7 @@
     "id": 669173,
     "name": "Tomatensoep",
     "category": "Soup",
-    "allergens": ""
+    "allergens": "Bevat: melk, lactose."
   },
   {
     "id": 668918,
@@ -1306,6 +1312,12 @@
     "name": "Salade Geitenkaas",
     "category": "Salads",
     "allergens": "Bevat: melk, lactose, tarwe, gluten."
+  },
+  {
+    "id": 1972478,
+    "name": "mix special",
+    "category": "Semifinished products",
+    "allergens": "Bevat: ei, tarwe, gluten."
   },
   {
     "id": 668926,

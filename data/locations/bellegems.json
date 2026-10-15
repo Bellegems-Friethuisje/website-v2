@@ -548,7 +548,7 @@
         "description": "Huisbereid"
       },
       "fr": {
-        "name": "Sauce poivre chaude maison",
+        "name": "Sauce poivre chaude",
         "description": "Maison"
       },
       "price": 3.5,
@@ -631,7 +631,7 @@
         "description": "Huisbereide tomatensaus"
       },
       "fr": {
-        "name": "Sauce tomate en pot",
+        "name": "Sauce tomate",
         "description": "Sauce tomate maison"
       },
       "price": 3.5,
@@ -943,7 +943,7 @@
         "name": "Zigeunerstick"
       },
       "fr": {
-        "name": "Zigeunerstick"
+        "name": "Tzigane"
       },
       "price": 3.5,
       "image": "/menu/snacks/zigeunerstick.webp",
@@ -961,7 +961,7 @@
       },
       "price": 3.5,
       "image": "/menu/snacks/mergueze.webp",
-      "allergens": ["soy"]
+      "allergens": ["gluten", "soy"]
     },
     {
       "id": 135,
@@ -971,7 +971,7 @@
         "name": "Spicy viandel"
       },
       "fr": {
-        "name": "Viandel épicé"
+        "name": "Viandel spciy"
       },
       "price": 2.6,
       "image": "/menu/snacks/spicyviandel.webp",
@@ -1042,7 +1042,7 @@
         "name": "Crizly pikant"
       },
       "fr": {
-        "name": "Crizly épicé"
+        "name": "Crizly piquante"
       },
       "price": 4.3,
       "image": "/menu/snacks/crizzly.webp",
@@ -1188,7 +1188,7 @@
         "name": "Kipfingers"
       },
       "fr": {
-        "name": "Doigts de poulet"
+        "name": "Chix de poulet"
       },
       "price": 3.9,
       "image": "/menu/snacks/kipfingers.webp",
@@ -1230,7 +1230,7 @@
         "name": "Bitterballen"
       },
       "fr": {
-        "name": "Bitterballen"
+        "name": "Boulettes de viande"
       },
       "price": 3.2,
       "image": "/menu/snacks/bitterballen.webp",
@@ -1272,7 +1272,7 @@
         "name": "Mini loempia's"
       },
       "fr": {
-        "name": "Mini nems"
+        "name": "Mini loempias"
       },
       "price": 3.8,
       "image": "/menu/snacks/miniloempias.webp",
@@ -1286,7 +1286,7 @@
         "name": "Loempia"
       },
       "fr": {
-        "name": "Nem"
+        "name": "Loempia"
       },
       "price": 4.5,
       "image": "/menu/snacks/loempia.webp",
@@ -1328,7 +1328,7 @@
         "name": "Lookworst"
       },
       "fr": {
-        "name": "Saucisse à l'ail"
+        "name": "Cervella"
       },
       "price": 3.5,
       "image": "/menu/snacks/lookworst.webp",
@@ -1343,7 +1343,7 @@
         "name": "Bockworst"
       },
       "fr": {
-        "name": "Bockwurst"
+        "name": "Saucisse franckfort"
       },
       "price": 3.5,
       "image": "/menu/snacks/bockworst.webp",
@@ -1385,7 +1385,7 @@
         "name": "Jagerworst"
       },
       "fr": {
-        "name": "Saucisse du chasseur"
+        "name": "Chasseur"
       },
       "price": 3.8,
       "image": "/menu/snacks/jagerworst.webp",

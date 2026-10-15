@@ -39,6 +39,13 @@ for (const item of allergenes) {
 
 // Manual overrides for items where semantic matching is needed
 const manualMap = {
+  // SAFETY OVERRIDE (2026-10-15): supplier (Spuntini Deerlijk, article A00428
+  // "merguez sate alro 30x110g") allergen declaration in QGuard only lists soy.
+  // A reported gluten exposure incident means that declaration cannot be trusted
+  // as-is. Forcing gluten here as a precaution until the supplier/physical
+  // product label confirms the true ingredient list. Remove this override only
+  // after that verification, and correct it to match the confirmed label.
+  'merguez sate': ['gluten','soy'],
   // Frietjes — allergen-free
   'kinderfriet': [], 'kleine friet': [], 'middel friet': [], 'grote friet': [],
   // Sauzen — variant names in allergenes.json
@@ -62,7 +69,11 @@ const manualMap = {
   'scampi diabolique': ['crustaceans','gluten','milk'],
   'scampi curry': ['crustaceans','gluten','milk','mustard','sulphites'],
   // Snacks without allergen data
-  'dynamite': [], 'artisanale kipbrochette': [],
+  // NOTE (2026-10-15): "Dynamite" override removed — QGuard now has real data
+  // for it (gluten, milk, soy), so it must flow through instead of being forced
+  // to empty. Leaving the stale override here was the same failure pattern that
+  // caused the merguez gluten miss.
+  'artisanale kipbrochette': [],
   // Sauzen without allergen data / culinarily determined
   'loempiasaus': ['soy'],
   '3 sauzen': [], 'speciale saus': [],
@@ -99,18 +110,46 @@ function findAllergens(name) {
   return null
 }
 
-let matched = 0, unmatched = []
+let matched = 0, unmatched = [], changedCount = 0
+const idToNewAllergens = new Map()
 for (const item of menu.menu) {
   if (!item.nl?.name) continue
   const allergens = findAllergens(item.nl.name)
   if (allergens !== null) {
-    item.allergens = allergens
     matched++
+    idToNewAllergens.set(item.id, { allergens, old: item.allergens || [] })
   } else {
     unmatched.push(item.nl.name)
   }
 }
 
-writeFileSync('./data/locations/bellegems.json', JSON.stringify(menu, null, 2), 'utf8')
-console.log(`Matched: ${matched}, Unmatched: ${unmatched.length}`)
+// Rewrite only each item's "allergens" line in place, rather than
+// JSON.stringify-ing the whole file — that would reformat every array in the
+// document (opening hours, pairsWith, ...) and bury the real diff in noise.
+const rawText = readFileSync('./data/locations/bellegems.json', 'utf8')
+const eol = rawText.includes('\r\n') ? '\r\n' : '\n'
+const lines = rawText.split(/\r\n|\n/)
+const idLineRe = /^(\s*)"id":\s*(\d+),\s*$/
+const allergensLineRe = /^(\s*)"allergens":\s*\[[^\]]*\]\s*,?\s*$/
+
+let currentId = null
+for (let i = 0; i < lines.length; i++) {
+  const idMatch = lines[i].match(idLineRe)
+  if (idMatch) {
+    currentId = Number(idMatch[2])
+    continue
+  }
+  const allMatch = lines[i].match(allergensLineRe)
+  if (allMatch && currentId !== null && idToNewAllergens.has(currentId)) {
+    const { allergens, old } = idToNewAllergens.get(currentId)
+    const trailingComma = /,\s*$/.test(lines[i]) ? ',' : ''
+    const arr = allergens.length ? `[${allergens.map(a => JSON.stringify(a)).join(', ')}]` : '[]'
+    lines[i] = `${allMatch[1]}"allergens": ${arr}${trailingComma}`
+    if ([...old].sort().join(',') !== [...allergens].sort().join(',')) changedCount++
+    currentId = null
+  }
+}
+
+writeFileSync('./data/locations/bellegems.json', lines.join(eol), 'utf8')
+console.log(`Matched: ${matched}, Unmatched: ${unmatched.length}, Changed: ${changedCount}`)
 if (unmatched.length) console.log('Unmatched:\n' + unmatched.map(n => '  ' + n).join('\n'))
